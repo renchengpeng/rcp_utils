@@ -12,7 +12,7 @@ public interface Constants {
     public static final String ODMLOGIN_STATUS_CLOSE = "0";
     
     //timing- 是否是推荐系统推荐
-    public static final String IS_SPREAD = "1";// 1：是
+    public static final String IS_SPREAD = "1";// 1：是.=
     
     
     //timing- fyw tasklet
