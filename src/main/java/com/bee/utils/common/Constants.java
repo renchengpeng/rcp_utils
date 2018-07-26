@@ -2458,4 +2458,36 @@ public interface Constants {
     
     //idservice 集群参数
     public static final String ID_CLUSTER_KEY = "idCluster";
+    /**跃程 产品类型0话费 */
+    public static final String YC_PRODUCT_TYPE_0="0";
+    /**跃程 产品类型1流量*/
+    public static final String YC_PRODUCT_TYPE_1="1";
+    /**跃程 产品类型4油卡*/
+    public static final String YC_PRODUCT_TYPE_4="4";
+    /**跃程 产品状态 0上架   */
+    public static final String YC_PRODUCT_STATUS_0="0";
+    /**跃程 产品状态 1下架   */
+    public static final String YC_PRODUCT_STATUS_1="1";
+    /**跃程 运营商 0移动 */
+    public static final String YC_PRODUCT_OPERATOR_MOBILE="0";
+    /**跃程 运营商 1联通*/
+    public static final String YC_PRODUCT_OPERATOR_UNICOM="1";
+    /**跃程 运营商 2电信*/
+    public static final String YC_PRODUCT_OPERATOR_TELECOM="2";
+    /**跃程 订单支付方式 0 易通券 */
+    public static final String YC_ORDER_PAY_TYPE_0="0";
+    /**跃程 订单支付方式 1 蜂财 */
+    public static final String YC_ORDER_PAY_TYPE_1="1";
+    /**跃程 订单状态 0 订单已创建，未支付 */
+    public static final String YC_ORDER_STATUS_0="0";
+    /**跃程 订单状态1 支付成功，进行直充 */
+    public static final String YC_ORDER_STATUS_1="1";
+    /**跃程 订单状态2 直充申请成功，等待回调*/
+    public static final String YC_ORDER_STATUS_2="2";
+    /**跃程 订单状态3 收到回调，订单完成*/
+    public static final String YC_ORDER_STATUS_3="3";
+    /**跃程 订单状态4 订单已取消*/
+    public static final String YC_ORDER_STATUS_4="4";
+    
+    
 }
