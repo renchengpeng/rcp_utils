@@ -2268,6 +2268,15 @@ public interface Constants {
     /** 默认的分销商编号 0 **/
     public static final String DEFAULT_AGENTMER_SEQ = "0";
 
+    /** 分销商网站信息状态  0--待审核 **/
+    public static final String ODM_WEB_SET_VERIFY = "0";
+
+    /** 分销商网站信息状态  1--审核通过 **/
+    public static final String ODM_WEB_SET_ACTIVE = "1";
+
+    /** 分销商网站信息状态  2--驳回**/
+    public static final String ODM_WEB_SET_BACK = "2";
+
     /** 蜂惠方法执行失败 **/
     public static final String FH_RESULT_FAIL = "0";
     /** 蜂惠方法执行成功 **/
