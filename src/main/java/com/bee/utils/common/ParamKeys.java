@@ -397,4 +397,9 @@ public interface ParamKeys {
     //分成策略编号
     public static final String REBATE_STRATEGY_SEQ_NO= "RebateStrategyService";
     
+    //跃程订单编号
+    public static final String YC_ORDER_SEQ_NO="YcOrderService";
+    
+    //跃程充值产品编号
+    public static final String YC_PRODUCT_SEQ_NO="YcProductService";
 }
