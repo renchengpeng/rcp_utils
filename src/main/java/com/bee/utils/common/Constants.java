@@ -2420,17 +2420,17 @@ public interface Constants {
     
     /******************************签名相关标识 *****************************************/
     //蜂点
-    public static final String SIGNATURE_FD="0";
+    public static final String SIGNATURE_FD="1";
     //壹通券
-    public static final String SIGNATURE_YITONGQUAN="1";
+    public static final String SIGNATURE_YITONGQUAN="2";
     //魔钥
-    public static final String SIGNATURE_MOYAO="2";
+    public static final String SIGNATURE_MOYAO="3";
     //卡鲤
-    public static final String SIGNATURE_KALI="3";
+    public static final String SIGNATURE_KALI="4";
     //快寄卖
-    public static final String SIGNATURE_KUAIJIMAI="4";
+    public static final String SIGNATURE_KUAIJIMAI="5";
     //签名第三方
-    public static final String SIGNATURE_THIRD="5";
+    public static final String SIGNATURE_THIRD="6";
     /***********************************************************************/
     
     /** 请求成功状态码 */
