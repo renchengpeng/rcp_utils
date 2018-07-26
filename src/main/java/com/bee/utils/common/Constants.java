@@ -1408,7 +1408,7 @@ public interface Constants {
     /** 获取用户信息失败 **/
     public static final String GET_USER_INFO_FAILED = "0012";
 
-    /** 登录名已存在 **/
+    /** 登录名已存在  ***/
     public static final String LOGIN_NAME_EXIST = "0012";
 
     /** redis超时的时间 **/
