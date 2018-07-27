@@ -412,6 +412,8 @@ public interface Constants {
     
     /** 分销商odm系统**/
     public final static String CHANNEL_16 = "16";
+    /**跃程充值 **/
+    public final static String CHANNEL_17="17";
     
     
     
