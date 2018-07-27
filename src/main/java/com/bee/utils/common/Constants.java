@@ -700,6 +700,8 @@ public interface Constants {
     public final static String PLAT_KALI="18";
     /**支付宝券**/
     public final static String PLAT_ZHI_FU_BAO="19";
+    /**商户**/
+    public final static String PLAT_MERCHANT="20";
     
     /** 魔钥-物品上传附件**/
     public final static String DISENCLOSURE= "1";
