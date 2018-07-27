@@ -1410,7 +1410,7 @@ public interface Constants {
     /** 获取用户信息失败 **/
     public static final String GET_USER_INFO_FAILED = "0012";
 
-    /** 登录名已存在 **/
+    /** 登录名已存在  ***/
     public static final String LOGIN_NAME_EXIST = "0012";
 
     /** redis超时的时间 **/
@@ -2270,6 +2270,15 @@ public interface Constants {
     /** 默认的分销商编号 0 **/
     public static final String DEFAULT_AGENTMER_SEQ = "0";
 
+    /** 分销商网站信息状态  0--待审核 **/
+    public static final String ODM_WEB_SET_VERIFY = "0";
+
+    /** 分销商网站信息状态  1--审核通过 **/
+    public static final String ODM_WEB_SET_ACTIVE = "1";
+
+    /** 分销商网站信息状态  2--驳回**/
+    public static final String ODM_WEB_SET_BACK = "2";
+
     /** 蜂惠方法执行失败 **/
     public static final String FH_RESULT_FAIL = "0";
     /** 蜂惠方法执行成功 **/
@@ -2460,4 +2469,38 @@ public interface Constants {
     
     //idservice 集群参数
     public static final String ID_CLUSTER_KEY = "idCluster";
+    /**跃程 产品类型0话费 */
+    public static final String YC_PRODUCT_TYPE_0="0";
+    /**跃程 产品类型1流量*/
+    public static final String YC_PRODUCT_TYPE_1="1";
+    /**跃程 产品类型4油卡*/
+    public static final String YC_PRODUCT_TYPE_4="4";
+    /**跃程 产品状态 0上架   */
+    public static final String YC_PRODUCT_STATUS_0="0";
+    /**跃程 产品状态 1下架   */
+    public static final String YC_PRODUCT_STATUS_1="1";
+    /**跃程 运营商 0移动 */
+    public static final String YC_PRODUCT_OPERATOR_MOBILE="0";
+    /**跃程 运营商 1联通*/
+    public static final String YC_PRODUCT_OPERATOR_UNICOM="1";
+    /**跃程 运营商 2电信*/
+    public static final String YC_PRODUCT_OPERATOR_TELECOM="2";
+    /**跃程 订单支付方式 0 易通券 */
+    public static final String YC_ORDER_PAY_TYPE_0="0";
+    /**跃程 订单支付方式 1 蜂财 */
+    public static final String YC_ORDER_PAY_TYPE_1="1";
+    /**跃程 订单状态 0 订单已创建，未支付 */
+    public static final String YC_ORDER_STATUS_0="0";
+    /**跃程 订单状态1 支付成功，进行直充 */
+    public static final String YC_ORDER_STATUS_1="1";
+    /**跃程 订单状态2 直充申请成功，等待回调*/
+    public static final String YC_ORDER_STATUS_2="2";
+    /**跃程 订单状态3 收到回调，订单完成*/
+    public static final String YC_ORDER_STATUS_3="3";
+    /**跃程 订单状态4 订单已取消*/
+    public static final String YC_ORDER_STATUS_4="4";
+    /**跃程 订单状态5 订单错误取消 */
+    public static final String YC_ORDER_STATUS_5="5";
+    
+    
 }
