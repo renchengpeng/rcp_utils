@@ -2497,6 +2497,8 @@ public interface Constants {
     public static final String YC_ORDER_STATUS_3="3";
     /**跃程 订单状态4 订单已取消*/
     public static final String YC_ORDER_STATUS_4="4";
+    /**跃程 订单状态5 订单错误取消 */
+    public static final String YC_ORDER_STATUS_5="5";
     
     
 }
