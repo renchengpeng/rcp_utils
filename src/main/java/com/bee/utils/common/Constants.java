@@ -2476,10 +2476,6 @@ public interface Constants {
     public static final String YC_PRODUCT_OPERATOR_UNICOM="1";
     /**跃程 运营商 2电信*/
     public static final String YC_PRODUCT_OPERATOR_TELECOM="2";
-    /**跃程 订单支付方式 0 易通券 */
-    public static final String YC_ORDER_PAY_TYPE_0="0";
-    /**跃程 订单支付方式 1 蜂财 */
-    public static final String YC_ORDER_PAY_TYPE_1="1";
     /**跃程 订单状态 0 订单已创建，未支付 */
     public static final String YC_ORDER_STATUS_0="0";
     /**跃程 订单状态1 支付成功，进行直充 */
