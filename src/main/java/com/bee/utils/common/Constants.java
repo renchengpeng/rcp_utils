@@ -2464,6 +2464,8 @@ public interface Constants {
     
     /** 蜂点域名 */
     public static final String FD_WEB_URL = "www.qiyeos.com";
+    /** 蜂点客服邮箱 */
+    public static final String FD_CUSTOMER_SERVICE_EMAIL="service@beecredit.com";
     
     /** 合同模板区分蜂点ODM（0-蜂点 1-分销商） */
     public static final String AGENT_MER_FLAG_0 = "0";//蜂点
@@ -2499,6 +2501,12 @@ public interface Constants {
     public static final String YC_ORDER_STATUS_4="4";
     /**跃程 订单状态5 订单错误取消 */
     public static final String YC_ORDER_STATUS_5="5";
-    
+
+    /**分销商编号作为redis KEY*/
+    public static final String AGENT_MER_SEQ_REDIS_kEY="ODM_WEB_SET_AGENT_MER_SEQ:";
+
+    /**分销商网站域名作为redis KEY*/
+    public static final String WEB_URL_REDIS_kEY="ODM_WEB_SET:";
+
     
 }
