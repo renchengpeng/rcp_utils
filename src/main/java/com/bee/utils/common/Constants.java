@@ -412,6 +412,8 @@ public interface Constants {
     
     /** 分销商odm系统**/
     public final static String CHANNEL_16 = "16";
+    /**跃程充值 **/
+    public final static String CHANNEL_17="17";
     
     
     
@@ -2503,6 +2505,12 @@ public interface Constants {
     public static final String YC_ORDER_STATUS_4="4";
     /**跃程 订单状态5 订单错误取消 */
     public static final String YC_ORDER_STATUS_5="5";
-    
+
+    /**分销商编号作为redis KEY*/
+    public static final String AGENT_MER_SEQ_REDIS_kEY="ODM_WEB_SET_AGENT_MER_SEQ:";
+
+    /**分销商网站域名作为redis KEY*/
+    public static final String WEB_URL_REDIS_kEY="ODM_WEB_SET:";
+
     
 }
