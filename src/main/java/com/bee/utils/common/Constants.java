@@ -2511,6 +2511,11 @@ public interface Constants {
 
     /**分销商网站域名作为redis KEY*/
     public static final String WEB_URL_REDIS_kEY="ODM_WEB_SET:";
-
     
+    /**邮箱服务地址*/
+    public static final String EMAIL_HOST="smtp.beecredit.com";
+    /**邮件用户名*/
+    public static final String EMAIL_USER_NAME="service@beecredit.com";
+    /**密码*/
+    public static final String EMAIL_PASSWORD="Byzy2015";
 }
