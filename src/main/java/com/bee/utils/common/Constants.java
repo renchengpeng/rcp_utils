@@ -2512,6 +2512,18 @@ public interface Constants {
 
     /**分销商网站域名作为redis KEY*/
     public static final String WEB_URL_REDIS_kEY="ODM_WEB_SET:";
-
+    /*******************************服务商品属性类型***************************/
+    /**服务商品属性类型  默认类型  0*/
+    public static final String SPECIFICATION_TYPE_DEFAULT ="0";
+    /**服务商品属性类型  时间类型  1*/
+    public static final String SPECIFICATION_TYPE_TIME ="1";
+    /********************************时间单位***************************************/
+    /** 时间单位  天*/
+    public static final String SPECIFICATION_TIME_UNIT_DAY ="DAY";
+    /** 时间单位  月*/
+    public static final String SPECIFICATION_TIME_UNIT_MONTH ="MONTH";
+    /** 时间单位  年*/
+    public static final String SPECIFICATION_TIME_UNIT_YEAR ="YEAR";
+    /***********************************************************************/
     
 }
