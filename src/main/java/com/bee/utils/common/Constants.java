@@ -2510,5 +2510,7 @@ public interface Constants {
     /**分销商网站域名作为redis KEY*/
     public static final String WEB_URL_REDIS_kEY="ODM_WEB_SET:";
 
-    
+    /**http协议  odm中用 */
+    public static final String HTTP_PROTOCOL_1 = "1";//http
+    public static final String HTTP_PROTOCOL_2 = "2";//https
 }
