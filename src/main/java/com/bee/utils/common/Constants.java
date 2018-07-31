@@ -2489,6 +2489,11 @@ public interface Constants {
     public static final String YC_PRODUCT_OPERATOR_UNICOM="1";
     /**跃程 运营商 2电信*/
     public static final String YC_PRODUCT_OPERATOR_TELECOM="2";
+    /**跃程 运营商 3中石油*/
+    public static final String YC_PRODUCT_OPERATOR_PETROCHINA="3";
+    /**跃程 运营商 4中石化*/
+    public static final String YC_PRODUCT_OPERATOR_SINOPEC="4";
+    
     /**跃程 订单状态 0 订单已创建，未支付 */
     public static final String YC_ORDER_STATUS_0="0";
     /**跃程 订单状态1 支付成功，进行直充 */
