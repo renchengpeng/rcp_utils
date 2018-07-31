@@ -2528,10 +2528,17 @@ public interface Constants {
     public static final String SPECIFICATION_TIME_UNIT_YEAR ="YEAR";
     /***********************************************************************/
     
-    /**邮箱服务地址*/
+    /**蜂点邮箱服务地址*/
     public static final String EMAIL_HOST="smtp.beecredit.com";
-    /**邮件用户名*/
+    /**蜂点邮件用户名*/
     public static final String EMAIL_USER_NAME="service@beecredit.com";
-    /**密码*/
-    public static final String EMAIL_PASSWORD="Byzy2015";
+    /**蜂点密码*/
+    public static final String EMAIL_PASSWORD="Byzy2015"; /**邮箱服务地址*/
+
+    /**壹通券邮箱服务地址*/
+    public static final String YITONGQUAN_EMAIL_HOST="smtp.exmail.qq.com";
+    /**壹通券邮件用户名*/
+    public static final String YITONGQUAN_EMAIL_USER_NAME="service@yitongquan.cn";
+    /**壹通券密码*/
+    public static final String YITONGQUAN_EMAIL_PASSWORD="Byzy0730";
 }
