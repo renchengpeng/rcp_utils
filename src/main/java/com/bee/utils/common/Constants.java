@@ -156,6 +156,8 @@ public interface Constants {
     public static final String MOYAO_PERSONAL = "moyao/personal";
     /** 魔钥广告请求前缀 **/
     public static final String MOYAO_ADVERTISEMENT = "moyao/advertisement";
+    /** 魔钥app版本请求前缀 **/
+    public static final String MOYAO_APP = "moyao/app";
     /** 魔钥公众号相关请求前缀 **/
     public static final String MOYAO_WECHAT = "moyao/wechat";
     public static final String FD_WECHAT = "fd/wechat";
