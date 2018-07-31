@@ -2339,6 +2339,11 @@ public interface Constants {
     
     /*** 订单是否删除 1：已删除 */
     public static final String FH_ORDER_DEL_STATUS_1 = "1";
+    /*** 订单服务类型 0 默认买断 */
+    public static final String FH_ORDER_SERVICE_TYPE_DEFAULT = "0";
+    /*** 订单服务类型 1 按时间收费 */
+    public static final String FH_ORDER_SERVICE_TYPE_TIME = "1";
+    
     
     /****************************************************************** 蜂惠订单相关状态 结束 ******************************************************/
     
@@ -2514,6 +2519,10 @@ public interface Constants {
 
     /**分销商网站域名作为redis KEY*/
     public static final String WEB_URL_REDIS_kEY="ODM_WEB_SET:";
+
+    /**http协议  odm中用 */
+    public static final String HTTP_PROTOCOL_1 = "1";//http
+    public static final String HTTP_PROTOCOL_2 = "2";//https
     /*******************************服务商品属性类型***************************/
     /**服务商品属性类型  默认类型  0*/
     public static final String SPECIFICATION_TYPE_DEFAULT ="0";
