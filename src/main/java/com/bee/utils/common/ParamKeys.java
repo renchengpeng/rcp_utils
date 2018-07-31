@@ -335,6 +335,7 @@ public interface ParamKeys {
 	public static final String PERSONAL_APPLY_SEQ_NO="PersonalApplyService";
 	public static final String MOYAO_ORGANIZE_DEPARTMENT_SEQ_NO="MoyaoOrganizeDepartmentService";
 	public static final String NEWS_PUSH_SEQ_NO="NewsPushService";
+	public static final String APP_VERSION_SEQ_NO="AppVersionService";//20180730 xyd 魔钥版本表
 	//福员外相关
     public static final String FYW_ACCOUNT_SEQ_NO="FywAccountService";
     public static final String FYW_FILE_BATCH_HISTORY_SEQ_NO="FywFileBatchHistoryService";
@@ -384,6 +385,7 @@ public interface ParamKeys {
     
     public static final String FH_PRODUCT_NO="FhProductService";
     
+    public static final String RECORD_SEQ_NO="FdChangeRecordService";
     
     public static final String PRD_SKU_NO="productSkuNoService";
     //发票记录编号
