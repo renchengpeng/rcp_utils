@@ -156,6 +156,8 @@ public interface Constants {
     public static final String MOYAO_PERSONAL = "moyao/personal";
     /** 魔钥广告请求前缀 **/
     public static final String MOYAO_ADVERTISEMENT = "moyao/advertisement";
+    /** 魔钥app版本请求前缀 **/
+    public static final String MOYAO_APP = "moyao/app";
     /** 魔钥公众号相关请求前缀 **/
     public static final String MOYAO_WECHAT = "moyao/wechat";
     public static final String FD_WECHAT = "fd/wechat";
@@ -2464,6 +2466,8 @@ public interface Constants {
     
     /** 蜂点域名 */
     public static final String FD_WEB_URL = "www.qiyeos.com";
+    /** 蜂点客服邮箱 */
+    public static final String FD_CUSTOMER_SERVICE_EMAIL="service@beecredit.com";
     
     /** 合同模板区分蜂点ODM（0-蜂点 1-分销商） */
     public static final String AGENT_MER_FLAG_0 = "0";//蜂点
@@ -2487,10 +2491,11 @@ public interface Constants {
     public static final String YC_PRODUCT_OPERATOR_UNICOM="1";
     /**跃程 运营商 2电信*/
     public static final String YC_PRODUCT_OPERATOR_TELECOM="2";
-    /**跃程 订单支付方式 0 易通券 */
-    public static final String YC_ORDER_PAY_TYPE_0="0";
-    /**跃程 订单支付方式 1 蜂财 */
-    public static final String YC_ORDER_PAY_TYPE_1="1";
+    /**跃程 运营商 3中石油*/
+    public static final String YC_PRODUCT_OPERATOR_PETROCHINA="3";
+    /**跃程 运营商 4中石化*/
+    public static final String YC_PRODUCT_OPERATOR_SINOPEC="4";
+    
     /**跃程 订单状态 0 订单已创建，未支付 */
     public static final String YC_ORDER_STATUS_0="0";
     /**跃程 订单状态1 支付成功，进行直充 */
@@ -2513,4 +2518,31 @@ public interface Constants {
     /**http协议  odm中用 */
     public static final String HTTP_PROTOCOL_1 = "1";//http
     public static final String HTTP_PROTOCOL_2 = "2";//https
+    /*******************************服务商品属性类型***************************/
+    /**服务商品属性类型  默认类型  0*/
+    public static final String SPECIFICATION_TYPE_DEFAULT ="0";
+    /**服务商品属性类型  时间类型  1*/
+    public static final String SPECIFICATION_TYPE_TIME ="1";
+    /********************************时间单位***************************************/
+    /** 时间单位  天*/
+    public static final String SPECIFICATION_TIME_UNIT_DAY ="DAY";
+    /** 时间单位  月*/
+    public static final String SPECIFICATION_TIME_UNIT_MONTH ="MONTH";
+    /** 时间单位  年*/
+    public static final String SPECIFICATION_TIME_UNIT_YEAR ="YEAR";
+    /***********************************************************************/
+    
+    /**蜂点邮箱服务地址*/
+    public static final String EMAIL_HOST="smtp.beecredit.com";
+    /**蜂点邮件用户名*/
+    public static final String EMAIL_USER_NAME="service@beecredit.com";
+    /**蜂点密码*/
+    public static final String EMAIL_PASSWORD="Byzy2015"; /**邮箱服务地址*/
+
+    /**壹通券邮箱服务地址*/
+    public static final String YITONGQUAN_EMAIL_HOST="smtp.exmail.qq.com";
+    /**壹通券邮件用户名*/
+    public static final String YITONGQUAN_EMAIL_USER_NAME="service@yitongquan.cn";
+    /**壹通券密码*/
+    public static final String YITONGQUAN_EMAIL_PASSWORD="Byzy0730";
 }
