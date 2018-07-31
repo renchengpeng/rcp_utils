@@ -2339,6 +2339,11 @@ public interface Constants {
     
     /*** 订单是否删除 1：已删除 */
     public static final String FH_ORDER_DEL_STATUS_1 = "1";
+    /*** 订单服务类型 0 默认买断 */
+    public static final String FH_ORDER_SERVICE_TYPE_DEFAULT = "0";
+    /*** 订单服务类型 1 按时间收费 */
+    public static final String FH_ORDER_SERVICE_TYPE_TIME = "1";
+    
     
     /****************************************************************** 蜂惠订单相关状态 结束 ******************************************************/
     
