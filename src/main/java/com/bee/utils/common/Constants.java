@@ -2471,6 +2471,9 @@ public interface Constants {
     
     /** 蜂点域名 */
     public static final String FD_WEB_URL = "www.qiyeos.com";
+
+    /** 蜂销域名 */
+    public static final String FX_WEB_URL = "fx.qiyeos.com";
     
     /** 合同模板区分蜂点ODM（0-蜂点 1-分销商） */
     public static final String AGENT_MER_FLAG_0 = "0";//蜂点
