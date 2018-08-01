@@ -2548,7 +2548,4 @@ public interface Constants {
     public static final String YITONGQUAN_EMAIL_USER_NAME="service@yitongquan.cn";
     /**壹通券密码*/
     public static final String YITONGQUAN_EMAIL_PASSWORD="Byzy0730";
-
-    /**壹通券logo*/
-    public static final String YITONGQUAN_LOGO="http://images.91shanbao.com/emailLogo/shanbaoEmail/yitongquan-logo.png";
 }
