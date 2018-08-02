@@ -121,6 +121,9 @@ public interface Constants {
 
     /** 企业状态 关闭 **/
     public static final String ENTERPRISE_STATUS_CLOSE = "3";
+    
+    /** 企业状态 冻结**/
+    public static final String ENTERPRISE_STATUS_FREEZE = "4";
 
     /** Jd售后类型 **/
     /* 退 */
