@@ -20,7 +20,8 @@ public interface Constants {
     public static final String FYW_WRONG_TASKLET_TYPE_TWO = "2";// 2：请求异常
     
     
-    public static final String AGENT_PROPORTIONS_TO_FENGDIAN_EXCHANGE_NAME = "agent_proportions_to_fengdian_exchange";// 各平台向蜂点分成
+    public static final String AGENT_PROPORTIONS_TO_FENGDIAN_EXCHANGE_NAME = "agent_proportions_to_fengdian_exchange";// 各平台向蜂点分成的交换机
+    public static final String AGENT_PROPORTIONS_TO_FENGDIAN_ROUTING_KEY = "agent_proportions_to_fengdian_routingKey";// 各平台向蜂点分成的路由键
 
     public static final String FEIYUFENGXIAO_RESALE_QUEUE_NAME = "feiyufengxiao_resale_queue";// 费鱼蜂销
 
