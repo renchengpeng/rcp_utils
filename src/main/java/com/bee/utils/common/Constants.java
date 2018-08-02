@@ -20,8 +20,11 @@ public interface Constants {
     public static final String FYW_WRONG_TASKLET_TYPE_TWO = "2";// 2：请求异常
     
     
+    public static final String AGENT_PROPORTIONS_TO_FENGDIAN_EXCHANGE_NAME = "agent_proportions_to_fengdian_exchange";// 各平台向蜂点分成的交换机
+    public static final String AGENT_PROPORTIONS_TO_FENGDIAN_ROUTING_KEY = "agent_proportions_to_fengdian_routingKey";// 各平台向蜂点分成的路由键
+
     public static final String FEIYUFENGXIAO_RESALE_QUEUE_NAME = "feiyufengxiao_resale_queue";// 费鱼蜂销
-    
+
     public static final String FEIYUFENGXIAO_RESALE_FAIL_QUEUE_NAME = "feiyufengxiao_resale_fail_queue";// 费鱼蜂销
     
     public static final String MANGMAO_WITHDRAW_MONEY_QUEUE = "mangmao_withdraw_money_queue";// 忙猫新提现
@@ -118,6 +121,9 @@ public interface Constants {
 
     /** 企业状态 关闭 **/
     public static final String ENTERPRISE_STATUS_CLOSE = "3";
+    
+    /** 企业状态 冻结**/
+    public static final String ENTERPRISE_STATUS_FREEZE = "4";
 
     /** Jd售后类型 **/
     /* 退 */
@@ -156,6 +162,8 @@ public interface Constants {
     public static final String MOYAO_PERSONAL = "moyao/personal";
     /** 魔钥广告请求前缀 **/
     public static final String MOYAO_ADVERTISEMENT = "moyao/advertisement";
+    /** 魔钥app版本请求前缀 **/
+    public static final String MOYAO_APP = "moyao/app";
     /** 魔钥公众号相关请求前缀 **/
     public static final String MOYAO_WECHAT = "moyao/wechat";
     public static final String FD_WECHAT = "fd/wechat";
@@ -412,6 +420,8 @@ public interface Constants {
     
     /** 分销商odm系统**/
     public final static String CHANNEL_16 = "16";
+    /**跃程充值 **/
+    public final static String CHANNEL_17="17";
     
     
     
@@ -700,6 +710,8 @@ public interface Constants {
     public final static String PLAT_KALI="18";
     /**支付宝券**/
     public final static String PLAT_ZHI_FU_BAO="19";
+    /**商户**/
+    public final static String PLAT_MERCHANT="20";
     
     /** 魔钥-物品上传附件**/
     public final static String DISENCLOSURE= "1";
@@ -1408,7 +1420,7 @@ public interface Constants {
     /** 获取用户信息失败 **/
     public static final String GET_USER_INFO_FAILED = "0012";
 
-    /** 登录名已存在 **/
+    /** 登录名已存在  ***/
     public static final String LOGIN_NAME_EXIST = "0012";
 
     /** redis超时的时间 **/
@@ -2268,6 +2280,15 @@ public interface Constants {
     /** 默认的分销商编号 0 **/
     public static final String DEFAULT_AGENTMER_SEQ = "0";
 
+    /** 分销商网站信息状态  0--待审核 **/
+    public static final String ODM_WEB_SET_VERIFY = "0";
+
+    /** 分销商网站信息状态  1--审核通过 **/
+    public static final String ODM_WEB_SET_ACTIVE = "1";
+
+    /** 分销商网站信息状态  2--驳回**/
+    public static final String ODM_WEB_SET_BACK = "2";
+
     /** 蜂惠方法执行失败 **/
     public static final String FH_RESULT_FAIL = "0";
     /** 蜂惠方法执行成功 **/
@@ -2324,6 +2345,11 @@ public interface Constants {
     
     /*** 订单是否删除 1：已删除 */
     public static final String FH_ORDER_DEL_STATUS_1 = "1";
+    /*** 订单服务类型 0 默认买断 */
+    public static final String FH_ORDER_SERVICE_TYPE_DEFAULT = "0";
+    /*** 订单服务类型 1 按时间收费 */
+    public static final String FH_ORDER_SERVICE_TYPE_TIME = "1";
+    
     
     /****************************************************************** 蜂惠订单相关状态 结束 ******************************************************/
     
@@ -2420,17 +2446,17 @@ public interface Constants {
     
     /******************************签名相关标识 *****************************************/
     //蜂点
-    public static final String SIGNATURE_FD="0";
+    public static final String SIGNATURE_FD="1";
     //壹通券
-    public static final String SIGNATURE_YITONGQUAN="1";
+    public static final String SIGNATURE_YITONGQUAN="2";
     //魔钥
-    public static final String SIGNATURE_MOYAO="2";
+    public static final String SIGNATURE_MOYAO="3";
     //卡鲤
-    public static final String SIGNATURE_KALI="3";
+    public static final String SIGNATURE_KALI="4";
     //快寄卖
-    public static final String SIGNATURE_KUAIJIMAI="4";
+    public static final String SIGNATURE_KUAIJIMAI="5";
     //签名第三方
-    public static final String SIGNATURE_THIRD="5";
+    public static final String SIGNATURE_THIRD="6";
     /***********************************************************************/
     
     /** 请求成功状态码 */
@@ -2451,6 +2477,9 @@ public interface Constants {
     
     /** 蜂点域名 */
     public static final String FD_WEB_URL = "www.qiyeos.com";
+
+    /** 蜂销域名 */
+    public static final String FX_WEB_URL = "fx.qiyeos.com";
     
     /** 合同模板区分蜂点ODM（0-蜂点 1-分销商） */
     public static final String AGENT_MER_FLAG_0 = "0";//蜂点
@@ -2458,4 +2487,74 @@ public interface Constants {
     
     //idservice 集群参数
     public static final String ID_CLUSTER_KEY = "idCluster";
+    /**跃程 产品类型0话费 */
+    public static final String YC_PRODUCT_TYPE_0="0";
+    /**跃程 产品类型1流量*/
+    public static final String YC_PRODUCT_TYPE_1="1";
+    /**跃程 产品类型4油卡*/
+    public static final String YC_PRODUCT_TYPE_4="4";
+    /**跃程 产品状态 0上架   */
+    public static final String YC_PRODUCT_STATUS_0="0";
+    /**跃程 产品状态 1下架   */
+    public static final String YC_PRODUCT_STATUS_1="1";
+    /**跃程 运营商 0移动 */
+    public static final String YC_PRODUCT_OPERATOR_MOBILE="0";
+    /**跃程 运营商 1联通*/
+    public static final String YC_PRODUCT_OPERATOR_UNICOM="1";
+    /**跃程 运营商 2电信*/
+    public static final String YC_PRODUCT_OPERATOR_TELECOM="2";
+    /**跃程 运营商 3中石油*/
+    public static final String YC_PRODUCT_OPERATOR_PETROCHINA="3";
+    /**跃程 运营商 4中石化*/
+    public static final String YC_PRODUCT_OPERATOR_SINOPEC="4";
+    
+    /**跃程 订单状态 0 订单已创建，未支付 */
+    public static final String YC_ORDER_STATUS_0="0";
+    /**跃程 订单状态1 支付成功，进行直充 */
+    public static final String YC_ORDER_STATUS_1="1";
+    /**跃程 订单状态2 直充申请成功，等待回调*/
+    public static final String YC_ORDER_STATUS_2="2";
+    /**跃程 订单状态3 收到回调，订单完成*/
+    public static final String YC_ORDER_STATUS_3="3";
+    /**跃程 订单状态4 订单已取消*/
+    public static final String YC_ORDER_STATUS_4="4";
+    /**跃程 订单状态5 订单错误取消 */
+    public static final String YC_ORDER_STATUS_5="5";
+
+    /**分销商编号作为redis KEY*/
+    public static final String AGENT_MER_SEQ_REDIS_kEY="ODM_WEB_SET_AGENT_MER_SEQ:";
+
+    /**分销商网站域名作为redis KEY*/
+    public static final String WEB_URL_REDIS_kEY="ODM_WEB_SET:";
+
+    /**http协议  odm中用 */
+    public static final String HTTP_PROTOCOL_1 = "1";//http
+    public static final String HTTP_PROTOCOL_2 = "2";//https
+    /*******************************服务商品属性类型***************************/
+    /**服务商品属性类型  默认类型  0*/
+    public static final String SPECIFICATION_TYPE_DEFAULT ="0";
+    /**服务商品属性类型  时间类型  1*/
+    public static final String SPECIFICATION_TYPE_TIME ="1";
+    /********************************时间单位***************************************/
+    /** 时间单位  天*/
+    public static final String SPECIFICATION_TIME_UNIT_DAY ="DAY";
+    /** 时间单位  月*/
+    public static final String SPECIFICATION_TIME_UNIT_MONTH ="MONTH";
+    /** 时间单位  年*/
+    public static final String SPECIFICATION_TIME_UNIT_YEAR ="YEAR";
+    /***********************************************************************/
+    
+    /**蜂点邮箱服务地址*/
+    public static final String EMAIL_HOST="smtp.beecredit.com";
+    /**蜂点邮件用户名*/
+    public static final String EMAIL_USER_NAME="service@beecredit.com";
+    /**蜂点密码*/
+    public static final String EMAIL_PASSWORD="Byzy2015"; /**邮箱服务地址*/
+
+    /**壹通券邮箱服务地址*/
+    public static final String YITONGQUAN_EMAIL_HOST="smtp.exmail.qq.com";
+    /**壹通券邮件用户名*/
+    public static final String YITONGQUAN_EMAIL_USER_NAME="service@yitongquan.cn";
+    /**壹通券密码*/
+    public static final String YITONGQUAN_EMAIL_PASSWORD="Byzy0730";
 }
