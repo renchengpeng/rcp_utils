@@ -20,8 +20,11 @@ public interface Constants {
     public static final String FYW_WRONG_TASKLET_TYPE_TWO = "2";// 2：请求异常
     
     
+    public static final String AGENT_PROPORTIONS_TO_FENGDIAN_EXCHANGE_NAME = "agent_proportions_to_fengdian_exchange";// 各平台向蜂点分成的交换机
+    public static final String AGENT_PROPORTIONS_TO_FENGDIAN_ROUTING_KEY = "agent_proportions_to_fengdian_routingKey";// 各平台向蜂点分成的路由键
+
     public static final String FEIYUFENGXIAO_RESALE_QUEUE_NAME = "feiyufengxiao_resale_queue";// 费鱼蜂销
-    
+
     public static final String FEIYUFENGXIAO_RESALE_FAIL_QUEUE_NAME = "feiyufengxiao_resale_fail_queue";// 费鱼蜂销
     
     public static final String MANGMAO_WITHDRAW_MONEY_QUEUE = "mangmao_withdraw_money_queue";// 忙猫新提现
@@ -118,6 +121,9 @@ public interface Constants {
 
     /** 企业状态 关闭 **/
     public static final String ENTERPRISE_STATUS_CLOSE = "3";
+    
+    /** 企业状态 冻结**/
+    public static final String ENTERPRISE_STATUS_FREEZE = "4";
 
     /** Jd售后类型 **/
     /* 退 */
@@ -2471,8 +2477,9 @@ public interface Constants {
     
     /** 蜂点域名 */
     public static final String FD_WEB_URL = "www.qiyeos.com";
-    /** 蜂点客服邮箱 */
-    public static final String FD_CUSTOMER_SERVICE_EMAIL="service@beecredit.com";
+
+    /** 蜂销域名 */
+    public static final String FX_WEB_URL = "fx.qiyeos.com";
     
     /** 合同模板区分蜂点ODM（0-蜂点 1-分销商） */
     public static final String AGENT_MER_FLAG_0 = "0";//蜂点
@@ -2550,7 +2557,4 @@ public interface Constants {
     public static final String YITONGQUAN_EMAIL_USER_NAME="service@yitongquan.cn";
     /**壹通券密码*/
     public static final String YITONGQUAN_EMAIL_PASSWORD="Byzy0730";
-
-    /**壹通券logo*/
-    public static final String YITONGQUAN_LOGO="http://images.91shanbao.com/emailLogo/shanbaoEmail/yitongquan-logo.png";
 }
