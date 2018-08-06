@@ -2480,6 +2480,9 @@ public interface Constants {
 
     /** 蜂销域名 */
     public static final String FX_WEB_URL = "fx.qiyeos.com";
+
+    /** 壹通券推荐系统logo */
+    public static final String  YTQ_CHANNEL_LOGO = "email/logo/ytqchannellogo.png";
     
     /** 合同模板区分蜂点ODM（0-蜂点 1-分销商） */
     public static final String AGENT_MER_FLAG_0 = "0";//蜂点
