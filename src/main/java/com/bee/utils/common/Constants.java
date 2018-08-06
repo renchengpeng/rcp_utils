@@ -2557,4 +2557,11 @@ public interface Constants {
     public static final String YITONGQUAN_EMAIL_USER_NAME="service@yitongquan.cn";
     /**壹通券密码*/
     public static final String YITONGQUAN_EMAIL_PASSWORD="Byzy0730";
+    
+    /*******************************蜂点同步壹通券类型***************************/
+    /**蜂点同步壹通券类型 企业信息   0*/
+    public static final String FD_TO_YTQ_CHANGE_TYPE_0 ="0";
+    /**蜂点同步壹通券类型 账号信息   1*/
+    public static final String FD_TO_YTQ_CHANGE_TYPE_1 ="1";
+    
 }
