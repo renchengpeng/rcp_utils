@@ -2480,6 +2480,9 @@ public interface Constants {
 
     /** 蜂销域名 */
     public static final String FX_WEB_URL = "fx.qiyeos.com";
+
+    /** 壹通券推荐系统logo */
+    public static final String  YTQ_CHANNEL_LOGO = "email/logo/ytqchannellogo.png";
     
     /** 合同模板区分蜂点ODM（0-蜂点 1-分销商） */
     public static final String AGENT_MER_FLAG_0 = "0";//蜂点
@@ -2557,4 +2560,11 @@ public interface Constants {
     public static final String YITONGQUAN_EMAIL_USER_NAME="service@yitongquan.cn";
     /**壹通券密码*/
     public static final String YITONGQUAN_EMAIL_PASSWORD="Byzy0730";
+    
+    /*******************************蜂点同步壹通券类型***************************/
+    /**蜂点同步壹通券类型 企业信息   0*/
+    public static final String FD_TO_YTQ_CHANGE_TYPE_0 ="0";
+    /**蜂点同步壹通券类型 账号信息   1*/
+    public static final String FD_TO_YTQ_CHANGE_TYPE_1 ="1";
+    
 }
