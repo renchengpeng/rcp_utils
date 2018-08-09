@@ -4,6 +4,8 @@ public enum MerFlag {
     MERCHANT("MER","商户平台"),
     ADVANCE("ADV","预付商户"),
     JD("JD","京东商城"),
+    SN("SN","苏宁商城"),
+    YX("SN","网易严选"),
     YJYP("YJYP","优加优品");
     private String flag;
     private String name;
