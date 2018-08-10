@@ -407,4 +407,7 @@ public interface ParamKeys {
     
     //跃程充值产品编号
     public static final String YC_PRODUCT_SEQ_NO="YcProductService";
+    
+    //操作指南编号
+    public static final String ODM_OPERATION_GUIDE_SEQ_NO="OperationGuideOdmService";
 }
