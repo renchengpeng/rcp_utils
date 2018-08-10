@@ -310,6 +310,7 @@ public interface ParamKeys {
     public static final String WORKFLOW_DESIGN_SEQ_NO="WorkflowDesignService";
     public static final String GOODS_STORE_HIS_SEQ_NO="GoodsStoreHisService";
     public static final String GOODS_EXCEPTION_INFO_SEQ_NO="GoodsExceptionInfoService";
+    public static final String PERSONAL_EXCEPTION_INFO_SEQ_NO="PersonalExceptionInfoService";//20180810 xyd
     public static final String CUPBOARD_OPEN_HIS_SEQ_NO="CupboardOpenHisService";
     public static final String DELAY_USE_APPLY_SEQ_NO="DelayUseApplyService";
     public static final String CABINET_DOOR_INFO_SEQ_NO="CabinetDoorInfoService";
