@@ -76,6 +76,7 @@ public interface ParamKeys {
 
 
 	public static final String CUST_AC_SEQ_NO = "CustAcNoService";
+	public static final String PROVISION_AC_SEQ_NO = "ProvisionAccountService";
 	
 	public static final String USER_MSG_RECEIVE_No = "UserMsgReceiveService";
 	
@@ -148,6 +149,8 @@ public interface ParamKeys {
     
     // FPAYTranHistoryService对应的serviceId
     public static final String FPAY_TRAN_NO= "FPAYTranHistoryService";
+    // ProvisionTranHistoryService对应的serviceId
+    public static final String PROVISION_TRAN_NO= "ProvisionTranHistoryService";
     
     //新消息推送消息编号
   	public static final String MESSAGE_ID="MessageService";
