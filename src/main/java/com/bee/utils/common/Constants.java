@@ -2566,5 +2566,10 @@ public interface Constants {
     public static final String FD_TO_YTQ_CHANGE_TYPE_0 ="0";
     /**蜂点同步壹通券类型 账号信息   1*/
     public static final String FD_TO_YTQ_CHANGE_TYPE_1 ="1";
-    
+
+    /**ODM蜂点权限标识   00001*/
+    public static final String ODM_PRIVILEGE_FD ="00001";
+    /**ODM小宝盒权限标识   00002*/
+    public static final String ODM_PRIVILEGE_XBH ="00002";
+
 }
