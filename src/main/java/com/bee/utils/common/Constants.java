@@ -381,7 +381,7 @@ public interface Constants {
     public final static String  returnTypeWx = "weixin";
     public final static String  returnTypeZfb = "alipay";
     
-    //渠道系统标志
+    //支付系统渠道标志
     /**蜂采**/
     public final static String CHANNEL_01="01";
     /**个人蜂贝**/
