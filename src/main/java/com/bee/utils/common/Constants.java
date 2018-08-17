@@ -756,6 +756,9 @@ public interface Constants {
     /** 弹框类型  4--开票弹框*/
     public static final String MSG_TK_TYPE_4 = "4";
 
+    /** 弹框类型  5--采购弹框*/
+    public static final String MSG_TK_TYPE_5 = "5";
+
     /** MSG消息推送类型 */
     /** 所有商户 */
     public static final String MSG_PUSH_TYPE_ALL = "1";
