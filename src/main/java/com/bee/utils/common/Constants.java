@@ -2575,4 +2575,10 @@ public interface Constants {
     /**ODM小宝盒权限标识   00002*/
     public static final String ODM_PRIVILEGE_XBH ="00002";
 
+    /**用户类型（0-企业，1-个人）*/
+    public static final String ODM_USER_TYPE_0 = "0";
+    public static final String ODM_USER_TYPE_1 = "1";
+    /**系统类型（0-odm壹通券，1-odm壹通券推荐系统）*/
+    public static final String ODM_SYS_TYPE_0 = "0";
+    public static final String ODM_SYS_TYPE_1 = "1";
 }
