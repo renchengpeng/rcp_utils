@@ -756,6 +756,9 @@ public interface Constants {
     /** 弹框类型  4--开票弹框*/
     public static final String MSG_TK_TYPE_4 = "4";
 
+    /** 弹框类型  5--采购弹框*/
+    public static final String MSG_TK_TYPE_5 = "5";
+
     /** MSG消息推送类型 */
     /** 所有商户 */
     public static final String MSG_PUSH_TYPE_ALL = "1";
@@ -2572,4 +2575,10 @@ public interface Constants {
     /**ODM小宝盒权限标识   00002*/
     public static final String ODM_PRIVILEGE_XBH ="00002";
 
+    /**用户类型（0-企业，1-个人）*/
+    public static final String ODM_USER_TYPE_0 = "0";
+    public static final String ODM_USER_TYPE_1 = "1";
+    /**系统类型（0-odm壹通券，1-odm壹通券推荐系统）*/
+    public static final String ODM_SYS_TYPE_0 = "0";
+    public static final String ODM_SYS_TYPE_1 = "1";
 }
