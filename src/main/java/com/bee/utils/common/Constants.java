@@ -2574,5 +2574,14 @@ public interface Constants {
     public static final String ODM_PRIVILEGE_FD ="00001";
     /**ODM小宝盒权限标识   00002*/
     public static final String ODM_PRIVILEGE_XBH ="00002";
+    
+    /**壹通券记录操作 1.生成*/
+    public static final String DZBXK_CARD_STATUS_CREAT ="1";
+    /**壹通券记录操作 2.绑定*/
+    public static final String DZBXK_CARD_STATUS_BIND ="2";
+    /**壹通券记录操作 3.转让*/
+    public static final String DZBXK_CARD_STATUS_TRAN ="3";
+    
+    
 
 }
