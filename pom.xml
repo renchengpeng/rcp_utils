@@ -5,11 +5,20 @@
 		<artifactId>bcs-parent</artifactId>
 		<version>0.0.1</version>
 	</parent>
-  <groupId>com.bee.utils</groupId>
-  <artifactId>bee-utils</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
-  <name>bee-utils</name>
+	
+	
+	<properties>
+    	<java_source_version>1.8</java_source_version>
+        <java_target_version>1.8</java_target_version>
+        <commons_version>0.0.1-SNAPSHOT</commons_version>
+    </properties>
+    
+    
+	  <groupId>com.bee.utils</groupId>
+	  <artifactId>bee-utils</artifactId>
+	  <version>${commons_version}</version>
+	  <packaging>jar</packaging>
+	  <name>bee-utils</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
