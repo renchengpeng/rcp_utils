@@ -2283,6 +2283,9 @@ public interface Constants {
     /** 默认的分销商编号 0 **/
     public static final String DEFAULT_AGENTMER_SEQ = "0";
 
+    /** 默认的渠道编码 0 **/
+    public static final String DEFAULT_CHANNEL_CODE = "0";
+
     /** 分销商网站信息状态  0--待审核 **/
     public static final String ODM_WEB_SET_VERIFY = "0";
 
