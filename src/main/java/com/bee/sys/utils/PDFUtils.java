@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.text.SimpleDateFormat;
+import java.util.Base64;
 import java.util.Date;
 
 import com.bee.framework.i.bp.core.CoreException;
@@ -21,7 +22,6 @@ import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.tool.xml.XMLWorkerFontProvider;
 import com.itextpdf.tool.xml.XMLWorkerHelper;
-import com.migcomponents.migbase64.Base64;
 
 public class PDFUtils {
 
@@ -62,11 +62,11 @@ public class PDFUtils {
             document.open();
             worker = XMLWorkerHelper.getInstance();
             worker.parseXHtml(pdfWriter, document, new ByteArrayInputStream(agreement.getBytes()),Charset.forName("UTF-8"), new AsianFontProvider());// (pdfWriter,
-            byte[] buffer = Base64.decode(baseImgMy.getBytes());
+            byte[] buffer = Base64.getDecoder().decode(baseImgMy.getBytes());
             if(baseImgOther == null){
                 throw new CoreException("领签失败，请检查授权书图片是否含有公章");
             }
-            byte[] buffers = Base64.decode(baseImgOther.getBytes());
+            byte[] buffers = Base64.getDecoder().decode(baseImgOther.getBytes());
             Image image = Image.getInstance(buffer);
             Image images = Image.getInstance(buffers);
             image.setAlignment(Image.LEFT | Image.UNDERLYING);

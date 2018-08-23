@@ -15,6 +15,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 import java.text.SimpleDateFormat;
+import java.util.Base64;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -31,7 +32,6 @@ import org.springframework.util.StringUtils;
 import com.alibaba.fastjson.JSON;
 import com.bee.framework.i.bp.core.CoreException;
 import com.bee.utils.common.ErrorCodes;
-import com.migcomponents.migbase64.Base64;
 
 /**
  * @author fanzhm
@@ -245,7 +245,7 @@ public class BeeUtils {
 				outStream.flush();
 				outStream.close();
 
-				return Base64.encodeToString(fileData, true);
+				return Base64.getEncoder().encodeToString(fileData);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -325,7 +325,7 @@ public class BeeUtils {
 	public static String decoderBase64File(String base64Code) throws CoreException {
 		String base64Str = new String();
 		try {
-			byte[] buffer = Base64.decode(base64Code.getBytes());
+			byte[] buffer = Base64.getDecoder().decode(base64Code.getBytes());
 			FileOutputStream out = new FileOutputStream(base64Str);
 			out.write(buffer);
 			out.close();
@@ -350,7 +350,7 @@ public class BeeUtils {
 			byte[] buffer = new byte[(int) file.length()];
 			inputFile.read(buffer);
 			inputFile.close();
-			return Base64.encodeToString(buffer, true);
+			return Base64.getEncoder().encodeToString(buffer);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
