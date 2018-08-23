@@ -2577,5 +2577,20 @@ public interface Constants {
     public static final String ODM_PRIVILEGE_FD ="00001";
     /**ODM小宝盒权限标识   00002*/
     public static final String ODM_PRIVILEGE_XBH ="00002";
+    
+    /**壹通券记录操作 1.生成*/
+    public static final String DZBXK_CARD_STATUS_CREAT ="1";
+    /**壹通券记录操作 2.绑定*/
+    public static final String DZBXK_CARD_STATUS_BIND ="2";
+    /**壹通券记录操作 3.转让*/
+    public static final String DZBXK_CARD_STATUS_TRAN ="3";
+    
+    
 
+    /**用户类型（0-企业，1-个人）*/
+    public static final String ODM_USER_TYPE_0 = "0";
+    public static final String ODM_USER_TYPE_1 = "1";
+    /**系统类型（0-odm壹通券，1-odm壹通券推荐系统）*/
+    public static final String ODM_SYS_TYPE_0 = "0";
+    public static final String ODM_SYS_TYPE_1 = "1";
 }
