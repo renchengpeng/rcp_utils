@@ -2593,4 +2593,8 @@ public interface Constants {
     /**系统类型（0-odm壹通券，1-odm壹通券推荐系统）*/
     public static final String ODM_SYS_TYPE_0 = "0";
     public static final String ODM_SYS_TYPE_1 = "1";
+    
+    /** 冻结状态（0-未冻结，1-冻结）  */
+    public static final String FREEZE_STATUS_0 = "0";
+    public static final String FREEZE_STATUS_1 = "1";
 }
