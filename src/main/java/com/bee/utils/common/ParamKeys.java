@@ -115,6 +115,8 @@ public interface ParamKeys {
 	public static final String FEERATE_SEQ_NO="FeeRateService";
 	// 电子报销ka
 	public static final String DZBXK_CARD_SEQ_NO = "DzbxkCardService";
+	// 电子报销ka交易记录
+	public static final String DZBXK_CARD_TRAN_HISTORY_SEQ_NO = "DzbxkCardTranHistoryService";
 	//企业预付订单
 	public static final String VIP_ORDER_ADVANCE_SEQ_NO="VipOrderAdvanceService";
 	public static final String SUB_VIP_ORDER_ADVANCE_SEQ_NO="SubVipOrderAdvanceService";
@@ -272,7 +274,8 @@ public interface ParamKeys {
     public static final String NOTICE_SEQ_NO="NoticeService";
     //ImgUpload
     public static final String UPLOADIMG_SEQ_NO="UploadImgService";
-    
+    //蜂点员工申请加入企业
+    public static final String FD_PERSONAL_APPLY_SEQ_NO="PersonalApplyService";
     //部门
     public static final String ORGANIZE_DEPARTMENT_SEQ_NO="OrganizeDepartmentService";
     
