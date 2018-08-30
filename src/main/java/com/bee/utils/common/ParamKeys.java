@@ -264,7 +264,8 @@ public interface ParamKeys {
     public static final String NOTICE_SEQ_NO="NoticeService";
     //ImgUpload
     public static final String UPLOADIMG_SEQ_NO="UploadImgService";
-    
+    //蜂点员工申请加入企业
+    public static final String FD_PERSONAL_APPLY_SEQ_NO="PersonalApplyService";
     //部门
     public static final String ORGANIZE_DEPARTMENT_SEQ_NO="OrganizeDepartmentService";
     

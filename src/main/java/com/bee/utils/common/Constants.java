@@ -2283,6 +2283,9 @@ public interface Constants {
     /** 默认的分销商编号 0 **/
     public static final String DEFAULT_AGENTMER_SEQ = "0";
 
+    /** 默认的渠道编码 0 **/
+    public static final String DEFAULT_CHANNEL_CODE = "0";
+
     /** 分销商网站信息状态  0--待审核 **/
     public static final String ODM_WEB_SET_VERIFY = "0";
 
@@ -2590,4 +2593,8 @@ public interface Constants {
     /**系统类型（0-odm壹通券，1-odm壹通券推荐系统）*/
     public static final String ODM_SYS_TYPE_0 = "0";
     public static final String ODM_SYS_TYPE_1 = "1";
+    
+    /** 冻结状态（0-未冻结，1-冻结）  */
+    public static final String FREEZE_STATUS_0 = "0";
+    public static final String FREEZE_STATUS_1 = "1";
 }
