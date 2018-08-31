@@ -12,16 +12,6 @@ package com.bee.utils.common;
  */
 public interface ParamKeys {
 	
-	// ORDERS表中的seqNo对应的serviceId
-	public static final String SHANMALL_ORDERS_SEQ_NO = "SMOrdersService";
-	// ORDERINFO表中的seqNo对应的serviceId
-	public static final String SHANMALL_ORDERINFO_SEQ_NO = "SMOrderInfoService";
-	
-	// ORDERS表中的seqNo对应的serviceId
-	public static final String FEIYU_ORDERS_SEQ_NO = "FYOrdersService";
-	// ORDERINFO表中的seqNo对应的serviceId
-	public static final String FEIYU_ORDERINFO_SEQ_NO = "FYOrderInfoService";
-
 	// SHOPPING-CAT表中的seqNo对应的serviceId
 	public static final String SHOPPING_CART_SEQ_NO = "ShoppingCartService";
 	
@@ -285,14 +275,7 @@ public interface ParamKeys {
     
     public static final String TRAN_NO =  "TranNoService";
     
-    public static final String VIP_WELFARE_ORDERS_NO="VipWelfareOrdersService";
-    
-    public static final String VIP_WELFARE_ORDERS_INFO_NO="VipWelfareOrderInfoService";
-    
-    public static final String OPEN_BILLING_SEQ_NO="OpenBillingService";
- 
     public static final String VIP_LOGIN_SEQ_NO="VipLoginService";
-    
     //关键字
     public static final String KEYWORD_INVOICE_ITEM_SEQ_NO="KeyWordInvoiceItemService";
     
