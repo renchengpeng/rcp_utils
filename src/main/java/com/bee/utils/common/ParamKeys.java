@@ -342,6 +342,8 @@ public interface ParamKeys {
 	public static final String MOYAO_ORGANIZE_DEPARTMENT_SEQ_NO="MoyaoOrganizeDepartmentService";
 	public static final String NEWS_PUSH_SEQ_NO="NewsPushService";
 	public static final String APP_VERSION_SEQ_NO="AppVersionService";//20180730 xyd 魔钥版本表
+	public static final String VIP_LATEST_LOGIN_HIS_SEQ_NO="VipLatestLoginHisService";//20180829 xyd 管理员端最后登录历史记录
+	public static final String PERSONAL_LATEST_LOGIN_HIS_SEQ_NO="PersonalLatestLoginHisService";//20180829 xyd 个人端最后登录历史记录
 	//福员外相关
     public static final String FYW_ACCOUNT_SEQ_NO="FywAccountService";
     public static final String FYW_FILE_BATCH_HISTORY_SEQ_NO="FywFileBatchHistoryService";
