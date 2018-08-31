@@ -122,6 +122,9 @@ public interface Constants {
     /** 企业状态 关闭 **/
     public static final String ENTERPRISE_STATUS_CLOSE = "3";
     
+    /** 企业状态 申请注销 **/
+    public static final String ENTERPRISE_STATUS_APPLY_CLOSE = "4";
+    
     /** 企业状态 冻结**/
     public static final String ENTERPRISE_STATUS_FREEZE = "4";
 
