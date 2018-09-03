@@ -2597,4 +2597,19 @@ public interface Constants {
     /** 冻结状态（0-未冻结，1-冻结）  */
     public static final String FREEZE_STATUS_0 = "0";
     public static final String FREEZE_STATUS_1 = "1";
+
+    /** userType 个人 */
+    public static final String USER_TYPE_2 = "2";
+
+
+    /*****************************字符串常量**********************************/
+    /** success字符串 */
+    public static final String STR_SUCCESS = "success";
+    /** http 字符串 */
+    public static final String STR_HTTP = "http";
+    /** https 字符串 */
+    public static final String STR_HTTPS = "https";
+    /** true 字符串 */
+    public static final String STR_TRUE = "true";
+
 }

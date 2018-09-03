@@ -29,8 +29,7 @@ public class PDFUtils {
         BaseFont bf = null;
         Font fontChinese = null;
         try {
-            //bf = BaseFont.createFont("C:\\Windows\\Fonts\\msyh.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
-            bf = BaseFont.createFont("STSong-Light", "UniGB-UCS2-H",BaseFont.NOT_EMBEDDED); 
+            bf = BaseFont.createFont("STSong-Light", "UniGB-UCS2-H",BaseFont.NOT_EMBEDDED);
             fontChinese = new Font(bf, 12, Font.NORMAL);
         } catch (DocumentException e) {
             e.printStackTrace();

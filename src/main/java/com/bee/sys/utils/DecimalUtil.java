@@ -360,15 +360,5 @@ public final class DecimalUtil {
 	            }
 	            return sb.toString();
 	        }
-	
-	
-	
-	public static void main(String[] args) {
-//		BigDecimal a= new BigDecimal(0.12);
-//	      BigDecimal b=new BigDecimal(1);
-//	     System.out.println(b.divide(a, 2, BigDecimal.ROUND_HALF_UP).doubleValue() );
-//	     System.out.println(DecimalUtil.divide(b, a, 2));
-	    System.out.println(number2CNMontrayUnit(new BigDecimal(456887.12)));
-	}
 }
 
