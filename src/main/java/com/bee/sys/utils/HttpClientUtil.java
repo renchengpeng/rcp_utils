@@ -1,6 +1,5 @@
 package com.bee.sys.utils;
 
-import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.bee.framework.i.bp.core.CoreException;
 import org.apache.commons.httpclient.HttpStatus;
@@ -22,6 +21,7 @@ import org.apache.http.util.EntityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
 import javax.net.ssl.*;
 import java.io.*;
 import java.net.URL;
@@ -35,6 +35,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 public class HttpClientUtil {
     
@@ -316,17 +317,17 @@ public class HttpClientUtil {
 		}
 	}
 	
-	public static void main(String[] args) {
-		JSONObject json = new JSONObject();
-		json.put("tagid",100);
-		JSONArray array = new JSONArray();
-		array.add("o42IOw883gWBta-bH485McWwZIi4");
-		json.put("openid_list",array);
-		
-		
-String postHttps2 = HttpClientUtil.postHttps("https://api.weixin.qq.com/cgi-bin/tags/members/batchtagging?access_token=10_-DumEKcEH15Avt60vf2dUnYvJ7OwPtc2vKB3Y8TrlOckmtqSZtXdaQPKyuL-pqHV--ca6L2wOM4eMStitXqRwLjLkccNYSEwFgP6dLf9T6F8XX9H64Ipgtk-hzxtmUhrXCHXfFQbpFMGS5gDVPLdADAPJF", json);
-		System.out.println(postHttps2);
-	}
+//	public static void main(String[] args) {
+//		JSONObject json = new JSONObject();
+//		json.put("tagid",100);
+//		JSONArray array = new JSONArray();
+//		array.add("o42IOw883gWBta-bH485McWwZIi4");
+//		json.put("openid_list",array);
+//		
+//		
+//String postHttps2 = HttpClientUtil.postHttps("https://api.weixin.qq.com/cgi-bin/tags/members/batchtagging?access_token=10_-DumEKcEH15Avt60vf2dUnYvJ7OwPtc2vKB3Y8TrlOckmtqSZtXdaQPKyuL-pqHV--ca6L2wOM4eMStitXqRwLjLkccNYSEwFgP6dLf9T6F8XX9H64Ipgtk-hzxtmUhrXCHXfFQbpFMGS5gDVPLdADAPJF", json);
+//		System.out.println(postHttps2);
+//	}
 	
 	
 	
@@ -351,5 +352,9 @@ String postHttps2 = HttpClientUtil.postHttps("https://api.weixin.qq.com/cgi-bin/
             throw new CoreException("请求失败",e);
 		}
 		return result;
+	}
+	
+	public static void main(String[] args) {
+		HttpClientUtil.doGet("https://ciapi.qiyeos.com/yueChengNotify?sid=asdfdassdfdsfsd");
 	}
 }
