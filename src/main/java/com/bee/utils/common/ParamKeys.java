@@ -353,6 +353,9 @@ public interface ParamKeys {
     // CRM客户等级
     public static final String FD_INTENTION_LEVEL_NUM = "FdIntentionLevelNumService";
     
+    // FH试用功能
+    public static final String FH_TRYOUT_SEQ_NO = "FhTryoutService";
+    
     
     // 呼叫中心编号
     public static final String CALL_CENTER_SEQ_NO = "CallCenterService";
