@@ -147,7 +147,6 @@ public class RSAHelper {
 			//fidel modify
 			byte [] t = 	Base64.encodeBase64(signature.sign());
 			 signBase64Str = org.apache.commons.codec.binary.StringUtils.newString(t, charSet);
-			//signBase64Str = Base64.encodeBase64String(signature.sign());
 		} catch (InvalidKeyException e) {
 			e.printStackTrace();
 		} catch (SignatureException e) {
