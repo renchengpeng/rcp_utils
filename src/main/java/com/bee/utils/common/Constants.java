@@ -2609,4 +2609,7 @@ public interface Constants {
     public static final String STR_HTTP = "http";
     /** https 字符串 */
     public static final String STR_HTTPS = "https";
+    /** true 字符串 */
+    public static final String STR_TRUE = "true";
+
 }
