@@ -334,8 +334,6 @@ public interface ParamKeys {
     public static final String FYW_SUBSIDY_SEQ="FywSubsidyService";
     public static final String FYW_DAILY_CHECK_SEQ="FywDailyCheckService";
     
-    public static final String THIRD_LOGIN_ACCOUNT_SEQ_NO="ThirdLoginAccountService"; 
-    
     public static final String REPEAT_PAY_ORDER_SEQ_NO="RepeatPayOrderService"; 
     
     // 意向客户信息
