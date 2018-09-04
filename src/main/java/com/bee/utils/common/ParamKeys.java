@@ -186,12 +186,6 @@ public interface ParamKeys {
     //API商户限额
     public static final String API_LIMIT_SEQ="ApiMerchantLimitAmtService";
     
-    //蜂通卡Tran历史
-    public static final String FQB_TRAN_HISTORY_SEQ  = "FQBTranHistoryService";
-    //蜂通卡AcBal历史
-    public static final String FQB_AC_BAL_HIS_SEQ  = "FQBAcBalHistoryService";
-    //蜂通卡转账历史
-    public static final String FQB_TRANSFER_HIS_SEQ  = "FQBTransferHisService";
     //折付宝评论快递批次号
     public static final String MER_DELIVER_COMMENT_SEQ_NO = "MerDeliverCommentService";
     //折付宝评论商品批次号
@@ -352,6 +346,9 @@ public interface ParamKeys {
     public static final String CRM_VIP_OPERATOR_NUM = "CrmVipOperatorNumService";
     // CRM客户等级
     public static final String FD_INTENTION_LEVEL_NUM = "FdIntentionLevelNumService";
+    
+    // FH试用功能
+    public static final String FH_TRYOUT_SEQ_NO = "FhTryoutService";
     
     
     // 呼叫中心编号

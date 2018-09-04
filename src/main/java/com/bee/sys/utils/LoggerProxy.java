@@ -1,14 +1,13 @@
 package com.bee.sys.utils;
 
+import com.alibaba.dubbo.common.logger.Logger;
+import com.alibaba.dubbo.common.logger.LoggerFactory;
+import org.springframework.util.StringUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import org.springframework.util.StringUtils;
-
-import com.alibaba.dubbo.common.logger.Logger;
-import com.alibaba.dubbo.common.logger.LoggerFactory;
 
 /**
  * 日志代理类
@@ -199,8 +198,6 @@ public class LoggerProxy implements Logger {
     private static List<String> find(String str) {
         StringBuilder sb = new StringBuilder();
         sb.append("(");
-//        sb.append(CARDNO_PATTERN);
-//        sb.append(")|(");
         sb.append(PHONE_PATTERN);
         sb.append(")|(");
         sb.append(EMAIL_PATTERN);
@@ -244,24 +241,7 @@ public class LoggerProxy implements Logger {
             sb.append(ele.substring(0, midlePrev));
             sb.append("****");
             sb.append(ele.substring(midleNext, ele.length()));
-//        } else if (ele.matches(CARDNO_PATTERN)) {// 查日志可以匹配整个字符串前（length/2）位
-//            int length = ele.length();
-//            int count = length / RADIX + 1;
-//            int midlePrev = length / 2 - 1;
-//            int midleNext = midlePrev + count;
-//            sb.append(ele.substring(0, midlePrev));
-//            sb.append("****");
-//            sb.append(ele.substring(midleNext, ele.length()));
         }
         return sb.toString();
     }
-
-   /*public static void main(String[] args) {
-        String str = "手机号18813113781和手机号217717771777hui15244141485dkfjkafj卡键：12897890348590@qq.com.CNjCardNo62148301243251627ijh18813113785";
-        for (String string : find(str)) {
-            System.out.println(string);
-            str = str.replace(string, encrypt(string));
-        }
-        System.out.println(str);
-    }*/
 }

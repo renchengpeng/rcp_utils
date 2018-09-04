@@ -1,20 +1,14 @@
 package com.bee.sys.utils;
 
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayOutputStream;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.RandomAccessFile;
-import java.security.MessageDigest;
-import java.util.Formatter;
-
-import javax.imageio.ImageIO;
-
-import org.springframework.web.multipart.MultipartFile;
-
 import com.alibaba.dubbo.common.logger.Logger;
 import com.alibaba.dubbo.common.logger.LoggerFactory;
+import org.springframework.web.multipart.MultipartFile;
+
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.*;
+import java.security.MessageDigest;
+import java.util.Formatter;
 
 public class APIUtils {
     
