@@ -36,6 +36,13 @@ public interface Constants {
     public static final String FYW_REQUEST_HIS_QUEUE = "fyw_request_his_queue";// 福员外
     
     public static final String FYW_DELAY_EXCHANGE = "fyw_delay_exchange";// 福员外
+
+    /** 支付宝虚拟卡状态 0未绑定 1已绑定  2异常**/
+    public static final String FYW_VIRTUAL_CARD_ZERO = "0";
+    public static final String FYW_VIRTUAL_CARD_ONE= "1";
+    public static final String FYW_VIRTUAL_CARD_ERROR= "2";
+
+
     
 
     // timing- 20170623
@@ -308,8 +315,12 @@ public interface Constants {
     /** 交易类型 9-调账充值 */
     public static final String TRAN_TYPE_9 = "9";
     
+
     /** 交易类型 10-（福员外）调账充值 */
     public static final String TRAN_TYPE_10 = "10";
+
+    /** 交易类型 11-（福员外） 生成虚拟卡*/
+    public static final String TRAN_TYPE_11= "11";
 
     /************************************** 支付订单 ***********************************************************/
     /** 支付订单类型 1-消费 */
@@ -726,6 +737,7 @@ public interface Constants {
 
     /** 收支类型 2 ：支出 */
     public static final String IN_OUT_TYPE_2 = "2";
+
 
     /** MSG消息 */
     /** 是否已读否 */
@@ -2069,7 +2081,9 @@ public interface Constants {
     public static final String FYW_TRAN_TYPE_5="5";
     /**福员外-交易类型-退款 */
     public static final String FYW_TRAN_TYPE_6="6";
-    
+    /**福员外-交易类型-绑定虚拟卡 */
+    public static final String FYW_TRAN_TYPE_7="7";
+
     /**福员外-收支类型-收入 */
     public static final String FYW_IN_OUT_TYPE_1="1";
     /**福员外-收支类型-支出 */
@@ -2081,6 +2095,8 @@ public interface Constants {
     public static final String FYW_REQUEST_TYPE_01="01";
     /**福员外-请求类型-企业充值 */
     public static final String FYW_REQUEST_TYPE_02="02";
+    /**福员外-请求类型-员工绑定虚拟卡充值 */
+    public static final String FYW_REQUEST_TYPE_03="03";
 
     /**福员外-请求状态 -请求生成，等待处理 */
     public static final String FYW_REQUEST_STATUS_00="00";

@@ -1,9 +1,9 @@
 package com.bee.sys.utils;
 
+import com.bee.framework.type.header.ResponseHeader;
+
 import java.io.Serializable;
 import java.util.List;
-
-import com.bee.framework.type.header.ResponseHeader;
 
 public class Result extends ResponseHeader {
 
