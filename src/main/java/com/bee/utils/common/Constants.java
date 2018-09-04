@@ -403,8 +403,6 @@ public interface Constants {
     public final static String CHANNEL_04="04";
     /**清算系统**/
     public final static String CHANNEL_05="05";
-    /**闪报员工**/
-    public final static String CHANNEL_SHANBAO_EMP="06";
     /**闪报企业**/
     public final static String CHANNEL_SHANBAO="07";
     /**闪mall系统**/
@@ -441,18 +439,12 @@ public interface Constants {
 
     public final static String ADMIN = "admin";
 
-    public final static String SHANMALL = "shanmall"; // shanmall
-
-    public final static String EMPSHANBAO = "empshanbao"; // empshanbao
 
     public final static String ENTERPRISE = "vip";
 
     public final static String FINANCIAL = "financial";
 
     public final static String BC = "bc";// 忙猫
-
-    // 费鱼 feiyu
-    public final static String FEIYUMALL = "feiyumall";
 
     public final static String EMPFEIYU = "empfeiyu";
 
@@ -689,12 +681,6 @@ public interface Constants {
     /** 闪报系统 **/
     public final static String PLAT_SHANBAO = "6";
 
-    /** 闪报个人系统 **/
-    public final static String PLAT_EMPSHANBAO = "7";
-
-    /** 蜂钱包-员工 **/
-    public final static String PLAT_FQB = "8";
-
     /** 费鱼mall系统 **/
     public final static String PLAT_FEIYUMALL = "9";
 
@@ -707,8 +693,6 @@ public interface Constants {
     /** 账无忌系统 **/
     public final static String PLAT_YIJIA = "12";
 
-    /** 蜂钱包-企业 **/
-    public final static String PLAT_VFQB = "13";
     /** 蜂点 **/
     public final static String PLAT_FD = "14";
     /** 费鱼蜂销**/
@@ -768,6 +752,9 @@ public interface Constants {
     /** 弹框类型  4--开票弹框*/
     public static final String MSG_TK_TYPE_4 = "4";
 
+    /** 弹框类型  5--采购弹框*/
+    public static final String MSG_TK_TYPE_5 = "5";
+
     /** MSG消息推送类型 */
     /** 所有商户 */
     public static final String MSG_PUSH_TYPE_ALL = "1";
@@ -787,15 +774,6 @@ public interface Constants {
 
     /** 蜂采 */
     public static final String MSG_FH = "2";
-
-    /** 蜂贝 */
-    public static final String MSG_FB = "3";
-
-    /** 蜂贝 */
-    public static final String MSG_SB = "4";
-
-    /** 蜂贝 */
-    public static final String MSG_SM = "5";
 
     /** 产品类型-FPAY[00] 蜂pay */
     public static final String PRODUCT_TYPE_FPAY = "00";
@@ -938,9 +916,6 @@ public interface Constants {
     /** 企业非独立定价 */
     public static final String ENTERPRISE_ISINDEPENDENTPRICING_1 = "1";
 
-    /** 待确认-客户经理 */
-    public static final String ADVANCE_ORDERS_STATUS_1 = "01";
-
     /** 待确认-商户部 */
     public static final String ADVANCE_ORDERS_STATUS_2 = "02";
 
@@ -959,9 +934,6 @@ public interface Constants {
     /** 订单处理完成 */
     public static final String ADVANCE_ORDERS_STATUS_7 = "07";
 
-    /* 已配送发票 *//*
-                * public static final String ADVANCE_ORDERS_STATUS_8 = "08";
-                */
     /** 取消 */
     public static final String ADVANCE_ORDERS_STATUS_9 = "09";
 
@@ -1061,9 +1033,6 @@ public interface Constants {
     /*** 1 ：已删除 */
     public static final String ORDERS_DEL_1 = "1";
 
-    /** 京东商品图片地址前缀 */
-    // public static final String JD_IMAGE_PREFIX="http://img13.360buyimg.com/n1/";
-
     /** 蜂采后台 银行信息列表 启用0 */
     public static final String FH_BANK_START = "0";
 
@@ -1151,12 +1120,6 @@ public interface Constants {
     public static final String ISAWARD = "1";
 
     public static final String NOTAWARD = "0";
-
-    /** 闪报平台所有账户 */
-    public static final String MSG_TYPE_SHANBAO = "3";
-
-    /** 闪mall平台所有账户 */
-    public static final String MSG_TYPE_SHANMALL = "4";
 
     /** 蜂点方法执行成功 **/
     public static final String FD_RESULT_SUCCESS = "1";
@@ -1357,30 +1320,6 @@ public interface Constants {
     /** 蜂点子账户是否拥有主账户的某个权限 2:没有 */
     public static final String IS_SUB_ACCOUNT_OWN_NO = "2";
 
-    /**
-     * 闪报验证码redis常量
-     */
-    public static final String SHANBAO_VALIDCODE = "shanbao_validCode_";
-
-    /**
-     * 闪报个人验证码redis常量
-     */
-    public static final String EMP_SHANBAO_VALIDCODE = "empshanbao_validCode_";
-
-    /**
-     * 闪报商城验证码redis常量
-     */
-    public static final String SHANMALL_VALIDCODE = "shanmall_validCode_";
-
-    /**
-     * 闪报推荐验证码redis常量
-     */
-    public static final String CHANNEL_VALIDCODE = "channel_validCode_";
-
-    /**
-     * 闪报验证码过期时间，120s
-     */
-    public static final long VALIDCODE_TIME = 120l;
 
     public static final String MSG_PLATFORM_STATUS = "1";// 平台消息状态 1是显示 0是不显示
 
@@ -1436,7 +1375,7 @@ public interface Constants {
     public static final String LOGIN_NAME_EXIST = "0012";
 
     /** redis超时的时间 **/
-    public static final Long TIME_OUT = 30 * 60l;
+    public static final Long TIME_OUT = 30 * 60L;
 
     /** 默认角色 **/
     public static final String DEFAULT_ROLE = "0";
@@ -1537,10 +1476,6 @@ public interface Constants {
     public static final String IS_ITEM_TRUE = "1";
 
     public static final String IS_ITEM_FALSE = "2";
-
-    /** 蜂点嵌入平台编号 1:闪报 2:费鱼 **/
-    // public static final String FD_INCLUDE_SHANBAO = "1";
-    // public static final String FD_INCLUDE_FEIYU = "2";
 
     /** api商户的付款方式 1:对公账户 2:支票 **/
     public static final String API_PAYMETHOD_PUBLICACCOUNT = "1";
@@ -2296,6 +2231,9 @@ public interface Constants {
     /** 默认的分销商编号 0 **/
     public static final String DEFAULT_AGENTMER_SEQ = "0";
 
+    /** 默认的渠道编码 0 **/
+    public static final String DEFAULT_CHANNEL_CODE = "0";
+
     /** 分销商网站信息状态  0--待审核 **/
     public static final String ODM_WEB_SET_VERIFY = "0";
 
@@ -2430,15 +2368,6 @@ public interface Constants {
     /** 0-合同完成*/
     public static final String CONTRACT_STATUS_0 = "0";
 
-    /** 普通分销商分成策略 */
-    public static final String DEFAULT_REBATE_TYPE_0= "0";
-    
-    /** 高级分销商分成策略 */
-    public static final String DEFAULT_REBATE_TYPE_1= "1";
-    
-    /** 默认分销商分成策略 */
-    public static final String DEFAULT_REBATE_TYPE_2= "2";
-
     /** 是否签订完合同状态*/
     public static final String CONTRACT_FINISH_1 = "1";//已签订
     
@@ -2471,8 +2400,6 @@ public interface Constants {
     public static final String SIGNATURE_KALI="4";
     //快寄卖
     public static final String SIGNATURE_KUAIJIMAI="5";
-    //签名第三方
-    public static final String SIGNATURE_THIRD="6";
     /***********************************************************************/
     
     /** 请求成功状态码 */
@@ -2587,5 +2514,39 @@ public interface Constants {
     public static final String ODM_PRIVILEGE_FD ="00001";
     /**ODM小宝盒权限标识   00002*/
     public static final String ODM_PRIVILEGE_XBH ="00002";
+    
+    /**壹通券记录操作 1.生成*/
+    public static final String DZBXK_CARD_STATUS_CREAT ="1";
+    /**壹通券记录操作 2.绑定*/
+    public static final String DZBXK_CARD_STATUS_BIND ="2";
+    /**壹通券记录操作 3.转让*/
+    public static final String DZBXK_CARD_STATUS_TRAN ="3";
+    
+    
+
+    /**用户类型（0-企业，1-个人）*/
+    public static final String ODM_USER_TYPE_0 = "0";
+    public static final String ODM_USER_TYPE_1 = "1";
+    /**系统类型（0-odm壹通券，1-odm壹通券推荐系统）*/
+    public static final String ODM_SYS_TYPE_0 = "0";
+    public static final String ODM_SYS_TYPE_1 = "1";
+    
+    /** 冻结状态（0-未冻结，1-冻结）  */
+    public static final String FREEZE_STATUS_0 = "0";
+    public static final String FREEZE_STATUS_1 = "1";
+
+    /** userType 个人 */
+    public static final String USER_TYPE_2 = "2";
+
+
+    /*****************************字符串常量**********************************/
+    /** success字符串 */
+    public static final String STR_SUCCESS = "success";
+    /** http 字符串 */
+    public static final String STR_HTTP = "http";
+    /** https 字符串 */
+    public static final String STR_HTTPS = "https";
+    /** true 字符串 */
+    public static final String STR_TRUE = "true";
 
 }

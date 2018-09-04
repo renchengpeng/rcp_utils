@@ -12,16 +12,6 @@ package com.bee.utils.common;
  */
 public interface ParamKeys {
 	
-	// ORDERS表中的seqNo对应的serviceId
-	public static final String SHANMALL_ORDERS_SEQ_NO = "SMOrdersService";
-	// ORDERINFO表中的seqNo对应的serviceId
-	public static final String SHANMALL_ORDERINFO_SEQ_NO = "SMOrderInfoService";
-	
-	// ORDERS表中的seqNo对应的serviceId
-	public static final String FEIYU_ORDERS_SEQ_NO = "FYOrdersService";
-	// ORDERINFO表中的seqNo对应的serviceId
-	public static final String FEIYU_ORDERINFO_SEQ_NO = "FYOrderInfoService";
-
 	// SHOPPING-CAT表中的seqNo对应的serviceId
 	public static final String SHOPPING_CART_SEQ_NO = "ShoppingCartService";
 	
@@ -115,6 +105,8 @@ public interface ParamKeys {
 	public static final String FEERATE_SEQ_NO="FeeRateService";
 	// 电子报销ka
 	public static final String DZBXK_CARD_SEQ_NO = "DzbxkCardService";
+	// 电子报销ka交易记录
+	public static final String DZBXK_CARD_TRAN_HISTORY_SEQ_NO = "DzbxkCardTranHistoryService";
 	//企业预付订单
 	public static final String VIP_ORDER_ADVANCE_SEQ_NO="VipOrderAdvanceService";
 	public static final String SUB_VIP_ORDER_ADVANCE_SEQ_NO="SubVipOrderAdvanceService";
@@ -194,12 +186,6 @@ public interface ParamKeys {
     //API商户限额
     public static final String API_LIMIT_SEQ="ApiMerchantLimitAmtService";
     
-    //蜂通卡Tran历史
-    public static final String FQB_TRAN_HISTORY_SEQ  = "FQBTranHistoryService";
-    //蜂通卡AcBal历史
-    public static final String FQB_AC_BAL_HIS_SEQ  = "FQBAcBalHistoryService";
-    //蜂通卡转账历史
-    public static final String FQB_TRANSFER_HIS_SEQ  = "FQBTransferHisService";
     //折付宝评论快递批次号
     public static final String MER_DELIVER_COMMENT_SEQ_NO = "MerDeliverCommentService";
     //折付宝评论商品批次号
@@ -272,7 +258,8 @@ public interface ParamKeys {
     public static final String NOTICE_SEQ_NO="NoticeService";
     //ImgUpload
     public static final String UPLOADIMG_SEQ_NO="UploadImgService";
-    
+    //蜂点员工申请加入企业
+    public static final String FD_PERSONAL_APPLY_SEQ_NO="PersonalApplyService";
     //部门
     public static final String ORGANIZE_DEPARTMENT_SEQ_NO="OrganizeDepartmentService";
     
@@ -282,14 +269,7 @@ public interface ParamKeys {
     
     public static final String TRAN_NO =  "TranNoService";
     
-    public static final String VIP_WELFARE_ORDERS_NO="VipWelfareOrdersService";
-    
-    public static final String VIP_WELFARE_ORDERS_INFO_NO="VipWelfareOrderInfoService";
-    
-    public static final String OPEN_BILLING_SEQ_NO="OpenBillingService";
- 
     public static final String VIP_LOGIN_SEQ_NO="VipLoginService";
-    
     //关键字
     public static final String KEYWORD_INVOICE_ITEM_SEQ_NO="KeyWordInvoiceItemService";
     
@@ -340,6 +320,8 @@ public interface ParamKeys {
 	public static final String MOYAO_ORGANIZE_DEPARTMENT_SEQ_NO="MoyaoOrganizeDepartmentService";
 	public static final String NEWS_PUSH_SEQ_NO="NewsPushService";
 	public static final String APP_VERSION_SEQ_NO="AppVersionService";//20180730 xyd 魔钥版本表
+	public static final String VIP_LATEST_LOGIN_HIS_SEQ_NO="VipLatestLoginHisService";//20180829 xyd 管理员端最后登录历史记录
+	public static final String PERSONAL_LATEST_LOGIN_HIS_SEQ_NO="PersonalLatestLoginHisService";//20180829 xyd 个人端最后登录历史记录
 	//福员外相关
     public static final String FYW_ACCOUNT_SEQ_NO="FywAccountService";
     public static final String FYW_FILE_BATCH_HISTORY_SEQ_NO="FywFileBatchHistoryService";
@@ -364,6 +346,9 @@ public interface ParamKeys {
     public static final String CRM_VIP_OPERATOR_NUM = "CrmVipOperatorNumService";
     // CRM客户等级
     public static final String FD_INTENTION_LEVEL_NUM = "FdIntentionLevelNumService";
+    
+    // FH试用功能
+    public static final String FH_TRYOUT_SEQ_NO = "FhTryoutService";
     
     
     // 呼叫中心编号
