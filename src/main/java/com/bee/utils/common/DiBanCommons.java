@@ -38,6 +38,8 @@ public class DiBanCommons {
     public final static String ANSWER_TO_COMPLETE="9";
     //已评分
     public final static String HAS_SCORE="10";
+    //已退款
+    public final static String HAVE_REFUND="11";
     /***********************问题状态码  结束******************************/
    
 }
