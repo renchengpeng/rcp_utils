@@ -128,12 +128,10 @@ public interface Constants {
 
     /** 企业状态 关闭 **/
     public static final String ENTERPRISE_STATUS_CLOSE = "3";
-    
-    /** 企业状态 申请注销 **/
-    public static final String ENTERPRISE_STATUS_APPLY_CLOSE = "4";
-    
     /** 企业状态 冻结**/
     public static final String ENTERPRISE_STATUS_FREEZE = "4";
+    /** 企业状态 申请注销 **/
+    public static final String ENTERPRISE_STATUS_APPLY_CLOSE = "5";
 
     /** Jd售后类型 **/
     /* 退 */
@@ -150,7 +148,9 @@ public interface Constants {
     public static final String FD = "fd";
 
     public static final String FB = "fb";
-    
+
+    public static final String MALL = "mall";
+
     public static final String FH = "fh";
 
     public static final String FYW = "api";
@@ -1007,10 +1007,10 @@ public interface Constants {
     public static final String FB_STATUS_9 = "9";
     /** 评论状态 */
     /** 0-正常 */
-    public static final String FB_COMMENT_STATUS_0 = "0";
+    public static final String MALL_COMMENT_STATUS_0 = "0";
 
     /** 1-追加评论 */
-    public static final String FB_COMMENT_STATUS_1 = "1";
+    public static final String MALL_COMMENT_STATUS_1 = "1";
 
     /** 2-删除 */
     public static final String FB_COMMENT_STATUS_2 = "2";
