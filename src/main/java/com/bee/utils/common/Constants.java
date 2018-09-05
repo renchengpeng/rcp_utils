@@ -140,7 +140,9 @@ public interface Constants {
     public static final String FD = "fd";
 
     public static final String FB = "fb";
-    
+
+    public static final String MALL = "mall";
+
     public static final String FH = "fh";
 
     public static final String FYW = "api";
@@ -1023,10 +1025,10 @@ public interface Constants {
     public static final String FB_STATUS_9 = "9";
     /** 评论状态 */
     /** 0-正常 */
-    public static final String FB_COMMENT_STATUS_0 = "0";
+    public static final String MALL_COMMENT_STATUS_0 = "0";
 
     /** 1-追加评论 */
-    public static final String FB_COMMENT_STATUS_1 = "1";
+    public static final String MALL_COMMENT_STATUS_1 = "1";
 
     /** 2-删除 */
     public static final String FB_COMMENT_STATUS_2 = "2";
