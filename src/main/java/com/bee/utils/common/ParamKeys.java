@@ -334,8 +334,6 @@ public interface ParamKeys {
     public static final String FYW_SUBSIDY_SEQ="FywSubsidyService";
     public static final String FYW_DAILY_CHECK_SEQ="FywDailyCheckService";
     
-    public static final String THIRD_LOGIN_ACCOUNT_SEQ_NO="ThirdLoginAccountService"; 
-    
     public static final String REPEAT_PAY_ORDER_SEQ_NO="RepeatPayOrderService"; 
     
     // 意向客户信息
@@ -346,6 +344,9 @@ public interface ParamKeys {
     public static final String CRM_VIP_OPERATOR_NUM = "CrmVipOperatorNumService";
     // CRM客户等级
     public static final String FD_INTENTION_LEVEL_NUM = "FdIntentionLevelNumService";
+    
+    // FH试用功能
+    public static final String FH_TRYOUT_SEQ_NO = "FhTryoutService";
     
     
     // 呼叫中心编号
