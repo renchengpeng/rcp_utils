@@ -2235,9 +2235,6 @@ public interface Constants {
     /** 默认的分销商编号 0 **/
     public static final String DEFAULT_AGENTMER_SEQ = "0";
 
-    /** 默认的渠道编码 0 **/
-    public static final String DEFAULT_CHANNEL_CODE = "0";
-
     /** 分销商网站信息状态  0--待审核 **/
     public static final String ODM_WEB_SET_VERIFY = "0";
 
@@ -2552,5 +2549,18 @@ public interface Constants {
     public static final String STR_HTTPS = "https";
     /** true 字符串 */
     public static final String STR_TRUE = "true";
+
+    /***********************************渠道编码开始***************************************/
+
+    /** 默认的渠道编码 0 **/
+    public static final String DEFAULT_CHANNEL_CODE = "0";
+
+    /** 默认的渠道编码 00001 **/
+    public static final String MALL_CHANNEL_CODE = "00001";
+
+    /***********************************渠道编码结束***************************************/
+
+    /** 商城个人 TOKEN前缀 **/
+    public static final String MALL_PERSONAL = "MALL_PERSONAL_";
 
 }
