@@ -181,11 +181,6 @@ public interface ParamKeys {
     //预付商户限额
     public static final String LIMIT_SEQ="MerchantLimitAmtService";
     
-    //API限额交易记录
-    public static final String API_LIMIT_TRAN_NO="ApiLimitTranHistoryService";
-    //API商户限额
-    public static final String API_LIMIT_SEQ="ApiMerchantLimitAmtService";
-    
     //折付宝评论快递批次号
     public static final String MER_DELIVER_COMMENT_SEQ_NO = "MerDeliverCommentService";
     //折付宝评论商品批次号
