@@ -186,12 +186,6 @@ public interface ParamKeys {
     //API商户限额
     public static final String API_LIMIT_SEQ="ApiMerchantLimitAmtService";
     
-    //蜂通卡Tran历史
-    public static final String FQB_TRAN_HISTORY_SEQ  = "FQBTranHistoryService";
-    //蜂通卡AcBal历史
-    public static final String FQB_AC_BAL_HIS_SEQ  = "FQBAcBalHistoryService";
-    //蜂通卡转账历史
-    public static final String FQB_TRANSFER_HIS_SEQ  = "FQBTransferHisService";
     //折付宝评论快递批次号
     public static final String MER_DELIVER_COMMENT_SEQ_NO = "MerDeliverCommentService";
     //折付宝评论商品批次号
@@ -326,6 +320,8 @@ public interface ParamKeys {
 	public static final String MOYAO_ORGANIZE_DEPARTMENT_SEQ_NO="MoyaoOrganizeDepartmentService";
 	public static final String NEWS_PUSH_SEQ_NO="NewsPushService";
 	public static final String APP_VERSION_SEQ_NO="AppVersionService";//20180730 xyd 魔钥版本表
+	public static final String VIP_LATEST_LOGIN_HIS_SEQ_NO="VipLatestLoginHisService";//20180829 xyd 管理员端最后登录历史记录
+	public static final String PERSONAL_LATEST_LOGIN_HIS_SEQ_NO="PersonalLatestLoginHisService";//20180829 xyd 个人端最后登录历史记录
 	//福员外相关
     public static final String FYW_ACCOUNT_SEQ_NO="FywAccountService";
     public static final String FYW_FILE_BATCH_HISTORY_SEQ_NO="FywFileBatchHistoryService";
@@ -338,8 +334,6 @@ public interface ParamKeys {
     public static final String FYW_SUBSIDY_SEQ="FywSubsidyService";
     public static final String FYW_DAILY_CHECK_SEQ="FywDailyCheckService";
     
-    public static final String THIRD_LOGIN_ACCOUNT_SEQ_NO="ThirdLoginAccountService"; 
-    
     public static final String REPEAT_PAY_ORDER_SEQ_NO="RepeatPayOrderService"; 
     
     // 意向客户信息
@@ -350,6 +344,9 @@ public interface ParamKeys {
     public static final String CRM_VIP_OPERATOR_NUM = "CrmVipOperatorNumService";
     // CRM客户等级
     public static final String FD_INTENTION_LEVEL_NUM = "FdIntentionLevelNumService";
+    
+    // FH试用功能
+    public static final String FH_TRYOUT_SEQ_NO = "FhTryoutService";
     
     
     // 呼叫中心编号

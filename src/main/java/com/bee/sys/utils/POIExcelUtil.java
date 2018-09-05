@@ -230,7 +230,6 @@ public class POIExcelUtil {
 		            }
 		            // zheng.sk 对于数字的类型转换
 		            if (Cell.CELL_TYPE_NUMERIC == cell.getCellType()) {
-		                // rowLst.add(String.valueOf(cell.getNumericCellValue()));
 		                BigDecimal db = new BigDecimal(String.valueOf(cell
 		                        .getNumericCellValue()));
 		                rowLst.add(db.toPlainString());
@@ -282,9 +281,6 @@ public class POIExcelUtil {
 	            // zheng.sk 对于数字的类型转换
 	            if (Cell.CELL_TYPE_NUMERIC == cell.getCellType()) {
 	                 rowLst.add(String.valueOf(cell.getNumericCellValue()));
-	                /*BigDecimal db = new BigDecimal(String.valueOf(cell
-	                        .getNumericCellValue()));
-	                rowLst.add(db.toPlainString());*/
 	            } else {
 	                rowLst.add(cell.getStringCellValue().trim().replace(" ",""));
 	            }
@@ -327,7 +323,6 @@ public class POIExcelUtil {
                     }
                     // zheng.sk 对于数字的类型转换
                     if (Cell.CELL_TYPE_NUMERIC == cell.getCellType()) {
-                        // rowLst.add(String.valueOf(cell.getNumericCellValue()));
                         BigDecimal db = new BigDecimal(String.valueOf(cell
                                 .getNumericCellValue()));
                         rowLst.add(db.toPlainString());
