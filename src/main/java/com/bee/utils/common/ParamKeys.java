@@ -93,6 +93,8 @@ public interface ParamKeys {
 	public static final String PRD_TYPE_SEQ_NO="PrdTypeService";
 	//用户详细信息
 	public static final String PERSONALCUSTOMER_SEQ_NO = "PersonalCustomerService";
+	//商城用户详细信息
+	public static final String PERSONALCUSTOMERMALL_SEQ_NO = "PersonalCustomerMallService";
 	//用户开户充值错误数据表
 	public static final String REGISTER_RECHARGE_SEQ_NO="RegisterRechargeService";
 	//开户充值序列号
