@@ -8,7 +8,8 @@ package com.bee.utils.common;
 public class DiBanCommons {
     /*** 请求后台路由前缀 */
     public final static String VDB_ADMIN = "vdiban";
-    
+    /*** 请求滴办个人路由前缀 */
+    public final static String PDB = "pdiban";
     
     /***********************税区状态 开始******************************/
     //解冻状态
