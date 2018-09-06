@@ -128,12 +128,10 @@ public interface Constants {
 
     /** 企业状态 关闭 **/
     public static final String ENTERPRISE_STATUS_CLOSE = "3";
-    
-    /** 企业状态 申请注销 **/
-    public static final String ENTERPRISE_STATUS_APPLY_CLOSE = "4";
-    
     /** 企业状态 冻结**/
     public static final String ENTERPRISE_STATUS_FREEZE = "4";
+    /** 企业状态 申请注销 **/
+    public static final String ENTERPRISE_STATUS_APPLY_CLOSE = "5";
 
     /** Jd售后类型 **/
     /* 退 */
@@ -150,7 +148,9 @@ public interface Constants {
     public static final String FD = "fd";
 
     public static final String FB = "fb";
-    
+
+    public static final String MALL = "mall";
+
     public static final String FH = "fh";
 
     public static final String FYW = "api";
@@ -1007,10 +1007,10 @@ public interface Constants {
     public static final String FB_STATUS_9 = "9";
     /** 评论状态 */
     /** 0-正常 */
-    public static final String FB_COMMENT_STATUS_0 = "0";
+    public static final String MALL_COMMENT_STATUS_0 = "0";
 
     /** 1-追加评论 */
-    public static final String FB_COMMENT_STATUS_1 = "1";
+    public static final String MALL_COMMENT_STATUS_1 = "1";
 
     /** 2-删除 */
     public static final String FB_COMMENT_STATUS_2 = "2";
@@ -1193,7 +1193,6 @@ public interface Constants {
 
     /** 蜂点个人 TOKEN前缀 **/
     public static final String FD_PERSONAL = "FD_PERSONAL_";
-    
     /** 魔钥个人 TOKEN前缀 **/
     public static final String MOYAO_TOKEN_ENTERPRISE = "MOYAO_ENTERPRISE_";
     
@@ -2234,9 +2233,6 @@ public interface Constants {
     /** 默认的分销商编号 0 **/
     public static final String DEFAULT_AGENTMER_SEQ = "0";
 
-    /** 默认的渠道编码 0 **/
-    public static final String DEFAULT_CHANNEL_CODE = "0";
-
     /** 分销商网站信息状态  0--待审核 **/
     public static final String ODM_WEB_SET_VERIFY = "0";
 
@@ -2551,5 +2547,18 @@ public interface Constants {
     public static final String STR_HTTPS = "https";
     /** true 字符串 */
     public static final String STR_TRUE = "true";
+
+    /***********************************渠道编码开始***************************************/
+
+    /** 默认的渠道编码 0 **/
+    public static final String DEFAULT_CHANNEL_CODE = "0";
+
+    /** 默认的渠道编码 00001 **/
+    public static final String MALL_CHANNEL_CODE = "00001";
+
+    /***********************************渠道编码结束***************************************/
+
+    /** 商城个人 TOKEN前缀 **/
+    public static final String MALL_PERSONAL = "MALL_PERSONAL_";
 
 }

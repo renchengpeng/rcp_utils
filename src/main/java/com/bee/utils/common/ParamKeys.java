@@ -93,6 +93,8 @@ public interface ParamKeys {
 	public static final String PRD_TYPE_SEQ_NO="PrdTypeService";
 	//用户详细信息
 	public static final String PERSONALCUSTOMER_SEQ_NO = "PersonalCustomerService";
+	//商城用户详细信息
+	public static final String PERSONALCUSTOMERMALL_SEQ_NO = "PersonalCustomerMallService";
 	//用户开户充值错误数据表
 	public static final String REGISTER_RECHARGE_SEQ_NO="RegisterRechargeService";
 	//开户充值序列号
@@ -180,11 +182,6 @@ public interface ParamKeys {
     
     //预付商户限额
     public static final String LIMIT_SEQ="MerchantLimitAmtService";
-    
-    //API限额交易记录
-    public static final String API_LIMIT_TRAN_NO="ApiLimitTranHistoryService";
-    //API商户限额
-    public static final String API_LIMIT_SEQ="ApiMerchantLimitAmtService";
     
     //折付宝评论快递批次号
     public static final String MER_DELIVER_COMMENT_SEQ_NO = "MerDeliverCommentService";
