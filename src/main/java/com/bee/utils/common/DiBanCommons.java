@@ -41,8 +41,4 @@ public class DiBanCommons {
     //已退款
     public final static String HAVE_REFUND="11";
     /***********************问题状态码  结束******************************/
-    //返回状态码-成功
-    public static final String VDB_RETURN_SUCCESS="1";
-    //返回状态码-失败
-    public static final String VDB_RETURN_FAIL="0";
 }
