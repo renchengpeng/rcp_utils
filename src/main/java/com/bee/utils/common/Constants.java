@@ -1193,8 +1193,6 @@ public interface Constants {
 
     /** 蜂点个人 TOKEN前缀 **/
     public static final String FD_PERSONAL = "FD_PERSONAL_";
-    /**mall商城个人 token 前缀 **/
-    public static final String MALL_PERSONAL = "MALL_PERSONAL_";
     /** 魔钥个人 TOKEN前缀 **/
     public static final String MOYAO_TOKEN_ENTERPRISE = "MOYAO_ENTERPRISE_";
     
