@@ -41,6 +41,9 @@ public class DiBanCommons {
     public final static String HAS_SCORE="10";
     //已退款
     public final static String HAVE_REFUND="11";
+    //无匹配专家
+    public static final String NO_REPLY = "12";
+
     /***********************问题状态码  结束******************************/
     
     /***********************注册师类型  开始*************************************/
@@ -49,4 +52,6 @@ public class DiBanCommons {
     //会计师类型
     public final static String ACCOUNTANT_TYPE="2";
     /***********************注册师类型  结束*************************************/
+
+
 }
