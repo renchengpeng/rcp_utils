@@ -217,7 +217,7 @@ public interface ParamKeys {
     public static final String EXPECTBANKBRANCH_SEQ_NO = "ExpectBankBranchService";
     
     // 蜂贝心愿商品主键ID
-    public static final String FB_THIRD_PRODUCT_ID = "ThirdProductService";
+    public static final String MALL_WISH_PRODUCT_ID = "WishProductService";
     
     //还款记录ID
     public static final String ADVANCE_LIMIT_REPAY_HIS_SEQ_NO = "AdvanceLimtRepayHisService";
