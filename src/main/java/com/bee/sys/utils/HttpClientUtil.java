@@ -353,7 +353,43 @@ public class HttpClientUtil {
 		}
 		return result;
 	}
-	
+
+	/**
+	 * @description: httpClient 发起https请求时，需要忽略证书的写法
+	 * @auther: feng
+	 * @date:  2018/09/10
+	 * @param: []
+	 * @return: javax.net.ssl.SSLContext
+	 * @throws: 
+	 **/
+    public static SSLContext createIgnoreVerifySSL() throws NoSuchAlgorithmException, KeyManagementException {
+        SSLContext sc = SSLContext.getInstance("SSLv3");
+
+
+        // 实现一个X509TrustManager接口，用于绕过验证，不用修改里面的方法
+        X509TrustManager trustManager = new X509TrustManager() {
+            @Override
+            public void checkClientTrusted(
+                    java.security.cert.X509Certificate[] paramArrayOfX509Certificate,
+                    String paramString) throws CertificateException {
+            }
+
+            @Override
+            public void checkServerTrusted(
+                    java.security.cert.X509Certificate[] paramArrayOfX509Certificate,
+                    String paramString) throws CertificateException {
+            }
+
+            @Override
+            public java.security.cert.X509Certificate[] getAcceptedIssuers() {
+                return null;
+            }
+        };
+
+        sc.init(null, new TrustManager[] { trustManager }, null);
+        return sc;
+    }
+
 	public static void main(String[] args) {
 		HttpClientUtil.doGet("https://ciapi.qiyeos.com/yueChengNotify?sid=asdfdassdfdsfsd");
 	}

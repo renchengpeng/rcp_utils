@@ -8,7 +8,8 @@ package com.bee.utils.common;
 public class DiBanCommons {
     /*** 请求后台路由前缀 */
     public final static String VDB_ADMIN = "vdiban";
-    
+    /*** 请求滴办个人路由前缀 */
+    public final static String PDB = "pdiban";
     
     /***********************税区状态 开始******************************/
     //解冻状态
@@ -40,5 +41,17 @@ public class DiBanCommons {
     public final static String HAS_SCORE="10";
     //已退款
     public final static String HAVE_REFUND="11";
+    //无匹配专家
+    public static final String NO_REPLY = "12";
+
     /***********************问题状态码  结束******************************/
+    
+    /***********************注册师类型  开始*************************************/
+    //税务师类型
+    public final static String  TAX_AGENT_TYPE="1";
+    //会计师类型
+    public final static String ACCOUNTANT_TYPE="2";
+    /***********************注册师类型  结束*************************************/
+
+
 }

@@ -53,12 +53,6 @@ public interface Constants {
     public static final String FYW_PERMISSON_TYPE_ONE = "1";
     public static final String FYW_PERMISSON_TYPE_TWO = "2";
     
-    public static final String HASH_OAUTH_0 = "0";// 0未开通
-
-    public static final String HASH_OAUTH_1 = "1";// 1开通未分配
-
-    public static final String HASH_OAUTH_2 = "2";// 2开通并分配
-
     public static final String MER_DELIVER_ISDEFAULT_TRUE = "1";// mer 快递 是否默认 是
 
     public static final String MER_DELIVER_ISDEFAULT_FALSE = "0";// mer 快递 是否默认 否
@@ -100,11 +94,6 @@ public interface Constants {
     public static final String PROCESS_STATUS_0 = "0";// 未配送
 
     public static final String PROCESS_STATUS_1 = "1";// 已配送
-
-    // 合同制作状态
-    public static final String DISPATCHING_STATUS_0 = "0";// 未制作
-
-    public static final String DISPATCHING_STATUS_1 = "1";// 已制作
 
     public static final String CHARSET_UTF_8 = "UTF-8";
 
@@ -159,12 +148,6 @@ public interface Constants {
     
     public static final String ODM = "odm";
 
-    /** VFB企业请求前缀 **/
-    public static final String VFB = "vfb";
-
-    /** VFB企业请求前缀 **/
-    public static final String VFBP = "vfbp";
-
     /** 魔钥企业请求前缀 **/
     public static final String MOYAO_VIP = "moyao/vip";
 
@@ -179,7 +162,6 @@ public interface Constants {
     public static final String FD_WECHAT = "fd/wechat";
     /** 商户状态 正常 **/
     public static final String MERCHANT_STATUS_ACTIVE = "0";
-
     /** 商户状态 关闭 **/
     public static final String MERCHANT_STATUS_CLOSE = "1";
 
@@ -365,11 +347,6 @@ public interface Constants {
     /** 退款订单状态 03-退款失败 */
     public static final String REFUND_ORDER_STATUS_03 = "03";
 
-    public static final String REFUND_FLAG_0 = "0";// 0可退款
-
-    public static final String REFUND_FLAG_1 = "1";// 1不可退款
-
-
     /**支付通道 01-融宝**/
     public final static String PAY_CHANNEL_REPAL="01";
     /**支付通道 02-快付通**/
@@ -447,8 +424,6 @@ public interface Constants {
 
     public final static String FINANCIAL = "financial";
 
-    public final static String BC = "bc";// 忙猫
-
     public final static String EMPFEIYU = "empfeiyu";
 
     public final static String IS_NEW_ADDR = "Y";
@@ -493,13 +468,6 @@ public interface Constants {
     public final static String PAGE_FLAG = "order";
 
     public final static String IS_DEL = "Y";
-
-    /****** 钱包账户转让购买渠道 *****/
-    /** 购买渠道 1-P2P **/
-    public final static String REDEEM_CHANNEL_1 = "1";
-
-    /** 购买渠道 2-第三方 **/
-    public final static String REDEEM_CHANNEL_2 = "2";
 
     /** 批量开户充值时的列表状态 */
     /** 00-开户信息未处理 */
@@ -801,9 +769,6 @@ public interface Constants {
 
     /** 产品类型-电子报销款 */
     public static final String PRODUCT_TYPE_DZBXK = "01";
-
-    /** 产品类型-蜂钱包 */
-    public static final String PRODUCT_TYPE_FQB = "10";
 
     /** 账户类型-FPAY[00] 蜂pay */
     public static final String ACCOUNT_TYPE_FPAY = "00";
