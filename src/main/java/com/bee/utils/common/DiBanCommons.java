@@ -18,6 +18,13 @@ public class DiBanCommons {
     public final static String  FREEZE="1";
     /***********************税区状态 结束******************************/
     
+    /***********************认证状态 开始*******************************************/
+    //审核
+    public final static String AUDIT="0";
+    //拒审
+    public final static String REFUSE_TO_REVIEW="1";
+    /***********************认证状态 结束*******************************************/
+    
     /***********************问题状态码  开始******************************/
     //待确认
     public final static String UNCONFIRMED="1";
