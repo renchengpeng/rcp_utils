@@ -7,7 +7,7 @@ package com.bee.utils.common;
  */
 public class DiBanCommons {
     /*** 请求后台路由前缀 */
-    public final static String VDB_ADMIN = "vdiban";
+    public final static String VDB= "vdiban";
     /*** 请求滴办个人路由前缀 */
     public final static String PDB = "pdiban";
     
