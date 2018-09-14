@@ -7,7 +7,7 @@ package com.bee.utils.common;
  */
 public class DiBanCommons {
     /*** 请求后台路由前缀 */
-    public final static String VDB_ADMIN = "vdiban";
+    public final static String VDB= "vdiban";
     /*** 请求滴办个人路由前缀 */
     public final static String PDB = "pdiban";
     
@@ -17,6 +17,34 @@ public class DiBanCommons {
     //冻结状态
     public final static String  FREEZE="1";
     /***********************税区状态 结束******************************/
+    
+    /***********************注册类型  开始*************************************/
+    // 使用状态：0-不使用
+    public final static String USE_STATUS_0="0";
+    // 使用状态：1-使用
+    public final static String USE_STATUS_1="1";
+    /***********************注册类型  结束*************************************/
+    
+    /***********************专业领域  开始*************************************/
+    // 使用状态：0-使用
+    public final static String FIELD_STATUS_0="0";
+    // 使用状态：1-未使用
+    public final static String FIELD_STATUS_1="1";
+    /***********************专业领域  结束*************************************/
+    
+    /***********************问题类型  开始*************************************/
+    // 使用状态：0-使用
+    public final static String QUESTION_TYPE_STATUS_0="0";
+    // 使用状态：1-未使用
+    public final static String QUESTION_TYPE_STATUS_1="1";
+    /***********************问题类型  结束*************************************/
+    
+    /***********************认证状态 开始*******************************************/
+    //审核
+    public final static String AUDIT="0";
+    //拒审
+    public final static String REFUSE_TO_REVIEW="1";
+    /***********************认证状态 结束*******************************************/
     
     /***********************问题状态码  开始******************************/
     //待确认
