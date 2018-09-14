@@ -391,4 +391,7 @@ public interface ParamKeys {
     
     //操作指南编号
     public static final String ODM_OPERATION_GUIDE_SEQ_NO="OperationGuideOdmService";
+
+    /*SSL订单编号*/
+    public static final String SSL_ORDER_SEQ = "SSL_ORDER_SEQ";
 }
