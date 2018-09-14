@@ -97,6 +97,8 @@ public interface ParamKeys {
 	public static final String PERSONALCUSTOMERMALL_SEQ_NO = "PersonalCustomerMallService";
 	//用户开户充值错误数据表
 	public static final String REGISTER_RECHARGE_SEQ_NO="RegisterRechargeService";
+	//退款记录数据表
+	public static final String REFUND_HISTORY_SEQ_NO="RefundHistoryService";
 	//开户充值序列号
 	public static final String BATCH_FILE_NO_SEQ_NO="BatchFileNoService";
 	//转账记录
