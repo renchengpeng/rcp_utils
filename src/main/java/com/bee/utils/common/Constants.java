@@ -375,7 +375,7 @@ public interface Constants {
     //支付系统渠道标志
     /**蜂采**/
     public final static String CHANNEL_01="01";
-    /**个人蜂贝**/
+    /**商城**/
     public final static String CHANNEL_02="02";
     /**蜂财**/
     public final static String CHANNEL_03="03";
@@ -2528,9 +2528,15 @@ public interface Constants {
 
     /** 蜂惠试用状态 0 : 使用中   1 : 已结束  2 : 暂停中 **/
     public static final String FH_TRYTOUT_STATUS_0 = "0";
+
     /** 蜂惠试用状态 0 : 使用中   1 : 已结束  2 : 暂停中 **/
     public static final String FH_TRYTOUT_STATUS_1 = "1";
     /** 蜂惠试用状态 0 : 使用中   1 : 已结束  2 : 暂停中 **/
     public static final String FH_TRYTOUT_STATUS_2 = "2";
+
+    /** 商城购物车单个商品最大数量 **/
+    public static final Integer SHOPPING_CAR_PRODUCT_MAX_COUNT = 999;
+
+
     
 }
