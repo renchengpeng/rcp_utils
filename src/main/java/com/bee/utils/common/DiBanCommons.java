@@ -6,6 +6,10 @@ package com.bee.utils.common;
  * @author wangjiucheng
  */
 public class DiBanCommons {
+	
+	//加密使用
+	public static final String DB_PRIVATE_KEY = "DIBANWANWANSUI88";
+	 
     /*** 请求后台路由前缀 */
     public final static String VDB= "vdiban";
     /*** 请求滴办个人路由前缀 */
@@ -73,13 +77,4 @@ public class DiBanCommons {
     public static final String NO_REPLY = "12";
 
     /***********************问题状态码  结束******************************/
-    
-    /***********************注册师类型  开始*************************************/
-    //税务师类型
-    public final static String  TAX_AGENT_TYPE="1";
-    //会计师类型
-    public final static String ACCOUNTANT_TYPE="2";
-    /***********************注册师类型  结束*************************************/
-
-
 }
