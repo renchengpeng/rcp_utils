@@ -77,4 +77,10 @@ public class DiBanCommons {
     public static final String NO_REPLY = "12";
 
     /***********************问题状态码  结束******************************/
+    /***********************税区标志位  开始******************************/
+    //1表示会计/财务类型
+    public static final String AREA_FLAG_1 = "1";
+    //2表示税务类型
+    public static final String AREA_FLAG_2 = "2";
+    /***********************税区标志位  结束******************************/
 }
