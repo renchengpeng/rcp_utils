@@ -1791,7 +1791,10 @@ public interface Constants {
     public static final String MOYAO_TRANSCODE_10015 = "10015";
     /** 10016-魔钥指令-远程推送升级程序**/
     public static final String MOYAO_TRANSCODE_10016 = "10016";
-    
+    /** 10017-魔钥指令-远程推送固件升级**/
+    public static final String MOYAO_TRANSCODE_10017 = "10017";
+    /** 10016-魔钥指令-上传视频**/
+    public static final String MOYAO_TRANSCODE_10088 = "10088";
     
     /** T0001-魔钥交易类型-指令开门 */
     public static final String MOYAO_TRANTYPE_T0001 = "T0001";
