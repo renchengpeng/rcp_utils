@@ -27,9 +27,16 @@ public interface Constants {
 
     public static final String FEIYUFENGXIAO_RESALE_FAIL_QUEUE_NAME = "feiyufengxiao_resale_fail_queue";// 费鱼蜂销
     
+    public static final String FPAY_RESALE_QUEUE_NAME = "fpay_resale_queue";//  蜂pay提现
+    
+    public static final String FPAY_RESALE_FAIL_QUEUE_NAME = "fpay_resale_fail_queue";// 蜂pay提现失败
+    
     public static final String MANGMAO_WITHDRAW_MONEY_QUEUE = "mangmao_withdraw_money_queue";// 忙猫新提现
     
     public static final String MANGMAO_WITHDRAW_MONEY_RETURN_QUEUE = "mangmao_withdraw_money_return_queue";// 忙猫新提现
+    
+    
+    
     
     public static final String FYW_DELAY_QUEUE = "fyw_delay_queue";// 福员外
     
