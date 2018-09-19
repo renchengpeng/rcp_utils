@@ -11,17 +11,17 @@ import com.bee.framework.date.util.DateUtils;
 
 public class FileUpload {
 
-	public static String openAccountFileDir;
+	public  String openAccountFileDir;
 
 	protected static final Logger log = LoggerFactory
 			.getLogger(FileUpload.class);
 
-	public static String getOpenAccountFileDir() {
+	public   String getOpenAccountFileDir() {
 		return openAccountFileDir;
 	}
 
-	public static void setOpenAccountFileDir(String openAccountFileDir) {
-		FileUpload.openAccountFileDir = openAccountFileDir;
+	public   void setOpenAccountFileDir(String openAccountFileDir) {
+		this.openAccountFileDir = openAccountFileDir;
 	}
 
 	public static String fileUpload(String destDir, MultipartFile file)

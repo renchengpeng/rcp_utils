@@ -2,6 +2,7 @@ package com.bee.sys.utils;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -161,5 +162,13 @@ public class SignUtils {
         return validateSign(map, map.get("sign"));
     }
     
+    
+    public static void main(String[] args) {
+        Map<String,String> map=new HashMap<>();
+        map.put("webUrl", "192.168.1.3");
+        System.out.println(SignUtils.createSign(map, "K9009VDPDZXKWSGP"));
+        System.out.println(CipherUtil.encryptMD5("TOKEN=FD_ENTERPRISE_09E08C18E973BD23E26A92E9CD7F2955&address=爱上擦拭擦拭从&companyName=爱上擦擦是&companyNameABB=爱上擦拭擦拭从&email=xuyadong@beecredit.com&menuId=2&privateKey=K9009VDPDZXKWSGP&telephone=13161614387&timestamp=1536656741&username=萨达".toUpperCase(),true));
+        
+    }
     
 }
