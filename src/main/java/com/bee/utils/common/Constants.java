@@ -1819,7 +1819,8 @@ public interface Constants {
     public static final String MOYAO_TRANTYPE_T0007 = "T0007";
     /** T0008-魔钥交易类型-远程推送升级**/
     public static final String MOYAO_TRANTYPE_T0008 = "T0008";
-    
+    /** T0009-魔钥交易类型-视频交互**/
+    public static final String MOYAO_TRANTYPE_T0009 = "T0009";
     /** serverTopic-魔钥服务端主题前缀 */
     public static final String MOYAO_SERVER_TOPIC_PREFIX = "serverTopic/";
     /** clientTopic-魔钥客户端主题前缀 */
