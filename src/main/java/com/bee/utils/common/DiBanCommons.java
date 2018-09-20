@@ -84,4 +84,11 @@ public class DiBanCommons {
     //律协标识
     public final static String BAR_ASSOCIATION="2";
     /************************税区/律协 结束*****************************************/
+    
+    /************************是否已分配解答人 开始*****************************************/
+    //已分配 
+    public final static String HAS_ALLOT_ANSWER_1="1";
+    //未分配
+    public final static String HAS_ALLOT_ANSWER_0="0";
+    /************************是否已分配解答人 结束*****************************************/
 }
