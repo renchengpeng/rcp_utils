@@ -27,9 +27,16 @@ public interface Constants {
 
     public static final String FEIYUFENGXIAO_RESALE_FAIL_QUEUE_NAME = "feiyufengxiao_resale_fail_queue";// 费鱼蜂销
     
+    public static final String FPAY_RESALE_QUEUE_NAME = "fpay_resale_queue";//  蜂pay提现
+    
+    public static final String FPAY_RESALE_FAIL_QUEUE_NAME = "fpay_resale_fail_queue";// 蜂pay提现失败
+    
     public static final String MANGMAO_WITHDRAW_MONEY_QUEUE = "mangmao_withdraw_money_queue";// 忙猫新提现
     
     public static final String MANGMAO_WITHDRAW_MONEY_RETURN_QUEUE = "mangmao_withdraw_money_return_queue";// 忙猫新提现
+    
+    
+    
     
     public static final String FYW_DELAY_QUEUE = "fyw_delay_queue";// 福员外
     
@@ -1791,7 +1798,10 @@ public interface Constants {
     public static final String MOYAO_TRANSCODE_10015 = "10015";
     /** 10016-魔钥指令-远程推送升级程序**/
     public static final String MOYAO_TRANSCODE_10016 = "10016";
-    
+    /** 10017-魔钥指令-远程推送固件升级**/
+    public static final String MOYAO_TRANSCODE_10017 = "10017";
+    /** 10016-魔钥指令-上传视频**/
+    public static final String MOYAO_TRANSCODE_10088 = "10088";
     
     /** T0001-魔钥交易类型-指令开门 */
     public static final String MOYAO_TRANTYPE_T0001 = "T0001";
@@ -1809,7 +1819,8 @@ public interface Constants {
     public static final String MOYAO_TRANTYPE_T0007 = "T0007";
     /** T0008-魔钥交易类型-远程推送升级**/
     public static final String MOYAO_TRANTYPE_T0008 = "T0008";
-    
+    /** T0009-魔钥交易类型-视频交互**/
+    public static final String MOYAO_TRANTYPE_T0009 = "T0009";
     /** serverTopic-魔钥服务端主题前缀 */
     public static final String MOYAO_SERVER_TOPIC_PREFIX = "serverTopic/";
     /** clientTopic-魔钥客户端主题前缀 */
@@ -2536,7 +2547,11 @@ public interface Constants {
 
     /** 商城购物车单个商品最大数量 **/
     public static final Integer SHOPPING_CAR_PRODUCT_MAX_COUNT = 999;
-
+    
+    /** 福员外科目状态 1:上架 **/
+    public static final String FYW_INVOICEITEM_STATUS_ON = "1";
+    /** 福员外科目状态  2:下架 **/
+    public static final String FYW_INVOICEITEM_STATUS_OFF = "2";
 
     
 }
