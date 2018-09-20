@@ -2547,7 +2547,11 @@ public interface Constants {
 
     /** 商城购物车单个商品最大数量 **/
     public static final Integer SHOPPING_CAR_PRODUCT_MAX_COUNT = 999;
-
+    
+    /** 福员外科目状态 1:上架 **/
+    public static final String FYW_INVOICEITEM_STATUS_ON = "1";
+    /** 福员外科目状态  2:下架 **/
+    public static final String FYW_INVOICEITEM_STATUS_OFF = "2";
 
     
 }
