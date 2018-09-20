@@ -77,4 +77,11 @@ public class DiBanCommons {
     public static final String NO_REPLY = "12";
 
     /***********************问题状态码  结束******************************/
+    
+    /************************税区/律协 开始*****************************************/
+    //税区标识
+    public final static String TAX_IDENTIFICATION="1";
+    //律协标识
+    public final static String BAR_ASSOCIATION="2";
+    /************************税区/律协 结束*****************************************/
 }

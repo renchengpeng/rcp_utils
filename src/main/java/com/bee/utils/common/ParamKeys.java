@@ -220,11 +220,13 @@ public interface ParamKeys {
     
     // 蜂贝心愿商品主键ID
     public static final String MALL_WISH_PRODUCT_ID = "WishProductService";
-    
+    // 蜂贝心愿商品主键ID
+    public static final String FB_THIRD_PRODUCT_ID = "ThirdProductService";
+
     //还款记录ID
     public static final String ADVANCE_LIMIT_REPAY_HIS_SEQ_NO = "AdvanceLimtRepayHisService";
     
-    //还款记录第三方
+    //还款记录第三方push
     public static final String ADVANCE_LIMIT_REPAY_HIS_KFT_SEQ_NO = "AdvanceLimtRepayHisKftService";
     
     //蜂贝退款记录编号
