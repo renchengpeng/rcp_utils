@@ -1802,7 +1802,8 @@ public interface Constants {
     public static final String MOYAO_TRANSCODE_10017 = "10017";
     /** 10016-魔钥指令-上传视频**/
     public static final String MOYAO_TRANSCODE_10088 = "10088";
-    
+    /** 10016-魔钥指令-开启视频**/
+    public static final String MOYAO_TRANSCODE_10018 = "10018";
     /** T0001-魔钥交易类型-指令开门 */
     public static final String MOYAO_TRANTYPE_T0001 = "T0001";
     /** T0002-魔钥交易类型-盘点标签 */
@@ -1831,7 +1832,8 @@ public interface Constants {
     public static final String MOYAO_SERVER_TOPIC_REALMNAME = "serverTopic/reviseRealmName";
     /** serverTipic-魔钥服务客户端程序升级**/
     public static final String MOYAO_SERVER_TOPIC_UPGRADE = "serverTopic/upgrade";
-    
+    /** serverTopic-魔钥服务端主题--视频交互*/
+    public static final String MOYAO_SERVER_TOPIC_VIDEO = "serverTopic/video";
     /** 0000-魔钥状态-成功 */
     public static final String MOYAO_RESULTCODE_0000 = "0000";
 
