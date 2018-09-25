@@ -2539,7 +2539,7 @@ public interface Constants {
     /** 商城个人 TOKEN前缀 **/
     public static final String MALL_PERSONAL = "MALL_PERSONAL_";
 
-    /** 蜂惠试用状态 0 : 使用中   1 : 已结束  2 : 暂停中 **/
+    /** 蜂惠试用状态 0 : 试用中   1 : 已结束  2 : 暂停中 **/
     public static final String FH_TRYTOUT_STATUS_0 = "0";
 
     /** 蜂惠试用状态 0 : 使用中   1 : 已结束  2 : 暂停中 **/
