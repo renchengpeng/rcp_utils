@@ -2555,6 +2555,7 @@ public interface Constants {
     /** 福员外科目状态,商户科目关联关系状态   2:下架 **/
     public static final String FYW_INVOICEITEM_STATUS_OFF = "2";
     
-    
+    /** 推荐类型：1:基于用户的协同过滤 **/
+    public static final String FYW_RECOMMEND_TYPE_1 = "1";
     
 }
