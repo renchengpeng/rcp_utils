@@ -336,6 +336,7 @@ public interface ParamKeys {
     public static final String FYW_ACTIVITY_NO="FywActivityService";
     public static final String FYW_SUBSIDY_SEQ="FywSubsidyService";
     public static final String FYW_DAILY_CHECK_SEQ="FywDailyCheckService";
+    public static final String FYW_SHOPPING_CAR_SEQ="FywShoppingCarService";
     
     public static final String REPEAT_PAY_ORDER_SEQ_NO="RepeatPayOrderService"; 
     
