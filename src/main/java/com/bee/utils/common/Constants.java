@@ -49,13 +49,18 @@ public interface Constants {
     public static final String FYW_VIRTUAL_CARD_ONE= "1";
     public static final String FYW_VIRTUAL_CARD_ERROR= "2";
 
+    /**支付宝定额券发放状态 0发放失败 1发放成功**/
+    public static final String FYW_QUOTA_TICKET_STATUS_ONE= "1";
+    public static final String FYW_QUOTA_TICKET_STATUS_ZERO= "0";
 
-    
+
+
+
 
     // timing- 20170623
     //福员外批量开户记录是否删除 0：未删除
     public static final String FYW_FILE_BATCH_ISDEL = "0";// 0 未删除
-    
+
     //福员外账号权限类型 1 主账号 2 主账号的子账号
     public static final String FYW_PERMISSON_TYPE_ONE = "1";
     public static final String FYW_PERMISSON_TYPE_TWO = "2";
