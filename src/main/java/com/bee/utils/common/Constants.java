@@ -307,6 +307,9 @@ public interface Constants {
     /** 交易类型 11-（福员外） 生成虚拟卡*/
     public static final String TRAN_TYPE_11= "11";
 
+    /** 交易类型 11-（福员外） 生成定额券*/
+    public static final String TRAN_TYPE_12= "12";
+
     /************************************** 支付订单 ***********************************************************/
     /** 支付订单类型 1-消费 */
     public static final String PAY_ORDER_TYPE_1 = "1";
@@ -691,7 +694,8 @@ public interface Constants {
     public static final String IN_OUT_TYPE_1 = "1";
 
     /** 收支类型 2 ：支出 */
-    public static final String IN_OUT_TYPE_2 = "2";
+    public static final String
+            IN_OUT_TYPE_2 = "2";
 
 
     /** MSG消息 */
@@ -1999,6 +2003,8 @@ public interface Constants {
     public static final String FYW_REQUEST_TYPE_02="02";
     /**福员外-请求类型-员工绑定虚拟卡充值 */
     public static final String FYW_REQUEST_TYPE_03="03";
+    /**福员外-请求类型-企业生成定额券 */
+    public static final String FYW_REQUEST_TYPE_04="04";
 
     /**福员外-请求状态 -请求生成，等待处理 */
     public static final String FYW_REQUEST_STATUS_00="00";
@@ -2010,7 +2016,9 @@ public interface Constants {
     public static final String FYW_REQUEST_STATUS_03="03";
     /**福员外-请求状态 -没有回调*/
     public static final String FYW_REQUEST_STATUS_04="04";
-    
+    /**福员外-请求状态 -定额券完整处理完毕*/
+    public static final String FYW_REQUEST_STATUS_05="05";
+
     /**福员外 -活动标识-企业金额补发 */
     public static final String FYW_ACTIVITY_TAG_0000="0000";
     /**福员外 -活动标识-企业开户充值 */
