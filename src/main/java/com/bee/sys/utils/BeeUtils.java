@@ -27,6 +27,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.bee.utils.common.Constants;
 import org.springframework.util.StringUtils;
 
 import com.alibaba.fastjson.JSON;
@@ -601,14 +602,15 @@ public class BeeUtils {
 	public static String replaceProtocol(String url, String protocol) throws CoreException {
 		String resUrl = "";
 		// 替换协议
-		if (!StringUtils.isEmpty(protocol) && (protocol.equals("http") || protocol.equals("https"))) {
+		if (!StringUtils.isEmpty(protocol) && (protocol.equals(Constants.STR_HTTP) || protocol.equals(Constants.STR_HTTPS))) {
 			// http协议
 			resUrl = url.replaceFirst("^http(s)?", protocol);
 		} else {
 			// 用默认的协议
 			resUrl = url;
 		}
-		return resUrl;
+		//return resUrl;
+		return url;
 	}
 
 	/**
