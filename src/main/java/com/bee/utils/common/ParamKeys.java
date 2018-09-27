@@ -97,6 +97,8 @@ public interface ParamKeys {
 	public static final String PERSONALCUSTOMERMALL_SEQ_NO = "PersonalCustomerMallService";
 	//用户开户充值错误数据表
 	public static final String REGISTER_RECHARGE_SEQ_NO="RegisterRechargeService";
+	//退款记录数据表
+	public static final String REFUND_HISTORY_SEQ_NO="RefundHistoryService";
 	//开户充值序列号
 	public static final String BATCH_FILE_NO_SEQ_NO="BatchFileNoService";
 	//转账记录
@@ -218,11 +220,13 @@ public interface ParamKeys {
     
     // 蜂贝心愿商品主键ID
     public static final String MALL_WISH_PRODUCT_ID = "WishProductService";
-    
+    // 蜂贝心愿商品主键ID
+    public static final String FB_THIRD_PRODUCT_ID = "ThirdProductService";
+
     //还款记录ID
     public static final String ADVANCE_LIMIT_REPAY_HIS_SEQ_NO = "AdvanceLimtRepayHisService";
     
-    //还款记录第三方
+    //还款记录第三方push
     public static final String ADVANCE_LIMIT_REPAY_HIS_KFT_SEQ_NO = "AdvanceLimtRepayHisKftService";
     
     //蜂贝退款记录编号
@@ -319,6 +323,7 @@ public interface ParamKeys {
 	public static final String APP_VERSION_SEQ_NO="AppVersionService";//20180730 xyd 魔钥版本表
 	public static final String VIP_LATEST_LOGIN_HIS_SEQ_NO="VipLatestLoginHisService";//20180829 xyd 管理员端最后登录历史记录
 	public static final String PERSONAL_LATEST_LOGIN_HIS_SEQ_NO="PersonalLatestLoginHisService";//20180829 xyd 个人端最后登录历史记录
+	public static final String VIDEO_STORAGE_SEQ_NO="VideoStorageService";//20180917 xyd 视频保存
 	//福员外相关
     public static final String FYW_ACCOUNT_SEQ_NO="FywAccountService";
     public static final String FYW_FILE_BATCH_HISTORY_SEQ_NO="FywFileBatchHistoryService";
@@ -330,6 +335,7 @@ public interface ParamKeys {
     public static final String FYW_ACTIVITY_NO="FywActivityService";
     public static final String FYW_SUBSIDY_SEQ="FywSubsidyService";
     public static final String FYW_DAILY_CHECK_SEQ="FywDailyCheckService";
+    public static final String FYW_SHOPPING_CAR_SEQ="FywShoppingCarService";
     
     public static final String REPEAT_PAY_ORDER_SEQ_NO="RepeatPayOrderService"; 
     
@@ -391,4 +397,7 @@ public interface ParamKeys {
     
     //操作指南编号
     public static final String ODM_OPERATION_GUIDE_SEQ_NO="OperationGuideOdmService";
+
+    /*SSL订单编号*/
+    public static final String SSL_ORDER_SEQ = "SSL_ORDER_SEQ";
 }

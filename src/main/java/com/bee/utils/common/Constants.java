@@ -27,9 +27,16 @@ public interface Constants {
 
     public static final String FEIYUFENGXIAO_RESALE_FAIL_QUEUE_NAME = "feiyufengxiao_resale_fail_queue";// 费鱼蜂销
     
+    public static final String FPAY_RESALE_QUEUE_NAME = "fpay_resale_queue";//  蜂pay提现
+    
+    public static final String FPAY_RESALE_FAIL_QUEUE_NAME = "fpay_resale_fail_queue";// 蜂pay提现失败
+    
     public static final String MANGMAO_WITHDRAW_MONEY_QUEUE = "mangmao_withdraw_money_queue";// 忙猫新提现
     
     public static final String MANGMAO_WITHDRAW_MONEY_RETURN_QUEUE = "mangmao_withdraw_money_return_queue";// 忙猫新提现
+    
+    
+    
     
     public static final String FYW_DELAY_QUEUE = "fyw_delay_queue";// 福员外
     
@@ -378,7 +385,7 @@ public interface Constants {
     //支付系统渠道标志
     /**蜂采**/
     public final static String CHANNEL_01="01";
-    /**个人蜂贝**/
+    /**商城**/
     public final static String CHANNEL_02="02";
     /**蜂财**/
     public final static String CHANNEL_03="03";
@@ -1795,8 +1802,12 @@ public interface Constants {
     public static final String MOYAO_TRANSCODE_10015 = "10015";
     /** 10016-魔钥指令-远程推送升级程序**/
     public static final String MOYAO_TRANSCODE_10016 = "10016";
-    
-    
+    /** 10017-魔钥指令-远程推送固件升级**/
+    public static final String MOYAO_TRANSCODE_10017 = "10017";
+    /** 10016-魔钥指令-上传视频**/
+    public static final String MOYAO_TRANSCODE_10088 = "10088";
+    /** 10016-魔钥指令-开启视频**/
+    public static final String MOYAO_TRANSCODE_10018 = "10018";
     /** T0001-魔钥交易类型-指令开门 */
     public static final String MOYAO_TRANTYPE_T0001 = "T0001";
     /** T0002-魔钥交易类型-盘点标签 */
@@ -1813,7 +1824,8 @@ public interface Constants {
     public static final String MOYAO_TRANTYPE_T0007 = "T0007";
     /** T0008-魔钥交易类型-远程推送升级**/
     public static final String MOYAO_TRANTYPE_T0008 = "T0008";
-    
+    /** T0009-魔钥交易类型-视频交互**/
+    public static final String MOYAO_TRANTYPE_T0009 = "T0009";
     /** serverTopic-魔钥服务端主题前缀 */
     public static final String MOYAO_SERVER_TOPIC_PREFIX = "serverTopic/";
     /** clientTopic-魔钥客户端主题前缀 */
@@ -1824,7 +1836,8 @@ public interface Constants {
     public static final String MOYAO_SERVER_TOPIC_REALMNAME = "serverTopic/reviseRealmName";
     /** serverTipic-魔钥服务客户端程序升级**/
     public static final String MOYAO_SERVER_TOPIC_UPGRADE = "serverTopic/upgrade";
-    
+    /** serverTopic-魔钥服务端主题--视频交互*/
+    public static final String MOYAO_SERVER_TOPIC_VIDEO = "serverTopic/video";
     /** 0000-魔钥状态-成功 */
     public static final String MOYAO_RESULTCODE_0000 = "0000";
 
@@ -2534,4 +2547,28 @@ public interface Constants {
     /** 商城个人 TOKEN前缀 **/
     public static final String MALL_PERSONAL = "MALL_PERSONAL_";
 
+    /** 蜂惠试用状态 0 : 试用中   1 : 已结束  2 : 暂停中 **/
+    public static final String FH_TRYTOUT_STATUS_0 = "0";
+
+    /** 蜂惠试用状态 0 : 使用中   1 : 已结束  2 : 暂停中 **/
+    public static final String FH_TRYTOUT_STATUS_1 = "1";
+    /** 蜂惠试用状态 0 : 使用中   1 : 已结束  2 : 暂停中 **/
+    public static final String FH_TRYTOUT_STATUS_2 = "2";
+
+    /** 商城购物车单个商品最大数量 **/
+    public static final Integer SHOPPING_CAR_PRODUCT_MAX_COUNT = 999;
+    
+    /** 福员外科目状态,商户科目关联关系状态  1:上架 **/
+    public static final String FYW_INVOICEITEM_STATUS_ON = "1";
+    /** 福员外科目状态,商户科目关联关系状态   2:下架 **/
+    public static final String FYW_INVOICEITEM_STATUS_OFF = "2";
+    
+    /** 福员外商户是否推荐   1:已推荐 **/
+    public static final String FYW_MERCHANT_IS_RECOMMENDED_1 = "1";
+    /** 福员外商户是否推荐   0:未推荐 **/
+    public static final String FYW_MERCHANT_IS_RECOMMENDED_0 = "0";
+    
+    /** 推荐类型：1:基于用户的协同过滤 **/
+    public static final String FYW_RECOMMEND_TYPE_1 = "1";
+    
 }
