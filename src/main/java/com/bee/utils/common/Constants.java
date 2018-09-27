@@ -1832,8 +1832,6 @@ public interface Constants {
     public static final String MOYAO_SERVER_TOPIC_REALMNAME = "serverTopic/reviseRealmName";
     /** serverTipic-魔钥服务客户端程序升级**/
     public static final String MOYAO_SERVER_TOPIC_UPGRADE = "serverTopic/upgrade";
-    /** serverTopic-魔钥服务端主题--视频交互*/
-    public static final String MOYAO_SERVER_TOPIC_VIDEO = "serverTopic/video";
     /** 0000-魔钥状态-成功 */
     public static final String MOYAO_RESULTCODE_0000 = "0000";
 
