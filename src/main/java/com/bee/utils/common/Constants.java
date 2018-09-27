@@ -49,13 +49,18 @@ public interface Constants {
     public static final String FYW_VIRTUAL_CARD_ONE= "1";
     public static final String FYW_VIRTUAL_CARD_ERROR= "2";
 
+    /**支付宝定额券发放状态 0发放失败 1发放成功**/
+    public static final String FYW_QUOTA_TICKET_STATUS_ONE= "1";
+    public static final String FYW_QUOTA_TICKET_STATUS_ZERO= "0";
 
-    
+
+
+
 
     // timing- 20170623
     //福员外批量开户记录是否删除 0：未删除
     public static final String FYW_FILE_BATCH_ISDEL = "0";// 0 未删除
-    
+
     //福员外账号权限类型 1 主账号 2 主账号的子账号
     public static final String FYW_PERMISSON_TYPE_ONE = "1";
     public static final String FYW_PERMISSON_TYPE_TWO = "2";
@@ -313,6 +318,9 @@ public interface Constants {
 
     /** 交易类型 11-（福员外） 生成虚拟卡*/
     public static final String TRAN_TYPE_11= "11";
+
+    /** 交易类型 11-（福员外） 生成定额券*/
+    public static final String TRAN_TYPE_12= "12";
 
     /************************************** 支付订单 ***********************************************************/
     /** 支付订单类型 1-消费 */
@@ -698,7 +706,8 @@ public interface Constants {
     public static final String IN_OUT_TYPE_1 = "1";
 
     /** 收支类型 2 ：支出 */
-    public static final String IN_OUT_TYPE_2 = "2";
+    public static final String
+            IN_OUT_TYPE_2 = "2";
 
 
     /** MSG消息 */
@@ -2010,6 +2019,8 @@ public interface Constants {
     public static final String FYW_REQUEST_TYPE_02="02";
     /**福员外-请求类型-员工绑定虚拟卡充值 */
     public static final String FYW_REQUEST_TYPE_03="03";
+    /**福员外-请求类型-企业生成定额券 */
+    public static final String FYW_REQUEST_TYPE_04="04";
 
     /**福员外-请求状态 -请求生成，等待处理 */
     public static final String FYW_REQUEST_STATUS_00="00";
@@ -2021,7 +2032,9 @@ public interface Constants {
     public static final String FYW_REQUEST_STATUS_03="03";
     /**福员外-请求状态 -没有回调*/
     public static final String FYW_REQUEST_STATUS_04="04";
-    
+    /**福员外-请求状态 -定额券完整处理完毕*/
+    public static final String FYW_REQUEST_STATUS_05="05";
+
     /**福员外 -活动标识-企业金额补发 */
     public static final String FYW_ACTIVITY_TAG_0000="0000";
     /**福员外 -活动标识-企业开户充值 */
@@ -2553,6 +2566,12 @@ public interface Constants {
     /** 福员外科目状态,商户科目关联关系状态   2:下架 **/
     public static final String FYW_INVOICEITEM_STATUS_OFF = "2";
     
+    /** 福员外商户是否推荐   1:已推荐 **/
+    public static final String FYW_MERCHANT_IS_RECOMMENDED_1 = "1";
+    /** 福员外商户是否推荐   0:未推荐 **/
+    public static final String FYW_MERCHANT_IS_RECOMMENDED_0 = "0";
     
+    /** 推荐类型：1:基于用户的协同过滤 **/
+    public static final String FYW_RECOMMEND_TYPE_1 = "1";
     
 }
