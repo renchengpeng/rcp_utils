@@ -2548,6 +2548,13 @@ public interface Constants {
     /** 商城购物车单个商品最大数量 **/
     public static final Integer SHOPPING_CAR_PRODUCT_MAX_COUNT = 999;
 
+    /** 地址级别 ： 级别1 省级别 */
+    public static final String ADDRESS_LEVEL_1 = "1";
+    /** 地址级别 ： 级别2 市级别 */
+    public static final String ADDRESS_LEVEL_2 = "2";
+    /** 地址级别 ： 级别3 区级别 */
+    public static final String ADDRESS_LEVEL_3 = "3";
+
 
     
 }
