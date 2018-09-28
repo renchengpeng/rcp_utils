@@ -2560,7 +2560,14 @@ public interface Constants {
 
     /** 商城购物车单个商品最大数量 **/
     public static final Integer SHOPPING_CAR_PRODUCT_MAX_COUNT = 999;
-    
+
+    /** 地址级别 ： 级别1 省级别 */
+    public static final String ADDRESS_LEVEL_1 = "1";
+    /** 地址级别 ： 级别2 市级别 */
+    public static final String ADDRESS_LEVEL_2 = "2";
+    /** 地址级别 ： 级别3 区级别 */
+    public static final String ADDRESS_LEVEL_3 = "3";
+
     /** 福员外科目状态,商户科目关联关系状态  1:上架 **/
     public static final String FYW_INVOICEITEM_STATUS_ON = "1";
     /** 福员外科目状态,商户科目关联关系状态   2:下架 **/
@@ -2573,5 +2580,5 @@ public interface Constants {
     
     /** 推荐类型：1:基于用户的协同过滤 **/
     public static final String FYW_RECOMMEND_TYPE_1 = "1";
-    
+
 }
