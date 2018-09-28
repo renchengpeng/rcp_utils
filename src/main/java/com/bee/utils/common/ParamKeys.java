@@ -328,8 +328,7 @@ public interface ParamKeys {
     public static final String FYW_ACCOUNT_SEQ_NO="FywAccountService";
     public static final String FYW_FILE_BATCH_HISTORY_SEQ_NO="FywFileBatchHistoryService";
     public static final String FYW_INVOICE_ITEM_SEQ_NO="FywInvoiceItemService";
-    public static final String FYW_ORDERS_SEQ_NO="FywOrdersService";
-    public static final String FYW_ORDERS_DETAIL_SEQ_NO="FywOrdersDetailService";
+    public static final String FYW_INVOICE_ORDERS_SEQ_NO="FywInvoiceOrdersService";
     public static final String FYW_MERCHANT_SEQ_NO="FywMerchantService"; 
     public static final String FYW_REGISTER_RECHARGE_SEQ_NO="FywRegisterRechargeService"; 
     public static final String FYW_TRAN_HISTORY_SEQ_NO="FywTranHistoryService"; 
