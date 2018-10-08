@@ -426,7 +426,9 @@ public interface Constants {
     public final static String CHANNEL_16 = "16";
     /**跃程充值 **/
     public final static String CHANNEL_17="17";
-    
+    /**快寄卖 **/
+    public final static String CHANNEL_18="18";
+
     
     
 
