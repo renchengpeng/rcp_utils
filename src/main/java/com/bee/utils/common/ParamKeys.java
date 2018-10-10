@@ -181,7 +181,12 @@ public interface ParamKeys {
     public static final String FB_ORDERS_NO="FbOrdersService";
     //蜂贝 订单详情 编号
     public static final String FB_ORDERINFO_NO="FbOrderInfoService";
-    
+
+    //商城 订单编号
+    public static final String MALL_ORDERS_NO="MallOrdersService";
+    //商城 订单详情 编号
+    public static final String MALL_ORDERINFO_NO="MallOrderInfoService";
+
     //预付商户限额
     public static final String LIMIT_SEQ="MerchantLimitAmtService";
     
