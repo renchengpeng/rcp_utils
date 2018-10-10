@@ -426,7 +426,9 @@ public interface Constants {
     public final static String CHANNEL_16 = "16";
     /**跃程充值 **/
     public final static String CHANNEL_17="17";
-    
+    /**快寄卖 **/
+    public final static String CHANNEL_18="18";
+
     
     
 
@@ -1975,8 +1977,10 @@ public interface Constants {
 
     /** 7福员外-采购订单-水单未过审核 */
     public static final String FYW_ORDERS_STATUS_7 = "7";
-    /** 8福员外-采购订单-订单发票已配送，订单完成 */
+    /** 8福员外-采购订单-订单发票已配送 */
     public static final String FYW_ORDERS_STATUS_8 = "8";
+    /** 9福员外-采购订单-订单订单完成 */
+    public static final String FYW_ORDERS_STATUS_9 = "9";
     
     
     /**福员外-账户类型-个人 */
