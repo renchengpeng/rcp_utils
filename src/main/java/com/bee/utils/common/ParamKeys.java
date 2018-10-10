@@ -181,7 +181,12 @@ public interface ParamKeys {
     public static final String FB_ORDERS_NO="FbOrdersService";
     //蜂贝 订单详情 编号
     public static final String FB_ORDERINFO_NO="FbOrderInfoService";
-    
+
+    //商城 订单编号
+    public static final String MALL_ORDERS_NO="MallOrdersService";
+    //商城 订单详情 编号
+    public static final String MALL_ORDERINFO_NO="MallOrderInfoService";
+
     //预付商户限额
     public static final String LIMIT_SEQ="MerchantLimitAmtService";
     
@@ -328,13 +333,14 @@ public interface ParamKeys {
     public static final String FYW_ACCOUNT_SEQ_NO="FywAccountService";
     public static final String FYW_FILE_BATCH_HISTORY_SEQ_NO="FywFileBatchHistoryService";
     public static final String FYW_INVOICE_ITEM_SEQ_NO="FywInvoiceItemService";
-    public static final String FYW_INVOICE_ORDERS_SEQ_NO="FywInvoiceOrdersService"; 
+    public static final String FYW_INVOICE_ORDERS_SEQ_NO="FywInvoiceOrdersService";
     public static final String FYW_MERCHANT_SEQ_NO="FywMerchantService"; 
     public static final String FYW_REGISTER_RECHARGE_SEQ_NO="FywRegisterRechargeService"; 
     public static final String FYW_TRAN_HISTORY_SEQ_NO="FywTranHistoryService"; 
     public static final String FYW_ACTIVITY_NO="FywActivityService";
     public static final String FYW_SUBSIDY_SEQ="FywSubsidyService";
     public static final String FYW_DAILY_CHECK_SEQ="FywDailyCheckService";
+    public static final String FYW_SHOPPING_CAR_SEQ="FywShoppingCarService";
     
     public static final String REPEAT_PAY_ORDER_SEQ_NO="RepeatPayOrderService"; 
     
