@@ -609,8 +609,7 @@ public class BeeUtils {
 			// 用默认的协议
 			resUrl = url;
 		}
-		//return resUrl;
-		return url;
+		return resUrl;
 	}
 
 	/**
