@@ -368,6 +368,8 @@ public interface Constants {
     public final static String PAY_CHANNEL_KFT="02";
     /**支付通道 03-随行付**/
     public final static String PAY_CHANNEL_SXF="03";
+    /**支付通道 04-拉卡拉**/
+    public final static String PAY_CHANNEL_LKL="04";
     
  
     /**随网关支付**/
