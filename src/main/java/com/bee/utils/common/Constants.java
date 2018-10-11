@@ -368,8 +368,6 @@ public interface Constants {
     public final static String PAY_CHANNEL_KFT="02";
     /**支付通道 03-随行付**/
     public final static String PAY_CHANNEL_SXF="03";
-    /**支付通道 04-拉卡拉**/
-    public final static String PAY_CHANNEL_LKL="04";
     
  
     /**随网关支付**/
@@ -1187,17 +1185,20 @@ public interface Constants {
     /** 京东支付类型 4：余额 7：网银钱包 101：金采支付 */
     public static final Integer JD_PAYTYPE_BAL = 4;
 
-    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 */
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉*/
     public static final String RESALE_DZBXK_DEAL_WAY_0 = "0";
 
-    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 */
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉*/
     public static final String RESALE_DZBXK_DEAL_WAY_1 = "1";
 
-    /** 电子报销款 - 1，人工处理，0，随行付支付2，融宝支付3，爱农 */
+    /** 电子报销款 - 1，人工处理，0，随行付支付2，融宝支付3，爱农，4拉卡拉 */
     public static final String RESALE_DZBXK_DEAL_WAY_2 = "2";
 
-    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 */
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉*/
     public static final String RESALE_DZBXK_DEAL_WAY_3 = "3";
+    
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农，4拉卡拉 */
+    public static final String RESALE_DZBXK_DEAL_WAY_4 = "4";
 
     /** 转让电子报销款 - 转让中 */
     public static final String RESALE_DZBXK_0 = "0";
