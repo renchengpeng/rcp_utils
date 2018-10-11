@@ -27,11 +27,11 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.bee.utils.common.Constants;
 import org.springframework.util.StringUtils;
 
 import com.alibaba.fastjson.JSON;
 import com.bee.framework.i.bp.core.CoreException;
+import com.bee.utils.common.Constants;
 import com.bee.utils.common.ErrorCodes;
 
 /**
@@ -634,4 +634,11 @@ public class BeeUtils {
 		}
 		return resAccount;
 	}
+	
+	public static boolean isEnglish(String charaString){
+
+      return charaString.matches("^[a-zA-Z]*");
+
+    }
+ 
 }
