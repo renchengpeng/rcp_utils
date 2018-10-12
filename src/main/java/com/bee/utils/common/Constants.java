@@ -144,6 +144,16 @@ public interface Constants {
     /* 修 */
     public static final String JDORDER_SERVICE_TYPE_REPAIR = "30";
 
+    /** 商城售后类型 **/
+    /* 退 */
+    public static final String MALLORDER_SERVICE_TYPE_BACK = "10";
+
+    /* 换 */
+    public static final String MALLORDER_SERVICE_TYPE_CHANGE = "20";
+
+    /* 修 */
+    public static final String MALLORDER_SERVICE_TYPE_REPAIR = "30";
+
     public static final String MERCHANT = "merchant";
 
     public static final String FD = "fd";
