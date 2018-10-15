@@ -1195,17 +1195,20 @@ public interface Constants {
     /** 京东支付类型 4：余额 7：网银钱包 101：金采支付 */
     public static final Integer JD_PAYTYPE_BAL = 4;
 
-    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 */
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉*/
     public static final String RESALE_DZBXK_DEAL_WAY_0 = "0";
 
-    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 */
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉*/
     public static final String RESALE_DZBXK_DEAL_WAY_1 = "1";
 
-    /** 电子报销款 - 1，人工处理，0，随行付支付2，融宝支付3，爱农 */
+    /** 电子报销款 - 1，人工处理，0，随行付支付2，融宝支付3，爱农，4拉卡拉 */
     public static final String RESALE_DZBXK_DEAL_WAY_2 = "2";
 
-    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 */
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉*/
     public static final String RESALE_DZBXK_DEAL_WAY_3 = "3";
+    
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农，4拉卡拉 */
+    public static final String RESALE_DZBXK_DEAL_WAY_4 = "4";
 
     /** 转让电子报销款 - 转让中 */
     public static final String RESALE_DZBXK_0 = "0";
@@ -1825,6 +1828,8 @@ public interface Constants {
     public static final String MOYAO_TRANSCODE_10088 = "10088";
     /** 10016-魔钥指令-开启视频**/
     public static final String MOYAO_TRANSCODE_10018 = "10018";
+    /** 10019-魔钥指令-柜子升级成功后，返回版本号信息**/
+    public static final String MOYAO_TRANSCODE_10019 = "10019";
     /** T0001-魔钥交易类型-指令开门 */
     public static final String MOYAO_TRANTYPE_T0001 = "T0001";
     /** T0002-魔钥交易类型-盘点标签 */
@@ -1843,6 +1848,7 @@ public interface Constants {
     public static final String MOYAO_TRANTYPE_T0008 = "T0008";
     /** T0009-魔钥交易类型-视频交互**/
     public static final String MOYAO_TRANTYPE_T0009 = "T0009";
+
     /** serverTopic-魔钥服务端主题前缀 */
     public static final String MOYAO_SERVER_TOPIC_PREFIX = "serverTopic/";
     /** clientTopic-魔钥客户端主题前缀 */
@@ -2151,6 +2157,8 @@ public interface Constants {
     public static final String CRM_ASSGIN_TYPE_10 = "10";
     /** CRM-客户分配类型 11-意向库分配给电销私海 */
     public static final String CRM_ASSGIN_TYPE_11 = "11";
+    /** CRM-客户分配类型 11-公海到客户经理 */
+    public static final String CRM_ASSGIN_TYPE_12 = "12";
 
     /** CRM-客户公开类型  1-从电销私海公开到公海 */
     public static final String CRM_OPEN_TYPE_1 = "1";
