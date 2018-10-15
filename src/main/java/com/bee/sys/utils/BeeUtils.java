@@ -142,7 +142,7 @@ public class BeeUtils {
 	 * 
 	 ********************************************************* .<br>
 	 * [方法] hideMobileNumber <br>
-	 * [描述] 隐藏手机号码关键信息(首3位+****+后2位)：136****86 <br>
+	 * [描述] 隐藏手机号码关键信息(首3位+****+后4位)：136**1186 <br>
 	 * [参数] TODO(对参数的描述) <br>
 	 * [返回] String <br>
 	 * [作者] zj <br>
@@ -153,7 +153,7 @@ public class BeeUtils {
 		if (!checkMobileNumber(mobileNumber)) {
 			throw new CoreException(ErrorCodes.BEE0016.getMessage());
 		}
-		return mobileNumber.substring(0, 3) + "****" + mobileNumber.substring(9, 11);
+		return mobileNumber.substring(0, 3) + "****" + mobileNumber.substring(7, 11);
 	}
 
 	/**

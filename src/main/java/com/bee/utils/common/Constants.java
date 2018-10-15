@@ -2147,6 +2147,8 @@ public interface Constants {
     public static final String CRM_ASSGIN_TYPE_10 = "10";
     /** CRM-客户分配类型 11-意向库分配给电销私海 */
     public static final String CRM_ASSGIN_TYPE_11 = "11";
+    /** CRM-客户分配类型 11-公海到客户经理 */
+    public static final String CRM_ASSGIN_TYPE_12 = "12";
 
     /** CRM-客户公开类型  1-从电销私海公开到公海 */
     public static final String CRM_OPEN_TYPE_1 = "1";
