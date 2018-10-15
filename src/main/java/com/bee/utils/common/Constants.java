@@ -2595,4 +2595,36 @@ public interface Constants {
     /** 推荐类型：1:基于用户的协同过滤 **/
     public static final String FYW_RECOMMEND_TYPE_1 = "1";
 
+
+
+    /** 严选售后申请单状态：1:	待审核 **/
+    public static final Integer YX_AFS_STATUS_1 = 1;
+
+    /** 严选售后申请单状态：2:待用户寄回 **/
+    public static final Integer YX_AFS_STATUS_2 = 2;
+
+    /** 严选售后申请单状态：3:用户已寄送 **/
+    public static final Integer YX_AFS_STATUS_3 = 3;
+
+    /** 严选售后申请单状态：4:退货成功 **/
+    public static final Integer YX_AFS_STATUS_4 = 4;
+
+    /** 严选售后申请单状态：5:客服审核不通过 **/
+    public static final Integer YX_AFS_STATUS_5 = 5;
+
+    /** 严选售后申请单状态：6:用户取消 **/
+    public static final Integer YX_AFS_STATUS_6 = 6;
+
+    /** 严选售后申请单状态：7:系统取消 **/
+    public static final Integer YX_AFS_STATUS_7 = 7;
+
+    /** 严选售后申请单状态：8:客服取消 **/
+    public static final Integer YX_AFS_STATUS_8 = 8;
+
+    /** 严选售后申请单状态：9:系统取消 **/
+    public static final Integer YX_AFS_STATUS_9 = 9;
+
+    /** 严选售后申请单状态：11:待客服确认 **/
+    public static final Integer YX_AFS_STATUS_11 = 11;
+
 }
