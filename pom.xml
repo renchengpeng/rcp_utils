@@ -126,10 +126,5 @@
 		    <artifactId>commons-lang3</artifactId>
 		    <version>3.4</version>
 		</dependency>
-	    <dependency>
-			<groupId>com.bee.videoUpload</groupId>
-			<artifactId>videoUpload</artifactId>
-			<version>0.0.1</version>
-	    </dependency>
   </dependencies>
 </project>
