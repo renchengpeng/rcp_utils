@@ -144,6 +144,16 @@ public interface Constants {
     /* 修 */
     public static final String JDORDER_SERVICE_TYPE_REPAIR = "30";
 
+    /** 商城售后类型 **/
+    /* 退 */
+    public static final String MALLORDER_SERVICE_TYPE_BACK = "10";
+
+    /* 换 */
+    public static final String MALLORDER_SERVICE_TYPE_CHANGE = "20";
+
+    /* 修 */
+    public static final String MALLORDER_SERVICE_TYPE_REPAIR = "30";
+
     public static final String MERCHANT = "merchant";
 
     public static final String FD = "fd";
@@ -1818,8 +1828,12 @@ public interface Constants {
     public static final String MOYAO_TRANSCODE_10088 = "10088";
     /** 10018-魔钥指令-开启视频**/
     public static final String MOYAO_TRANSCODE_10018 = "10018";
-    /** 10019-魔钥指令-柜孔状态**/
+    /** 10021-魔钥指令-柜孔状态**/
+    public static final String MOYAO_TRANSCODE_10019 = "10021";
+    /** 10019-魔钥指令-柜子升级成功后，返回版本号信息**/
     public static final String MOYAO_TRANSCODE_10019 = "10019";
+    /** 10013-魔钥指令-发布视频 */
+    public static final String MOYAO_TRANSCODE_10020 = "10020";
     /** T0001-魔钥交易类型-指令开门 */
     public static final String MOYAO_TRANTYPE_T0001 = "T0001";
     /** T0002-魔钥交易类型-盘点标签 */
@@ -2593,5 +2607,37 @@ public interface Constants {
     
     /** 推荐类型：1:基于用户的协同过滤 **/
     public static final String FYW_RECOMMEND_TYPE_1 = "1";
+
+
+
+    /** 严选售后申请单状态：1:	待审核 **/
+    public static final Integer YX_AFS_STATUS_1 = 1;
+
+    /** 严选售后申请单状态：2:待用户寄回 **/
+    public static final Integer YX_AFS_STATUS_2 = 2;
+
+    /** 严选售后申请单状态：3:用户已寄送 **/
+    public static final Integer YX_AFS_STATUS_3 = 3;
+
+    /** 严选售后申请单状态：4:退货成功 **/
+    public static final Integer YX_AFS_STATUS_4 = 4;
+
+    /** 严选售后申请单状态：5:客服审核不通过 **/
+    public static final Integer YX_AFS_STATUS_5 = 5;
+
+    /** 严选售后申请单状态：6:用户取消 **/
+    public static final Integer YX_AFS_STATUS_6 = 6;
+
+    /** 严选售后申请单状态：7:系统取消 **/
+    public static final Integer YX_AFS_STATUS_7 = 7;
+
+    /** 严选售后申请单状态：8:客服取消 **/
+    public static final Integer YX_AFS_STATUS_8 = 8;
+
+    /** 严选售后申请单状态：9:系统取消 **/
+    public static final Integer YX_AFS_STATUS_9 = 9;
+
+    /** 严选售后申请单状态：11:待客服确认 **/
+    public static final Integer YX_AFS_STATUS_11 = 11;
 
 }
