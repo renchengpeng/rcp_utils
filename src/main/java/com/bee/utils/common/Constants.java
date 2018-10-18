@@ -1829,7 +1829,7 @@ public interface Constants {
     /** 10018-魔钥指令-开启视频**/
     public static final String MOYAO_TRANSCODE_10018 = "10018";
     /** 10021-魔钥指令-柜孔状态**/
-    public static final String MOYAO_TRANSCODE_10019 = "10021";
+    public static final String MOYAO_TRANSCODE_10021 = "10021";
     /** 10019-魔钥指令-柜子升级成功后，返回版本号信息**/
     public static final String MOYAO_TRANSCODE_10019 = "10019";
     /** 10013-魔钥指令-发布视频 */
