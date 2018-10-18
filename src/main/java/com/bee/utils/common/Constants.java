@@ -1816,8 +1816,10 @@ public interface Constants {
     public static final String MOYAO_TRANSCODE_10017 = "10017";
     /** 10016-魔钥指令-上传视频**/
     public static final String MOYAO_TRANSCODE_10088 = "10088";
-    /** 10016-魔钥指令-开启视频**/
+    /** 10018-魔钥指令-开启视频**/
     public static final String MOYAO_TRANSCODE_10018 = "10018";
+    /** 10019-魔钥指令-柜孔状态**/
+    public static final String MOYAO_TRANSCODE_10019 = "10019";
     /** T0001-魔钥交易类型-指令开门 */
     public static final String MOYAO_TRANTYPE_T0001 = "T0001";
     /** T0002-魔钥交易类型-盘点标签 */
@@ -1836,6 +1838,8 @@ public interface Constants {
     public static final String MOYAO_TRANTYPE_T0008 = "T0008";
     /** T0009-魔钥交易类型-视频交互**/
     public static final String MOYAO_TRANTYPE_T0009 = "T0009";
+    /** T0010-魔钥交易类型-柜孔信息交互**/
+    public static final String MOYAO_TRANTYPE_T0010 = "T0010";
     /** serverTopic-魔钥服务端主题前缀 */
     public static final String MOYAO_SERVER_TOPIC_PREFIX = "serverTopic/";
     /** clientTopic-魔钥客户端主题前缀 */
