@@ -241,20 +241,29 @@ public interface Constants {
     /** 是否推荐商品 否 **/
     public static final String PRD_RECOMMEND_STATUS_2 = "2";
 
-    /** 订单状态 01-未付款 02-已付款 03-配送中 04 已完成 05-取消*/
+    /** 订单状态 01-未付款 */
     public static final String ORDER_STATUS_01 = "01";
 
     /** 订单状态 02-已付款 */
     public static final String ORDER_STATUS_02 = "02";
 
-    /** 订单状态 03-配送中 */
+    /** 订单状态 03-发货 */
     public static final String ORDER_STATUS_03 = "03";
 
-    /** 订单状态 04-已完成 */
+    /** 订单状态 04-确认已收货 */
     public static final String ORDER_STATUS_04 = "04";
 
-    /** 订单状态 05-取消 */
+    /** 订单状态 05-订单完成 */
     public static final String ORDER_STATUS_05 = "05";
+
+    /** 订单状态 06-退款中 */
+    public static final String ORDER_STATUS_06 = "06";
+
+    /** 订单状态 07-订单取消 */
+    public static final String ORDER_STATUS_07 = "07";
+
+    /** 订单状态 08-订单已退款 */
+    public static final String ORDER_STATUS_08 = "08";
 
     /** 订单状态 09-订单申请退款 */
     public static final String ORDER_STATUS_09 = "09";
