@@ -2628,4 +2628,10 @@ public interface Constants {
     /** 严选售后申请单状态：11:待客服确认 **/
     public static final Integer YX_AFS_STATUS_11 = 11;
 
+    /** 退款类型 01-售后退款**/
+    public static final String REFUND_TYPE_01 = "01";
+
+    /**退款类型 02-下单失败退款**/
+    public static final String REFUND_TYPE_02 = "02";
+
 }
