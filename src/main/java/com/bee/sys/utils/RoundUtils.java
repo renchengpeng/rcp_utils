@@ -21,10 +21,11 @@ public class RoundUtils {
      * @param beforeAmt  金额
      * @param serviceFee 费率
      * @param roundFlag 0：小数 1：个位  2：十位   3.
+     * @param Multiple 商户设置的付款最小单位
      * @return
      * @throws CoreException 
      */
-    public static BigDecimal roundAmount(String formula,BigDecimal beforeAmt,BigDecimal serviceFee,String roundFlag){
+    public static BigDecimal roundAmount(String formula,BigDecimal beforeAmt,BigDecimal serviceFee,String roundFlag,Integer multiple){
         BigDecimal fee = null;
         BigDecimal b = null;
         try {
@@ -83,8 +84,21 @@ public class RoundUtils {
             }else{
                 throw new CoreException("请设置倒扣或顺加");
             }
+            //如果商户设置了最小支付单位 则将付款金额转换为整数倍(例:最小单位20  应付119  付款金额为120)
+            if(multiple != 0) {
+            	BigDecimal multipleDecimal = BigDecimal.valueOf(multiple.longValue());
+            	//取余数
+            	BigDecimal remainder = b.divideAndRemainder(multipleDecimal)[1];
+            	//除数
+            	BigDecimal divisor = b.divideAndRemainder(multipleDecimal)[0];
+            	//如果余数大于0 则除数加1
+            	if(remainder.compareTo(BigDecimal.ZERO) == 1) {
+            		divisor = DecimalUtil.add(divisor, new BigDecimal(1));
+            	}
+            	//计算金额 最小单位*(除数)  或者  最小单位*(除数+1)
+            	b = DecimalUtil.multiply(multipleDecimal, divisor);
+            }
             } catch (CoreException e) {
-                
                 e.printStackTrace();
             }
         return b;
@@ -123,9 +137,9 @@ public class RoundUtils {
     }
     
     public static void main(String[] args) {
-       System.out.println(RoundUtils.roundAmount("2", new BigDecimal(0.5),new BigDecimal(0.001),"0"));
-       System.out.println(RoundUtils.roundAmount("1", new BigDecimal(1000),new BigDecimal(0.2),"0"));
-       System.out.println(RoundUtils.roundAmount("2", new BigDecimal(1000),new BigDecimal(0.2),"0"));
+       System.out.println(RoundUtils.roundAmount("2", new BigDecimal(0.5),new BigDecimal(0.001),"0",1));
+       System.out.println(RoundUtils.roundAmount("1", new BigDecimal(1000),new BigDecimal(0.2),"0",35));
+       System.out.println(RoundUtils.roundAmount("2", new BigDecimal(1000),new BigDecimal(0.2),"0",3));
        System.out.println(RoundUtils.reRoundAmount("1", new BigDecimal(1000),new BigDecimal(0.2)));
        System.out.println(RoundUtils.reRoundAmount("2", new BigDecimal(1000),new BigDecimal(0.2)));
 //       System.out.println(DecimalUtil.multiply(new BigDecimal(1256),new BigDecimal(1.001)));
