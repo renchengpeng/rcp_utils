@@ -635,8 +635,8 @@ public class BeeUtils {
 	}
 	
 	public static boolean isEnglish(String charaString){
-
-      return charaString.matches("^[a-zA-Z]*");
+	  String a=charaString.replace(" ", "");
+      return a.matches("^[a-zA-Z]*");
 
     }
  
