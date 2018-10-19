@@ -2,6 +2,7 @@ package com.bee.sys.utils;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -35,6 +36,7 @@ public class SignUtils {
     public static String createSign(Map<String, String> param){
         return CipherUtil.encryptMD5(createParam(param).toUpperCase(), true);
     }
+    
     
     /**
      * 通过 request 校验签名
@@ -98,5 +100,75 @@ public class SignUtils {
         return  prestr.deleteCharAt(prestr.length()-1).toString();
     }
     
+    /**
+     * 
+     * 带私钥的签名生成方法
+     * @author zjk
+     * 2018年9月10日
+     * @param param
+     * @param privateKey
+     * @return
+     */
+    public static String createSign(Map<String, String> param,String privateKey){
+        return CipherUtil.encryptMD5(createParam(param,privateKey).toUpperCase(), true);
+    }
+    
+    
+    /**
+     * 
+     * 带私钥的签名串拼接
+     * @author zjk
+     * 2018年9月10日
+     * @param param
+     * @param privateKey
+     * @return
+     */
+    public static String createParam(Map<String, String> param,String privateKey) {
+        param.put("privateKey", privateKey);
+        List<String> keys = new ArrayList<String>(param.keySet());
+        Collections.sort(keys);
+        StringBuilder prestr = new StringBuilder();
+        String key="";
+        String value="";
+        for (int i = 0; i < keys.size(); i++) {
+              key = keys.get(i);
+              value = param.get(key);
+            if("".equals(value) || value == null ||  key.equalsIgnoreCase("sign")){
+                continue;
+            }
+            prestr.append(key).append("=").append(value).append("&");
+        }
+        log.debug(">>>>【加密前拼接的字符串为:"+prestr+"】<<<<<");
+        return  prestr.deleteCharAt(prestr.length()-1).toString();
+    }
+    
+    /**
+     * 
+     * 带私钥的验签方法
+     * @author zjk
+     * 2018年9月10日
+     * @param request
+     * @param privateKey
+     * @return
+     * @throws Exception
+     */
+    @SuppressWarnings("unchecked")
+    public static boolean validateSign(HttpServletRequest request,String privateKey) throws Exception{
+        Map<String,String> map = BeeUtils.getParameterMap(request.getParameterMap());
+        if(map==null || map.size() == 0) {
+            throw new CoreException("参数获取失败");
+        }
+        map.put("privateKey", privateKey);
+        return validateSign(map, map.get("sign"));
+    }
+    
+    
+    public static void main(String[] args) {
+        Map<String,String> map=new HashMap<>();
+        map.put("webUrl", "192.168.1.3");
+        System.out.println(SignUtils.createSign(map, "K9009VDPDZXKWSGP"));
+        System.out.println(CipherUtil.encryptMD5("TOKEN=FD_ENTERPRISE_09E08C18E973BD23E26A92E9CD7F2955&address=爱上擦拭擦拭从&companyName=爱上擦擦是&companyNameABB=爱上擦拭擦拭从&email=xuyadong@beecredit.com&menuId=2&privateKey=K9009VDPDZXKWSGP&telephone=13161614387&timestamp=1536656741&username=萨达".toUpperCase(),true));
+        
+    }
     
 }

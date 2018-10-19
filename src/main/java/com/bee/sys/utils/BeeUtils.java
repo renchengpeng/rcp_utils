@@ -31,6 +31,7 @@ import org.springframework.util.StringUtils;
 
 import com.alibaba.fastjson.JSON;
 import com.bee.framework.i.bp.core.CoreException;
+import com.bee.utils.common.Constants;
 import com.bee.utils.common.ErrorCodes;
 
 /**
@@ -141,7 +142,7 @@ public class BeeUtils {
 	 * 
 	 ********************************************************* .<br>
 	 * [方法] hideMobileNumber <br>
-	 * [描述] 隐藏手机号码关键信息(首3位+****+后2位)：136****86 <br>
+	 * [描述] 隐藏手机号码关键信息(首3位+****+后4位)：136**1186 <br>
 	 * [参数] TODO(对参数的描述) <br>
 	 * [返回] String <br>
 	 * [作者] zj <br>
@@ -152,7 +153,7 @@ public class BeeUtils {
 		if (!checkMobileNumber(mobileNumber)) {
 			throw new CoreException(ErrorCodes.BEE0016.getMessage());
 		}
-		return mobileNumber.substring(0, 3) + "****" + mobileNumber.substring(9, 11);
+		return mobileNumber.substring(0, 3) + "****" + mobileNumber.substring(7, 11);
 	}
 
 	/**
@@ -601,7 +602,7 @@ public class BeeUtils {
 	public static String replaceProtocol(String url, String protocol) throws CoreException {
 		String resUrl = "";
 		// 替换协议
-		if (!StringUtils.isEmpty(protocol) && (protocol.equals("http") || protocol.equals("https"))) {
+		if (!StringUtils.isEmpty(protocol) && (protocol.equals(Constants.STR_HTTP) || protocol.equals(Constants.STR_HTTPS))) {
 			// http协议
 			resUrl = url.replaceFirst("^http(s)?", protocol);
 		} else {
@@ -632,4 +633,28 @@ public class BeeUtils {
 		}
 		return resAccount;
 	}
+//	public static void main(String[] args) {
+//        String aa="a d df".trim();
+//        if(!isEnglish(aa)) {
+//            System.out.println(aa.replace(" ", ""));
+//        }
+//        System.out.println(aa);
+//    }
+	
+	 public static void main(String[] args) {
+	        String a = " k   g";
+	        a = a.trim();
+	        if(!BeeUtils.isEnglish(a)){
+	            System.out.println(a.replace(" ", ""));
+	        }else{
+	            System.out.println(a.trim());
+	        }
+	    }
+	
+	public static boolean isEnglish(String charaString){
+	  String a=charaString.replace(" ", "");
+      return a.matches("^[a-zA-Z]*");
+
+    }
+ 
 }
