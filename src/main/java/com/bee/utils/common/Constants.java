@@ -2658,4 +2658,7 @@ public interface Constants {
     /**退款类型 02-下单失败退款**/
     public static final String REFUND_TYPE_02 = "02";
 
+    /**蜂惠banner位置id 011**/
+    public static final String FH_LOCATION_ID = "011";
+
 }
