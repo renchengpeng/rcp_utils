@@ -2640,4 +2640,15 @@ public interface Constants {
     /** 严选售后申请单状态：11:待客服确认 **/
     public static final Integer YX_AFS_STATUS_11 = 11;
 
+    /**网站站点标识  1-PC端**/
+    public static final String WEB_SITE_FLAG_1 = "1";
+    
+    /**网站站点标识 2-H5端**/
+    public static final String WEB_SITE_FLAG_2 = "2";
+    
+    /**网站站点标识 3-APP端**/
+    public static final String WEB_SITE_FLAG_3 = "3";
+    
+    /**网站站点**/
+    public static final String WEB_SITE_FLAG = "WEB_SITE_FLAG_";
 }
