@@ -633,10 +633,27 @@ public class BeeUtils {
 		}
 		return resAccount;
 	}
+//	public static void main(String[] args) {
+//        String aa="a d df".trim();
+//        if(!isEnglish(aa)) {
+//            System.out.println(aa.replace(" ", ""));
+//        }
+//        System.out.println(aa);
+//    }
+	
+	 public static void main(String[] args) {
+	        String a = " k   g";
+	        a = a.trim();
+	        if(!BeeUtils.isEnglish(a)){
+	            System.out.println(a.replace(" ", ""));
+	        }else{
+	            System.out.println(a.trim());
+	        }
+	    }
 	
 	public static boolean isEnglish(String charaString){
-
-      return charaString.matches("^[a-zA-Z]*");
+	  String a=charaString.replace(" ", "");
+      return a.matches("^[a-zA-Z]*");
 
     }
  

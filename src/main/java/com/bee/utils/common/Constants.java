@@ -241,20 +241,29 @@ public interface Constants {
     /** 是否推荐商品 否 **/
     public static final String PRD_RECOMMEND_STATUS_2 = "2";
 
-    /** 订单状态 01-未付款 02-已付款 03-配送中 04 已完成 05-取消*/
+    /** 订单状态 01-未付款 */
     public static final String ORDER_STATUS_01 = "01";
 
     /** 订单状态 02-已付款 */
     public static final String ORDER_STATUS_02 = "02";
 
-    /** 订单状态 03-配送中 */
+    /** 订单状态 03-发货 */
     public static final String ORDER_STATUS_03 = "03";
 
-    /** 订单状态 04-已完成 */
+    /** 订单状态 04-确认已收货 */
     public static final String ORDER_STATUS_04 = "04";
 
-    /** 订单状态 05-取消 */
+    /** 订单状态 05-订单完成 */
     public static final String ORDER_STATUS_05 = "05";
+
+    /** 订单状态 06-退款中 */
+    public static final String ORDER_STATUS_06 = "06";
+
+    /** 订单状态 07-订单取消 */
+    public static final String ORDER_STATUS_07 = "07";
+
+    /** 订单状态 08-订单已退款 */
+    public static final String ORDER_STATUS_08 = "08";
 
     /** 订单状态 09-订单申请退款 */
     public static final String ORDER_STATUS_09 = "09";
@@ -1829,8 +1838,10 @@ public interface Constants {
     public static final String MOYAO_TRANSCODE_10017 = "10017";
     /** 10016-魔钥指令-上传视频**/
     public static final String MOYAO_TRANSCODE_10088 = "10088";
-    /** 10016-魔钥指令-开启视频**/
+    /** 10018-魔钥指令-开启视频**/
     public static final String MOYAO_TRANSCODE_10018 = "10018";
+    /** 10021-魔钥指令-柜孔状态**/
+    public static final String MOYAO_TRANSCODE_10021 = "10021";
     /** 10019-魔钥指令-柜子升级成功后，返回版本号信息**/
     public static final String MOYAO_TRANSCODE_10019 = "10019";
     /** 10013-魔钥指令-发布视频 */
@@ -1853,7 +1864,8 @@ public interface Constants {
     public static final String MOYAO_TRANTYPE_T0008 = "T0008";
     /** T0009-魔钥交易类型-视频交互**/
     public static final String MOYAO_TRANTYPE_T0009 = "T0009";
-
+    /** T0010-魔钥交易类型-柜孔信息交互**/
+    public static final String MOYAO_TRANTYPE_T0010 = "T0010";
     /** serverTopic-魔钥服务端主题前缀 */
     public static final String MOYAO_SERVER_TOPIC_PREFIX = "serverTopic/";
     /** clientTopic-魔钥客户端主题前缀 */

@@ -329,6 +329,8 @@ public interface ParamKeys {
 	public static final String VIP_LATEST_LOGIN_HIS_SEQ_NO="VipLatestLoginHisService";//20180829 xyd 管理员端最后登录历史记录
 	public static final String PERSONAL_LATEST_LOGIN_HIS_SEQ_NO="PersonalLatestLoginHisService";//20180829 xyd 个人端最后登录历史记录
 	public static final String VIDEO_STORAGE_SEQ_NO="VideoStorageService";//20180917 xyd 视频保存
+	public static final String CABINET_HOLE_INFO_SEQ_NO="CabinetHoleInfoService";//20181015 xyd 柜孔记录
+	public static final String CABINET_HOLE_STATUSCHANGE_HIS_SEQ_NO="CabinetHoleStatusChangeHisService";//20181018 xyd 柜孔孔位动态变化历史记录
 	//福员外相关
     public static final String FYW_ACCOUNT_SEQ_NO="FywAccountService";
     public static final String FYW_FILE_BATCH_HISTORY_SEQ_NO="FywFileBatchHistoryService";
