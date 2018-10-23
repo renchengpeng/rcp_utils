@@ -271,6 +271,18 @@ public interface Constants {
     /** 订单状态 10-订单退款驳回 */
     public static final String ORDER_STATUS_10 = "10";
 
+    /** 子订单状态 1-正常，2-拒签 3-已发货 4--确认收货 5-退款*/
+    public static final String ORDERINFO_STATUS_1 = "1";
+    /** 子订单状态 2-拒签 */
+    public static final String ORDERINFO_STATUS_2 = "2";
+    /** 子订单状态 3-已发货 */
+    public static final String ORDERINFO_STATUS_3 = "3";
+    /** 子订单状态 4-确认收货 */
+    public static final String ORDERINFO_STATUS_4 = "4";
+
+    /** 子订单状态 5-退款 */
+    public static final String ORDERINFO_STATUS_5 = "5";
+
     /** 订单删除状态 0-订单是否删除 0 未删 */
     public static final String ORDER_IS_DEL_0 = "0";
 
@@ -2639,5 +2651,11 @@ public interface Constants {
 
     /** 严选售后申请单状态：11:待客服确认 **/
     public static final Integer YX_AFS_STATUS_11 = 11;
+
+    /** 退款类型 01-售后退款**/
+    public static final String REFUND_TYPE_01 = "01";
+
+    /**退款类型 02-下单失败退款**/
+    public static final String REFUND_TYPE_02 = "02";
 
 }
