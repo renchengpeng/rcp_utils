@@ -2581,8 +2581,11 @@ public interface Constants {
     /** 默认的渠道编码 0 **/
     public static final String DEFAULT_CHANNEL_CODE = "0";
 
-    /** 默认的渠道编码 00001 **/
+    /** 默认的渠道编码 00001 商城**/
     public static final String MALL_CHANNEL_CODE = "00001";
+
+    /** 默认的渠道编码 00002 蜂惠 **/
+    public static final String FH_CHANNEL_CODE = "00002";
 
     /***********************************渠道编码结束***************************************/
 
@@ -2669,5 +2672,17 @@ public interface Constants {
 
     /**退款类型 02-下单失败退款**/
     public static final String REFUND_TYPE_02 = "02";
+
+    /**蜂惠banner位置id 011**/
+    public static final String FH_LOCATION_ID = "011";
+
+    /** 登录账号开启状态 1：开启**/
+    public static final String LOGIN_STATUS_OPEN = "1";
+
+    /** 登录账号开启状态 0：关闭**/
+    public static final String LOGIN_STATUS_CLOSE = "0";
+
+    /** 蜂惠 TOKEN前缀 **/
+    public static final String FH_ENTERPRISE = "FH_ENTERPRISE_";
 
 }

@@ -405,4 +405,16 @@ public interface ParamKeys {
 
     /*SSL订单编号*/
     public static final String SSL_ORDER_SEQ = "SSL_ORDER_SEQ";
+
+    /* 蜂惠后台用户主键 */
+    public static final String FH_USERS_SEQ_NO = "FhUsersService";
+
+    /* 蜂惠后台权限主键 */
+    public static final String FH_PRIVILEGE_SEQ_NO = "FhPrivilegeService";
+
+    /* 蜂惠后台角色主键 */
+    public static final String FH_ROLE_SEQ_NO = "FhPrivilegeService";
+
+    /* 蜂惠后台部门主键 */
+    public static final String FH_DEPARTMENT_SEQ_NO = "DepartmentService";
 }
