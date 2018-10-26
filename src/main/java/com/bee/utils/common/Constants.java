@@ -2358,7 +2358,11 @@ public interface Constants {
     /**蜂惠banner开启状态*/
     public static final String FH_BANNER_OFF_STATUS = "0";//关闭
     public static final String FH_BANNER_ON_STATUS = "1";//打开
-    
+
+    /**banner开启状态*/
+    public static final String BANNER_OFF_STATUS = "00";//关闭
+    public static final String BANNER_ON_STATUS = "01";//打开
+
     /**产品是否绑定了属性0:绑定了 1:未绑定*/
     public static final String IS_BIND_ATTR_0="0";
     public static final String IS_BIND_ATTR_1="1";
