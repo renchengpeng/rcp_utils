@@ -2,7 +2,7 @@
 package com.bee.utils.common;
 
 /**
- * 企业代付公用部分
+ *  企业代付公用部分
  * 
  * @author wangjiucheng
  */
@@ -34,4 +34,8 @@ public interface PaCommons {
     /**是否超额 1 否 **/
     public static final String IS_OVERFULFIL_1 = "1";
     
+    /** 开票状态 1--待开票 **/
+    public static final String OPEN_INVOICE_STATUS_1 = "1";
+    /** 开票状态 2--已开票 **/
+    public static final String OPEN_INVOICE_STATUS_2 = "2";
 }
