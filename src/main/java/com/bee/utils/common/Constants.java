@@ -2685,4 +2685,10 @@ public interface Constants {
     /** 蜂惠 TOKEN前缀 **/
     public static final String FH_ENTERPRISE = "FH_ENTERPRISE_";
 
+    /** 登录账户类型：0-主账号 **/
+    public static final String VIP_LOGIN_PRIMARY_ACCOUNT = "0";
+    
+    /** 登录账户类型：1-子账号 **/
+    public static final String VIP_LOGIN_SUB_ACCOUNT = "1";
+    
 }
