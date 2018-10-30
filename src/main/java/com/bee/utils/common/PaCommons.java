@@ -25,4 +25,13 @@ public interface PaCommons {
     public static final String OPPERATOR_STATUS_0="0";
     /**操作员账号状态 关闭 **/
     public static final String OPPERATOR_STATUS_1="1";
+    /**审核类型 0 人工 **/
+    public static final String APPROVAL_TYPE_0 = "0";
+    /**审核类型 1 自动 **/
+    public static final String APPROVAL_TYPE_1 = "1";
+    /**是否超额 0 是 **/
+    public static final String IS_OVERFULFIL_0 = "0";
+    /**是否超额 1 否 **/
+    public static final String IS_OVERFULFIL_1 = "1";
+    
 }
