@@ -279,8 +279,6 @@ public interface ParamKeys {
     //关键字
     public static final String KEYWORD_INVOICE_ITEM_SEQ_NO="KeyWordInvoiceItemService";
     
-    public static final String VIP_PRD_STATUS_SEQ_NO="VipPrdStatusService";
-    
     public static final String VIP_MODEL_RELATION_SEQ_NO="VipModelRelationService";
     
     //订单结算
