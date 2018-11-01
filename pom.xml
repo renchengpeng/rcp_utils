@@ -16,7 +16,7 @@
     
     
 	  <groupId>com.bee.utils</groupId>
-	  <artifactId>xfq-bee-utils</artifactId>
+	  <artifactId>bee-utils</artifactId>
 	  <version>${commons_version}</version>
 	  <packaging>jar</packaging>
 	  <name>bee-utils</name>
