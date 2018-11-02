@@ -10,7 +10,10 @@ public interface PaCommons {
 
     /*** 请求后台路由前缀 */
     public final static String PA_ADMIN = "daifu";
-
+    /*** 企业端 路由前缀 */
+    public final static String PA_VDF="vdaifu";
+    /*** 个人端 路由前缀 */
+    public final static String PA_PDF="pdaifu";
     /****************************************************************** 方法执行状态 开始 ******************************************************/
     /** 方法执行成功 **/
     public static final String PA_RESULT_SUCCESS = "1";
