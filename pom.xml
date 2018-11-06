@@ -13,7 +13,7 @@
         <commons_version>0.0.1-SNAPSHOT</commons_version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+
     
 	  <groupId>com.bee.utils</groupId>
 	  <artifactId>bee-utils</artifactId>
