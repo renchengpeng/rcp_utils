@@ -41,7 +41,7 @@ public class CSRCreater {
                 signature.initSign(privateKey);
 
 
-                String DN = "CN=cn" + ",C=CN"+",O="+"河北" +",L= "+"石家庄" +"S="+domain+"email"+email;
+                String DN = "CN=cn" + ",C=CN"+",O="+state +",L= "+ location +"S="+domain+"email"+email;
 
                 sun.security.x509.X500Name x500Name = new sun.security.x509.X500Name(DN);
                 pkcs10.encodeAndSign(x500Name, signature);
