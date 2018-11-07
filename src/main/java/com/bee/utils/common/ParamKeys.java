@@ -419,4 +419,14 @@ public interface ParamKeys {
 
     /* 蜂惠后台部门主键 */
     public static final String FH_DEPARTMENT_SEQ_NO = "DepartmentService";
+    
+    public static final String FYW_DEPARTMENT_SEQ_NO="FywDepartmentService";
+    
+    public static final String FYW_RESOURCE_SEQ_NO = "FywMenuService";
+    
+    public static final String FYW_USERS_SEQ_NO = "FywUsersService";
+    
+    public static final String FYW_PRIVILEGE_SEQ_NO = "FywPrivilegeService";
+    
+    public static final String FYW_ROLE_SEQ_NO = "FywRoleService";
 }

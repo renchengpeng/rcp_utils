@@ -2698,4 +2698,12 @@ public interface Constants {
     /** 登录账户类型：1-子账号 **/
     public static final String VIP_LOGIN_SUB_ACCOUNT = "1";
     
+    /** 支付宝个人 TOKEN前缀 **/
+    public static final String FYW_PERSONAL = "FYW_PERSONAL_";
+    public static final String FYW_ENTERPRISE = "FYW_ENTERPRISE_";
+    
+    /** 支付宝 企业账户状态 0正常 1：未用 **/
+    public static final String FYW_ACCOUNT_0 = "0";
+    public static final String FYW_ACCOUNT_1 = "1";
+    
 }
