@@ -46,8 +46,8 @@ public class CSRCreater {
                 srb.append("o="+organizationName).append(",");
                 srb.append("l="+location).append(",");
                 srb.append("s="+state).append(",");
-                srb.append("ou="+department);
-                //srb.append(",M="+email);
+                srb.append("ou="+department).append(",");
+                srb.append("EMAIL="+email);
 
                 sun.security.x509.X500Name x500Name = new sun.security.x509.X500Name(srb.toString());
                 pkcs10.encodeAndSign(x500Name, signature);
