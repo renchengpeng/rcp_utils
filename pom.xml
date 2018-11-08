@@ -22,11 +22,6 @@
 	  <name>bee-utils</name>
 
   <dependencies>
-		  <dependency>
-			  <groupId>org.bouncycastle</groupId>
-			  <artifactId>bcprov-ext-jdk15on</artifactId>
-			  <version>1.59</version>
-		  </dependency>
   	<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
