@@ -2722,6 +2722,4 @@ public interface Constants {
 
     /** 蜂点主平台标识 **/
     public static final String FD_MODULE_FLAG = "000000";
-
->>>>>>> branch 'dev' of http://git.fengxiaomi.com/fengdian/bee-utils.git
 }
