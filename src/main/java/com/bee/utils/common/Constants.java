@@ -1847,8 +1847,10 @@ public interface Constants {
     public static final String MOYAO_TRANSCODE_10021 = "10021";
     /** 10019-魔钥指令-柜子升级成功后，返回版本号信息**/
     public static final String MOYAO_TRANSCODE_10019 = "10019";
-    /** 10013-魔钥指令-发布视频 */
+    /** 10020-魔钥指令-发布视频 */
     public static final String MOYAO_TRANSCODE_10020 = "10020";
+    /** 10022-wifi信息  客户端向moyao推送连接wifi成功消息*/
+    public static final String MOYAO_TRANSCODE_10022 = "10022";
     /** T0001-魔钥交易类型-指令开门 */
     public static final String MOYAO_TRANTYPE_T0001 = "T0001";
     /** T0002-魔钥交易类型-盘点标签 */
