@@ -13,7 +13,7 @@
         <commons_version>0.0.1-SNAPSHOT</commons_version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+
     
 	  <groupId>com.bee.utils</groupId>
 	  <artifactId>bee-utils</artifactId>
@@ -22,6 +22,11 @@
 	  <name>bee-utils</name>
 
   <dependencies>
+		  <dependency>
+			  <groupId>org.bouncycastle</groupId>
+			  <artifactId>bcprov-ext-jdk15on</artifactId>
+			  <version>1.59</version>
+		  </dependency>
   	<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
@@ -127,4 +132,18 @@
 		    <version>3.4</version>
 		</dependency>
   </dependencies>
+	<build>
+		<plugins>
+			<plugin>
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-compiler-plugin</artifactId>
+			  <version>3.2</version>
+			  <configuration>
+				<fork>true</fork>
+				<compilerArgument>-XDignore.symbol.file</compilerArgument>
+			  </configuration>
+			</plugin>
+		</plugins>
+	</build>
+  
 </project>

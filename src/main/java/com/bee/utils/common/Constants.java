@@ -1675,6 +1675,9 @@ public interface Constants {
     /** 2-柜门关闭 */
     public static final String MOYAO_CUPBOARD_OPENSTATUS_2 = "2";
 
+    /** 3-柜门开待处理 */
+    public static final String MOYAO_CUPBOARD_OPENSTATUS_3 = "3";
+
     /** 0-待入库-魔钥标签入库状态使用 */
     public static final String MOYAO_STORE_STATUS_0 = "0";
     
@@ -2694,6 +2697,15 @@ public interface Constants {
     
     /** 登录账户类型：1-子账号 **/
     public static final String VIP_LOGIN_SUB_ACCOUNT = "1";
+
+    /** 支付宝个人 TOKEN前缀 **/
+    public static final String FYW_PERSONAL = "FYW_PERSONAL_";
+    public static final String FYW_ENTERPRISE = "FYW_ENTERPRISE_";
+
+    /** 支付宝 企业账户状态 0正常 1：未用 **/
+    public static final String FYW_ACCOUNT_0 = "0";
+    public static final String FYW_ACCOUNT_1 = "1";
+
 
     /** 模块是否ODM 0否 **/
     public static final String ODM_MODULE_STATUS_0 = "0";
