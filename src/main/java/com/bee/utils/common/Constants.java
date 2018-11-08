@@ -2694,5 +2694,14 @@ public interface Constants {
     
     /** 登录账户类型：1-子账号 **/
     public static final String VIP_LOGIN_SUB_ACCOUNT = "1";
-    
+
+    /** 模块是否ODM 0否 **/
+    public static final String ODM_MODULE_STATUS_0 = "0";
+
+    /** 模块是否ODM 1是 **/
+    public static final String ODM_MODULE_STATUS_1 = "1";
+
+    /** 蜂点主平台标识 **/
+    public static final String FD_MODULE_FLAG = "000000";
+
 }
