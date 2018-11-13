@@ -6,6 +6,12 @@ package com.bee.utils.common;
  */
 public interface Constants {
 
+    /**risk swtich "1" : on ,  "0" : off **/
+
+    public static final String SWTICH_ON = "1";
+    public static final String SWTICH_OFF = "0";
+
+
     public static final String ERROR_MESSAGE = "errorMessage";
     //ODM 登录账号开启状态 0：关闭 1：开启
     public static final String ODMLOGIN_STATUS_OPEN = "1";
