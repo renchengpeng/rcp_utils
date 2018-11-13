@@ -2718,7 +2718,10 @@ public interface Constants {
     /** 支付宝 企业账户状态 0正常 1：未用 **/
     public static final String FYW_ACCOUNT_0 = "0";
     public static final String FYW_ACCOUNT_1 = "1";
-
+    /** 子账号权限标识：0-普通子账号  1-分发子账号，2-采购子账号  **/
+    public static final String FYW_LOGIN_POWER_0 = "0";
+    public static final String FYW_LOGIN_POWER_1 = "1";
+    public static final String FYW_LOGIN_POWER_2 = "2";
 
     /** 模块是否ODM 0否 **/
     public static final String ODM_MODULE_STATUS_0 = "0";
