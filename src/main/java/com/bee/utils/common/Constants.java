@@ -2728,7 +2728,4 @@ public interface Constants {
 
     /** 模块是否ODM 1是 **/
     public static final String ODM_MODULE_STATUS_1 = "1";
-
-    /** 蜂点主平台标识 **/
-    public static final String FD_MODULE_FLAG = "000000";
 }
