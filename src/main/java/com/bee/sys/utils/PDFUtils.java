@@ -1,27 +1,17 @@
 package com.bee.sys.utils;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.text.SimpleDateFormat;
-import java.util.Base64;
-import java.util.Date;
-
 import com.bee.framework.i.bp.core.CoreException;
-import com.itextpdf.text.BaseColor;
-import com.itextpdf.text.Chunk;
-import com.itextpdf.text.Document;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Font;
-import com.itextpdf.text.Image;
-import com.itextpdf.text.PageSize;
-import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.tool.xml.XMLWorkerFontProvider;
 import com.itextpdf.tool.xml.XMLWorkerHelper;
+
+import java.io.*;
+import java.nio.charset.Charset;
+import java.text.SimpleDateFormat;
+import java.util.Base64;
+import java.util.Date;
 
 public class PDFUtils {
 
@@ -38,12 +28,11 @@ public class PDFUtils {
         }
         return fontChinese;
     }
-    
+
     /**
-     * 
+     *
      *********************************************************.<br>
      * @method createPDF <br>
-     * @param pdf创建 <br>
      * @return void <br>
      * @author fengjianjun <br>
      * @created 2016年10月19日 下午2:01:37 <br>
@@ -102,20 +91,146 @@ public class PDFUtils {
             throw new CoreException("领签失败",e);
         }
     }
+
+    /**
+     * @description: 徽商电子盖章
+     * @auther: feng
+     * @date: 2018/11/13 13:56
+     * @param: [baseImgMy, baseImgOther, otherCompanyName, agreement]
+     * @return: byte[]
+     * @throws:
+     **/
+    public static byte[] pdfForhuishang(String baseImgMy,String agreement) throws CoreException{
+        XMLWorkerHelper worker = null;
+        PdfWriter pdfWriter = null;
+        String date = new SimpleDateFormat("yyyy年MM月dd日").format(new Date());//签章日期
+        try {
+            Document document = new Document();
+            document.setPageSize(PageSize.A4);
+            ByteArrayOutputStream byteArray = new ByteArrayOutputStream();
+            pdfWriter = PdfWriter.getInstance(document,byteArray);
+            document.open();
+            worker = XMLWorkerHelper.getInstance();
+            worker.parseXHtml(pdfWriter, document, new ByteArrayInputStream(agreement.getBytes()),Charset.forName("UTF-8"), new AsianFontProvider());// (pdfWriter,
+            byte[] buffer = Base64.getDecoder().decode(baseImgMy.getBytes());
+            Image image = Image.getInstance(buffer);
+
+            image.setAlignment(Image.LEFT | Image.UNDERLYING);
+            image.scaleAbsolute(100, 100);
+            Chunk cks = new Chunk(image, 430, -80);
+            Paragraph paragraph = new Paragraph("",setChineseFont());
+            paragraph.setKeepTogether(true);
+            paragraph.add(cks);
+
+            String name = "北京云网四方信息技术有限公司";
+            Paragraph p1 = new Paragraph(date,new Font(setChineseFont()));
+            p1.setAlignment(Element.ALIGN_RIGHT);
+            Paragraph p2 = new Paragraph(name,new Font(setChineseFont()));
+            p2.setAlignment(Element.ALIGN_RIGHT);
+
+            Paragraph p3 = new Paragraph("",new Font(setChineseFont()));
+            p2.setAlignment(Element.ALIGN_RIGHT);
+
+            paragraph.add(p1);
+            paragraph.add("\n");
+            paragraph.add(p2);
+            document.add(paragraph);
+            document.close();
+            FileOutputStream ff = new FileOutputStream(new File("D:\\mypdf.pdf"));
+            ff.write(byteArray.toByteArray());
+            ff.flush();
+            ff.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (DocumentException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    /**
+     * @description: 图片转pdf
+     * @auther: feng
+     * @date: 2018/11/14 13:44
+     * @param: [baseImgMy]
+     * @return: byte[]
+     * @throws: 
+     **/
+    public static byte[] imgtopdf(String baseImgMy) throws CoreException{
+        XMLWorkerHelper worker = null;
+        PdfWriter pdfWriter = null;
+        try {
+            Document document = new Document();
+            document.setPageSize(PageSize.A5);
+            ByteArrayOutputStream byteArray = new ByteArrayOutputStream();
+            pdfWriter = PdfWriter.getInstance(document,byteArray);
+            document.open();
+            byte[] buffer = Base64.getDecoder().decode(baseImgMy.getBytes());
+            Image image = Image.getInstance(buffer);
+
+            image.setAlignment(Image.LEFT | Image.UNDERLYING);
+            image.scaleAbsolute(300, 300);
+            Chunk cks = new Chunk(image, 100, -200);
+            Paragraph paragraph = new Paragraph("",setChineseFont());
+            paragraph.setKeepTogether(true);
+            paragraph.add(cks);
+            document.add(paragraph);
+            document.close();
+            FileOutputStream ff = new FileOutputStream(new File("D:\\myimg.pdf"));
+            ff.write(byteArray.toByteArray());
+            ff.flush();
+            ff.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (DocumentException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    public static void main(String[] args) {
+        File file = null;
+        try {
+            file = new File("C:\\Users\\feng\\Desktop\\jianjun\\jianjun\\index.html");
+            FileInputStream fi = new FileInputStream(file);
+            byte b[] = new byte[fi.available()];
+            fi.read(b);
+            fi.close();
+            String str = new String(b,"utf-8");
+            File image = new File("D:\\11.jpg");
+            FileInputStream fis = new FileInputStream(image);
+            byte[] imgbyte = new byte[fis.available()];
+            int len = 0;
+            while((len=fis.read(imgbyte))!= -1){
+                fis.read(imgbyte);
+            }
+
+            fis.close();
+            String baseimg = Base64.getEncoder().encodeToString(imgbyte);
+            //pdfForhuishang(baseimg,str);
+            imgtopdf(baseimg);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
 }
 class AsianFontProvider extends XMLWorkerFontProvider {
-    public Font getFont(final String fontname, final String encoding,  
-            final boolean embedded, final float size, final int style,  
-            final BaseColor color) {  
-        BaseFont bf = null;  
-        try {  
-            bf = BaseFont.createFont("STSong-Light", "UniGB-UCS2-H", BaseFont.NOT_EMBEDDED);  
-        } catch (Exception e) {  
-            e.printStackTrace();  
-        }  
-        Font font = new Font(bf, size, style, color);  
-        font.setColor(color);  
-        return font;  
-    }  
+    public Font getFont(final String fontname, final String encoding,
+            final boolean embedded, final float size, final int style,
+            final BaseColor color) {
+        BaseFont bf = null;
+        try {
+            bf = BaseFont.createFont("STSong-Light", "UniGB-UCS2-H", BaseFont.NOT_EMBEDDED);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Font font = new Font(bf, size, style, color);
+        font.setColor(color);
+        return font;
+    }
 }
-	
