@@ -429,4 +429,6 @@ public interface ParamKeys {
     public static final String FYW_PRIVILEGE_SEQ_NO = "FywPrivilegeService";
     
     public static final String FYW_ROLE_SEQ_NO = "FywRoleService";
+
+    public static final String SSL_ORDER_SEQ_NO = "SSLOrderService";
 }

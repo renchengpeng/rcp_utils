@@ -14,6 +14,8 @@ public interface PaCommons {
     public final static String PA_VDF="vdaifu";
     /*** 个人端 路由前缀 */
     public final static String PA_PDF="pdaifu";
+    /*** 企业端 redis*/
+    public static final String VPA_ENTERPRISE = "VPA_ENTERPRISE_";
     /****************************************************************** 方法执行状态 开始 ******************************************************/
     /** 方法执行成功 **/
     public static final String PA_RESULT_SUCCESS = "1";
@@ -41,4 +43,9 @@ public interface PaCommons {
     public static final String OPEN_INVOICE_STATUS_1 = "1";
     /** 开票状态 2--已开票 **/
     public static final String OPEN_INVOICE_STATUS_2 = "2";
+    
+    /** 地址状态  0:默认**/
+    public static final String IS_DEFAULT_0="0";
+    /** 地址状态  1:不是默认**/
+    public static final String IS_DEFAULT_1="1";
 }
