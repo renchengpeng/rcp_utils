@@ -2732,6 +2732,9 @@ public interface Constants {
     public static final String FYW_LOGIN_POWER_0 = "0";
     public static final String FYW_LOGIN_POWER_1 = "1";
     public static final String FYW_LOGIN_POWER_2 = "2";
+    
+    /**支付宝banner位置id 234**/
+    public static final String FYW_LOCATION_ID = "234";
 
     /** 模块是否ODM 0否 **/
     public static final String ODM_MODULE_STATUS_0 = "0";
