@@ -458,6 +458,8 @@ public interface Constants {
     public final static String CHANNEL_17="17";
     /**快寄卖 **/
     public final static String CHANNEL_18="18";
+    /**消费券的员工商城 **/
+    public final static String CHANNEL_19="19";
     /**新商城（替换原有商城内划算/蜂贝）**/
     public final static String CHANNEL_20="20";
     /**消费券的二手商城 **/
