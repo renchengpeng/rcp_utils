@@ -10,6 +10,8 @@ public interface Constants {
 
     public static final String SWTICH_ON = "1";
     public static final String SWTICH_OFF = "0";
+    /**费鱼的accesstoken的key**/
+    public static final String FY_ENTER_ACCESSTOKEN = "FY_ENTER_ACCESSTOKEN";
 
 
     public static final String ERROR_MESSAGE = "errorMessage";
