@@ -10,6 +10,8 @@ public interface Constants {
 
     public static final String SWTICH_ON = "1";
     public static final String SWTICH_OFF = "0";
+    /**费鱼的accesstoken的key**/
+    public static final String FY_ENTER_ACCESSTOKEN = "FY_ENTER_ACCESSTOKEN";
 
 
     public static final String ERROR_MESSAGE = "errorMessage";
@@ -456,10 +458,12 @@ public interface Constants {
     public final static String CHANNEL_17="17";
     /**快寄卖 **/
     public final static String CHANNEL_18="18";
+    /**消费券的员工商城 **/
+    public final static String CHANNEL_19="19";
     /**新商城（替换原有商城内划算/蜂贝）**/
     public final static String CHANNEL_20="20";
-
-    
+    /**消费券的二手商城 **/
+    public final static String CHANNEL_21="21";
     
 
     public final static String CHANNEL = "channel"; // by cws channel-web

@@ -382,8 +382,6 @@ public interface ParamKeys {
     
     public static final String FH_PRODUCT_NO="FhProductService";
     
-    public static final String RECORD_SEQ_NO="FdChangeRecordService";
-    
     public static final String PRD_SKU_NO="productSkuNoService";
     //发票记录编号
     public static final String INVOICE_INF_HIS_SEQ_NO= "InvoiceInfHisService";
