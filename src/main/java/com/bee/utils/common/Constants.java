@@ -2741,4 +2741,14 @@ public interface Constants {
 
     /** 模块是否ODM 1是 **/
     public static final String ODM_MODULE_STATUS_1 = "1";
+    
+    /** 模块没有移动端**/
+    public static final String FD_APP_FLAG_NO = "0";
+    /** 模块有移动端  **/
+    public static final String FD_APP_FLAG_YES = "1";
+    
+    /** 模块域名统一  **/
+    public static final String FD_URLSAME_FLAG_YES = "0";
+    /** 模块域名不统一  **/
+    public static final String FD_URLSAME_FLAG_NO = "1";
 }
