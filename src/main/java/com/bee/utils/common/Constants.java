@@ -10,6 +10,8 @@ public interface Constants {
 
     public static final String SWTICH_ON = "1";
     public static final String SWTICH_OFF = "0";
+    /**费鱼的accesstoken的key**/
+    public static final String FY_ENTER_ACCESSTOKEN = "FY_ENTER_ACCESSTOKEN";
 
 
     public static final String ERROR_MESSAGE = "errorMessage";
@@ -456,10 +458,12 @@ public interface Constants {
     public final static String CHANNEL_17="17";
     /**快寄卖 **/
     public final static String CHANNEL_18="18";
+    /**消费券的员工商城 **/
+    public final static String CHANNEL_19="19";
     /**新商城（替换原有商城内划算/蜂贝）**/
     public final static String CHANNEL_20="20";
-
-    
+    /**消费券的二手商城 **/
+    public final static String CHANNEL_21="21";
     
 
     public final static String CHANNEL = "channel"; // by cws channel-web
@@ -1218,17 +1222,20 @@ public interface Constants {
     /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉*/
     public static final String RESALE_DZBXK_DEAL_WAY_0 = "0";
 
-    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉*/
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉,5招商银行*/
     public static final String RESALE_DZBXK_DEAL_WAY_1 = "1";
 
-    /** 电子报销款 - 1，人工处理，0，随行付支付2，融宝支付3，爱农，4拉卡拉 */
+    /** 电子报销款 - 1，人工处理，0，随行付支付2，融宝支付3，爱农，4拉卡拉,5招商银行 */
     public static final String RESALE_DZBXK_DEAL_WAY_2 = "2";
 
-    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉*/
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉,5招商银行*/
     public static final String RESALE_DZBXK_DEAL_WAY_3 = "3";
     
-    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农，4拉卡拉 */
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农，4拉卡拉 ,5招商银行*/
     public static final String RESALE_DZBXK_DEAL_WAY_4 = "4";
+    
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农，4拉卡拉 ,5招商银行 */
+    public static final String RESALE_DZBXK_DEAL_WAY_5 = "5";
 
     /** 转让电子报销款 - 转让中 */
     public static final String RESALE_DZBXK_0 = "0";
@@ -2712,6 +2719,11 @@ public interface Constants {
     public static final String REGISTER_FLAG_FD = "0";
     /** 企业注册位置 1模块单独注册 **/
     public static final String REGISTER_FLAG_MODULE = "1";
+    
+    /** 企业登录位置 0蜂点登录到模块 **/
+    public static final String LOGIN_FLAG_FD = "0";
+    /** 企业登录位置 1模块单独登录 **/
+    public static final String LOGIN_FLAG_MODULE = "1";
 
     /** 支付宝个人 TOKEN前缀 **/
     public static final String FYW_PERSONAL = "FYW_PERSONAL_";
@@ -2724,10 +2736,23 @@ public interface Constants {
     public static final String FYW_LOGIN_POWER_0 = "0";
     public static final String FYW_LOGIN_POWER_1 = "1";
     public static final String FYW_LOGIN_POWER_2 = "2";
+    
+    /**支付宝banner位置id 234**/
+    public static final String FYW_LOCATION_ID = "234";
 
     /** 模块是否ODM 0否 **/
     public static final String ODM_MODULE_STATUS_0 = "0";
 
     /** 模块是否ODM 1是 **/
     public static final String ODM_MODULE_STATUS_1 = "1";
+    
+    /** 模块没有移动端**/
+    public static final String FD_APP_FLAG_NO = "0";
+    /** 模块有移动端  **/
+    public static final String FD_APP_FLAG_YES = "1";
+    
+    /** 模块域名统一  **/
+    public static final String FD_URLSAME_FLAG_YES = "0";
+    /** 模块域名不统一  **/
+    public static final String FD_URLSAME_FLAG_NO = "1";
 }
