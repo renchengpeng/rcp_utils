@@ -1,19 +1,30 @@
 package com.bee.sys.utils;
 
+import com.alibaba.dubbo.common.logger.Logger;
+import com.alibaba.dubbo.common.logger.LoggerFactory;
 import com.bee.framework.i.bp.core.CoreException;
+import com.bee.utils.common.PDFResultCommons;
+import com.itextpdf.awt.geom.Rectangle2D;
 import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.BaseFont;
+import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.PdfWriter;
+import com.itextpdf.text.pdf.parser.ImageRenderInfo;
+import com.itextpdf.text.pdf.parser.PdfReaderContentParser;
+import com.itextpdf.text.pdf.parser.RenderListener;
+import com.itextpdf.text.pdf.parser.TextRenderInfo;
 import com.itextpdf.tool.xml.XMLWorkerFontProvider;
 import com.itextpdf.tool.xml.XMLWorkerHelper;
 
 import java.io.*;
+import java.math.BigDecimal;
 import java.nio.charset.Charset;
 import java.text.SimpleDateFormat;
-import java.util.Base64;
-import java.util.Date;
+import java.util.*;
+import java.util.List;
 
 public class PDFUtils {
+    private static final Logger log = LoggerFactory.getLogger(PDFUtils.class);
 
     public static Font setChineseFont() {
         BaseFont bf = null;
@@ -49,7 +60,7 @@ public class PDFUtils {
             pdfWriter = PdfWriter.getInstance(document,byteArray);
             document.open();
             worker = XMLWorkerHelper.getInstance();
-            worker.parseXHtml(pdfWriter, document, new ByteArrayInputStream(agreement.getBytes()),Charset.forName("UTF-8"), new AsianFontProvider());// (pdfWriter,
+            worker.parseXHtml(pdfWriter, document, new ByteArrayInputStream(agreement.getBytes()),Charset.forName("UTF-8"), new AsianFontProvider());// (pdfWriter
             byte[] buffer = Base64.getDecoder().decode(baseImgMy.getBytes());
             if(baseImgOther == null){
                 throw new CoreException("领签失败，请检查授权书图片是否含有公章");
@@ -190,32 +201,138 @@ public class PDFUtils {
         }
         return null;
     }
-    public static void main(String[] args) {
-        File file = null;
-        try {
-            file = new File("C:\\Users\\feng\\Desktop\\jianjun\\jianjun\\index.html");
-            FileInputStream fi = new FileInputStream(file);
-            byte b[] = new byte[fi.available()];
-            fi.read(b);
-            fi.close();
-            String str = new String(b,"utf-8");
-            File image = new File("D:\\11.jpg");
-            FileInputStream fis = new FileInputStream(image);
-            byte[] imgbyte = new byte[fis.available()];
-            int len = 0;
-            while((len=fis.read(imgbyte))!= -1){
-                fis.read(imgbyte);
-            }
+    /**
+     * @description: createPDF1 为tw签署生成pfd格式的合同 并返回两个合同章的坐标 pdf样式需要参考 test.html 否则章的位置不好计算
+     * @auther: feng
+     * @date: 2018/11/22 13:23
+     * @param: [agreement, firstCompanyName, secCompanyName]
+     * @return: com.bee.utils.common.PDFResultCommons
+     * @throws: CoreException
+     **/
+    public static PDFResultCommons createPDF1(byte [] agreement,List<String> companyNameList) throws CoreException{
 
-            fis.close();
-            String baseimg = Base64.getEncoder().encodeToString(imgbyte);
-            //pdfForhuishang(baseimg,str);
-            imgtopdf(baseimg);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
+        PDFResultCommons pdfResultCommons = new PDFResultCommons();
+        XMLWorkerHelper worker = null;
+        PdfWriter pdfWriter = null;
+        List<float[]> list = new ArrayList<float[]>(2);
+        try {
+            if (agreement == null || agreement.length == 0) {
+                throw new CoreException("合同内容");
+            }
+            if (companyNameList.size() == 0) {
+                throw new CoreException("签署的公司名称，最少是1个");
+            }
+            Document document = new Document();
+            document.setPageSize(PageSize.A4);
+            ByteArrayOutputStream byteArray = new ByteArrayOutputStream();
+            pdfWriter = PdfWriter.getInstance(document, byteArray);
+            document.open();
+            worker = XMLWorkerHelper.getInstance();
+            worker.parseXHtml(pdfWriter, document, new ByteArrayInputStream(agreement), Charset.forName("UTF-8"), new AsianFontProvider());// (pdfWriter
+            float y = document.getPageSize().getHeight();
+            float x = document.getPageSize().getWidth();
+            document.close();
+            byte pdfbyte[] = byteArray.toByteArray();
+            byteArray.flush();
+            byteArray.close();
+
+            //读取pdf
+            PdfReader pdfReader = new PdfReader(pdfbyte);
+            //获取pdf总页数
+            int totalPageNum = pdfReader.getNumberOfPages();
+
+            for (int j = 1; j <= totalPageNum; j++) {
+
+                PdfReaderContentParser pdfReaderContentParser = new PdfReaderContentParser(pdfReader);
+                int finalJ = j;
+                pdfReaderContentParser.processContent(j, new RenderListener() {
+                    @Override
+                    public void renderText(TextRenderInfo textRenderInfo) {
+
+                        String text = textRenderInfo.getText();
+                        for (int i = 0; i < companyNameList.size(); i++) {
+
+                            if (null != text && text.contains(companyNameList.get(i))) {
+                                System.out.println(text);
+                                Rectangle2D.Float boundingRectange = textRenderInfo.getBaseline().getBoundingRectange();
+                                float[] resu = new float[3];
+                                resu[0] = boundingRectange.x;
+                                resu[1] = boundingRectange.y;
+                                resu[2] = finalJ;
+                                list.add(resu);
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void renderImage(ImageRenderInfo arg0) {
+                        // TODO Auto-generated method stub
+
+                    }
+
+                    @Override
+                    public void endTextBlock() {
+                        // TODO Auto-generated method stub
+
+                    }
+
+                    @Override
+                    public void beginTextBlock() {
+                        // TODO Auto-generated method stub
+
+                    }
+                });
         }
+
+
+            //标准章的尺寸  40mm * 40 mm   122是tw页面章的图片大小，这里计算的坐标有细微差别，所以为了计算精准一些，这里使用61来计算偏移量
+
+            if(list.size() == 0){
+                throw new CoreException("没有章");
+            }
+            for(float [] resu:list){
+                //计算百分比
+                BigDecimal fx = DecimalUtil.divide(new BigDecimal(resu[0]-20), new BigDecimal(x), 2);
+                BigDecimal fy = DecimalUtil.divide(new BigDecimal(y-resu[1]-61), new BigDecimal(y), 2);
+                //签署人的盖章位置
+                resu[0] = fx.floatValue();
+                resu[1] = fy.floatValue();
+                log.info("===============fx:"+resu[0] +"====================fy:"+resu[1] +"========================page:"+resu[2]);
+                System.out.println("===============fx:"+resu[0] +"====================fy:"+resu[1] +"========================page:"+resu[2]);
+            }
+            pdfReader.close();
+
+            pdfResultCommons.setPostList(list);
+            pdfResultCommons.setPdfbytes(pdfbyte);
+
+            return pdfResultCommons;
+        } catch (CoreException e) {
+            log.error("生成pdf合同失败",e);
+            throw e;
+        }catch (Exception e) {
+            log.error("生成pdf合同失败",e);
+            throw new CoreException("生成pdf合同失败",e);
+        }
+    }
+
+    public static void main(String[] args) {
+//        File file = null;
+//        try {
+//            file = new File("C:\\Users\\feng\\Desktop\\jianjun\\test.html");
+//            FileInputStream fi = new FileInputStream(file);
+//            byte b[] = new byte[fi.available()];
+//            fi.read(b);
+//            fi.close();
+//            byte bb [] = createPDF1(new String(b));
+//            FileOutputStream fos = new FileOutputStream(new File("D:\\hg.pdf"));
+//            fos.write(bb);
+//            fos.flush();
+//            fos.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
 
     }
 }
