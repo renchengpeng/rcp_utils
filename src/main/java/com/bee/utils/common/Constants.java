@@ -2737,6 +2737,10 @@ public interface Constants {
     public static final String FYW_LOGIN_POWER_1 = "1";
     public static final String FYW_LOGIN_POWER_2 = "2";
     
+    /** 企业是否早支付宝存在  0 未存在,  1 已存在 **/
+    public static final String FYW_EXIST_TYPE_0 = "0";
+    public static final String FYW_EXIST_TYPE_1 = "1";
+    
     /**支付宝banner位置id 234**/
     public static final String FYW_LOCATION_ID = "234";
 

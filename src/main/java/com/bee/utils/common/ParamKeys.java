@@ -186,7 +186,8 @@ public interface ParamKeys {
     public static final String MALL_ORDERS_NO="MallOrdersService";
     //商城 订单详情 编号
     public static final String MALL_ORDERINFO_NO="MallOrderInfoService";
-
+    //mall banner编号
+    public static final String MALL_BANNER_SEQ_NO= "MallBannerService";
     //预付商户限额
     public static final String LIMIT_SEQ="MerchantLimitAmtService";
     
