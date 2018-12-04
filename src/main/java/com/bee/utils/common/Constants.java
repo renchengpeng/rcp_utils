@@ -2715,13 +2715,11 @@ public interface Constants {
     /** 登录账户类型：1-子账号 **/
     public static final String VIP_LOGIN_SUB_ACCOUNT = "1";
 
-    /** 企业注册位置 0蜂点同步到模块 **/
+    /** 注册位置 0蜂点同步到模块 **/
     public static final String REGISTER_FLAG_FD = "0";
-    /** 企业注册位置 1模块单独注册 **/
+    /** 注册位置 1模块单独注册 **/
     public static final String REGISTER_FLAG_MODULE = "1";
     
-    /** 企业登录位置 0蜂点登录到模块 **/
-    public static final String LOGIN_FLAG_FD = "0";
     /** 企业登录位置 1模块单独登录 **/
     public static final String LOGIN_FLAG_MODULE = "1";
 
