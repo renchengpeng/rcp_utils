@@ -464,7 +464,8 @@ public interface Constants {
     public final static String CHANNEL_20="20";
     /**消费券的二手商城 **/
     public final static String CHANNEL_21="21";
-    
+    /**消费券跃程充值 **/
+    public final static String CHANNEL_22="22";
 
     public final static String CHANNEL = "channel"; // by cws channel-web
 
