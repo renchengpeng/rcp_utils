@@ -2759,4 +2759,7 @@ public interface Constants {
     public static final String FD_URLSAME_FLAG_YES = "0";
     /** 模块域名不统一  **/
     public static final String FD_URLSAME_FLAG_NO = "1";
+
+    /** 默认的地址编号 0 **/
+    public static final Integer DEFAULT_ADDRESS_ID = 0;
 }
