@@ -255,8 +255,6 @@ public interface ParamKeys {
     public static final String ORGANIZE_POSITION_SEQ_NO="OrganizePositionService";
     //Activity
     public static final String ACTIVITY_SEQ_NO="ActivityService";
-    //BindingModule
-    public static final String BINDING_SEQ_NO="BindingModuleService";
     //ActivityUser抽奖活动用户信息表主键
     public static final String ACTIVITY_USER_SEQ_NO="ActivityUserService";
     //Award
