@@ -31,21 +31,42 @@ public interface Constants {
     public static final String AGENT_PROPORTIONS_TO_FENGDIAN_EXCHANGE_NAME = "agent_proportions_to_fengdian_exchange";// 各平台向蜂点分成的交换机
     public static final String AGENT_PROPORTIONS_TO_FENGDIAN_ROUTING_KEY = "agent_proportions_to_fengdian_routingKey";// 各平台向蜂点分成的路由键
 
-    public static final String FEIYUFENGXIAO_RESALE_QUEUE_NAME = "feiyufengxiao_resale_queue";// 费鱼蜂销
+    public static final String FEIYUFENGXIAO_RESALE_QUEUE_NAME_ANPAY = "feiyufengxiao_resale_queue_anpay";// 费鱼蜂销 anpay
+
+    public static final String FEIYUFENGXIAO_RESALE_QUEUE_NAME_FINANCIAL = "feiyufengxiao_resale_queue_financial";// 费鱼蜂销 financial-web
 
     public static final String FEIYUFENGXIAO_RESALE_FAIL_QUEUE_NAME = "feiyufengxiao_resale_fail_queue";// 费鱼蜂销
-    
-    public static final String FPAY_RESALE_QUEUE_NAME = "fpay_resale_queue";//  蜂pay提现
-    
+
+    public static final String FPAY_RESALE_QUEUE_NAME_ANPAY = "fpay_resale_queue_anpay";//  蜂pay提现 anpay
+
+    public static final String FPAY_RESALE_QUEUE_NAME_FINANCIAL = "fpay_resale_queue_financial";//  蜂pay提现 financial-web
+
     public static final String FPAY_RESALE_FAIL_QUEUE_NAME = "fpay_resale_fail_queue";// 蜂pay提现失败
-    
-    public static final String MANGMAO_WITHDRAW_MONEY_QUEUE = "mangmao_withdraw_money_queue";// 忙猫新提现
-    
+
+    public static final String MANGMAO_WITHDRAW_MONEY_QUEUE_ANPAY = "mangmao_withdraw_money_queue";// 忙猫新提现 anpay
+
+    public static final String MANGMAO_WITHDRAW_MONEY_QUEUE_FINANCIAL = "mangmao_withdraw_money_queue";// 忙猫新提现 financial-web
+
     public static final String MANGMAO_WITHDRAW_MONEY_RETURN_QUEUE = "mangmao_withdraw_money_return_queue";// 忙猫新提现
-    
-    
-    
-    
+
+    public static final String XFQ_FEIYUFENGXIAO_RESALE_QUEUE_NAME_ANPAY = "xfq_feiyufengxiao_resale_queue_anpay";// 消费券的蜂销  anpay
+
+    public static final String XFQ_FEIYUFENGXIAO_RESALE_QUEUE_NAME_FINANCIAL = "xfq_feiyufengxiao_resale_queue_financial";// 消费券的蜂销 financial-web
+
+    public static final String XFQ_FEIYUFENGXIAO_RESALE_FAIL_QUEUE_NAME = "xfq_feiyufengxiao_resale_fail_queue";// 消费券的蜂销 返回队列
+
+    public static final String XFQ_FPAY_RESALE_QUEUE_NAME_ANPAY = "xfq_fpay_resale_queue_anpay";//  消费券的蜂pay提现 anpay
+
+    public static final String XFQ_FPAY_RESALE_QUEUE_NAME_FINANCIAL = "xfq_fpay_resale_queue_financial";//  消费券的蜂pay提现 financial-web
+
+    public static final String XFQ_FPAY_RESALE_FAIL_QUEUE_NAME = "xfq_fpay_resale_fail_queue";// 消费券的蜂pay提现失败
+
+    public static final String XFQ_MANGMAO_WITHDRAW_MONEY_QUEUE_ANPAY = "xfq_mangmao_withdraw_money_queue_anpay";// 消费券的二手商城发送到 anpay
+
+    public static final String XFQ_MANGMAO_WITHDRAW_MONEY_QUEUE_FINANCIAL = "xfq_mangmao_withdraw_money_queue_financial";// 消费券的二手商城发送到 financial-web
+
+    public static final String XFQ_MANGMAO_WITHDRAW_MONEY_RETURN_QUEUE = "xfq_mangmao_withdraw_money_return_queue";// 消费券的二手商城 返回
+
     public static final String FYW_DELAY_QUEUE = "fyw_delay_queue";// 福员外
     
     public static final String FYW_REQUEST_HIS_QUEUE = "fyw_request_his_queue";// 福员外
