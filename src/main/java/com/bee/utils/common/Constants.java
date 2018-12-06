@@ -351,6 +351,9 @@ public interface Constants {
 
     /** 交易类型 11-（福员外） 生成定额券*/
     public static final String TRAN_TYPE_12= "12";
+    
+    /** 交易类型 13-提现 */
+    public static final String TRAN_TYPE_13 = "13";
 
     /************************************** 支付订单 ***********************************************************/
     /** 支付订单类型 1-消费 */
@@ -2762,4 +2765,5 @@ public interface Constants {
 
     /** 默认的地址编号 0 **/
     public static final Integer DEFAULT_ADDRESS_ID = 0;
+    
 }
