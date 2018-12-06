@@ -43,9 +43,9 @@ public interface Constants {
 
     public static final String FPAY_RESALE_FAIL_QUEUE_NAME = "fpay_resale_fail_queue";// 蜂pay提现失败
 
-    public static final String MANGMAO_WITHDRAW_MONEY_QUEUE_ANPAY = "mangmao_withdraw_money_queue";// 忙猫新提现 anpay
+    public static final String MANGMAO_WITHDRAW_MONEY_QUEUE_ANPAY = "mangmao_withdraw_money_queue_anpay";// 忙猫新提现 anpay
 
-    public static final String MANGMAO_WITHDRAW_MONEY_QUEUE_FINANCIAL = "mangmao_withdraw_money_queue";// 忙猫新提现 financial-web
+    public static final String MANGMAO_WITHDRAW_MONEY_QUEUE_FINANCIAL = "mangmao_withdraw_money_queue_financial";// 忙猫新提现 financial-web
 
     public static final String MANGMAO_WITHDRAW_MONEY_RETURN_QUEUE = "mangmao_withdraw_money_return_queue";// 忙猫新提现
 
