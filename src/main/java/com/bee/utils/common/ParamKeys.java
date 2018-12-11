@@ -255,8 +255,6 @@ public interface ParamKeys {
     public static final String ORGANIZE_POSITION_SEQ_NO="OrganizePositionService";
     //Activity
     public static final String ACTIVITY_SEQ_NO="ActivityService";
-    //BindingModule
-    public static final String BINDING_SEQ_NO="BindingModuleService";
     //ActivityUser抽奖活动用户信息表主键
     public static final String ACTIVITY_USER_SEQ_NO="ActivityUserService";
     //Award
@@ -310,6 +308,7 @@ public interface ParamKeys {
     public static final String RFID_STORE_BATCH_HIS_SEQ_NO="RfidStoreBatchHisService";
     public static final String CUPBOARD_REVISE_HIS_SEQ_NO="CupboardReviseHisService";
     public static final String ADVERTISING_PICTURES_SEQ_NO="AdvertisingPicturesService";
+    public static final String PERSONAL_CUSTOMER_BIND_SEQ_NO="PersonalCustomerBindService"; //xyd 20181205 个人模块绑定
     public static final String ADVERTISEMENT_SEQ_NO="AdvertisementService";
     public static final String ADVERTISEMENT_DETAILS_SEQ_NO="AdvertisementDetailsService";
     public static final String REVISE_REALMNAME_HIS_SEQ_NO="ReviseRealmnameHisService";
