@@ -2375,10 +2375,6 @@ public interface Constants {
     /** 服务商品审核状态 驳回 **/
     public static final String SERVICE_PRODUCT_AUDIT_STATUS_BACK = "2";
     
-    /**蜂惠banner开启状态*/
-    public static final String FH_BANNER_OFF_STATUS = "0";//关闭
-    public static final String FH_BANNER_ON_STATUS = "1";//打开
-
     /**banner开启状态*/
     public static final String BANNER_OFF_STATUS = "00";//关闭
     public static final String BANNER_ON_STATUS = "01";//打开

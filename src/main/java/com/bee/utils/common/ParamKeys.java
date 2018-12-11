@@ -372,8 +372,6 @@ public interface ParamKeys {
     public static final String AGENT_MER_SEQ= "AgentMerService";
     //分销商登陆信息编号
     public static final String AGENT_MER_LOGIN_SEQ= "AgentMerLoginService";
-    //蜂惠banner编号
-    public static final String FH_BANNER_SEQ_NO= "FhBannerService";
     //蜂惠订单编号
     public static final String FH_ORDERS_SEQ_NO= "FhOrdersService";
     //峰惠对账记录编号
