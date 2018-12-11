@@ -2720,6 +2720,8 @@ public interface Constants {
 
     /**蜂惠banner位置id 011**/
     public static final String FH_LOCATION_ID = "011";
+    /**商城banner位置id 020**/
+    public static final String MALL_LOCATION_ID = "020";
 
     /** 登录账号开启状态 1：开启**/
     public static final String LOGIN_STATUS_OPEN = "1";
