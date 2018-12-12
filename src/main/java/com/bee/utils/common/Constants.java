@@ -2634,7 +2634,9 @@ public interface Constants {
     public static final String FH_CHANNEL_CODE = "00002";
 
     /***********************************渠道编码结束***************************************/
-
+    /** fb商城 TOKEN前缀 **/
+    public static final String FB_PERSONAL = "FB_PERSONAL_";
+    
     /** 商城个人 TOKEN前缀 **/
     public static final String MALL_PERSONAL = "MALL_PERSONAL_";
 
