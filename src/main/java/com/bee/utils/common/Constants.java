@@ -876,6 +876,9 @@ public interface Constants {
 
     /** 账户类型-BANK 丰付系统银行网银支付 */
     public static final String ACCOUNT_TYPE_BANK = "10";
+    
+    /** 账户类型-徽商银行账户 */
+    public static final String ACCOUNT_TYPE_HUISHANG="11";
 
     /** 限额规则状态-1-使用 */
     public static final String QUOTA_RULE_STATUS_1 = "1";
