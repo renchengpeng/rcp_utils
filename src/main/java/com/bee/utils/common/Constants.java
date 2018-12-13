@@ -12,6 +12,7 @@ public interface Constants {
     public static final String SWTICH_OFF = "0";
     /**费鱼的accesstoken的key**/
     public static final String FY_ENTER_ACCESSTOKEN = "FY_ENTER_ACCESSTOKEN";
+    public static final String FY_EMP_ENTER_ACCESSTOKEN = "FY_EMP_ENTER_ACCESSTOKEN";
 
 
     public static final String ERROR_MESSAGE = "errorMessage";
@@ -2636,7 +2637,9 @@ public interface Constants {
     public static final String FH_CHANNEL_CODE = "00002";
 
     /***********************************渠道编码结束***************************************/
-
+    /** fb商城 TOKEN前缀 **/
+    public static final String FB_PERSONAL = "FB_PERSONAL_";
+    
     /** 商城个人 TOKEN前缀 **/
     public static final String MALL_PERSONAL = "MALL_PERSONAL_";
 
