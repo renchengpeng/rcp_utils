@@ -309,6 +309,7 @@ public interface ParamKeys {
     public static final String CUPBOARD_REVISE_HIS_SEQ_NO="CupboardReviseHisService";
     public static final String ADVERTISING_PICTURES_SEQ_NO="AdvertisingPicturesService";
     public static final String PERSONAL_CUSTOMER_BIND_SEQ_NO="PersonalCustomerBindService"; //xyd 20181205 个人模块绑定
+    public static final String ENTERPRISE_BIND_SEQ_NO="AuthorizeRelationService"; //企业绑定
     public static final String ADVERTISEMENT_SEQ_NO="AdvertisementService";
     public static final String ADVERTISEMENT_DETAILS_SEQ_NO="AdvertisementDetailsService";
     public static final String REVISE_REALMNAME_HIS_SEQ_NO="ReviseRealmnameHisService";
