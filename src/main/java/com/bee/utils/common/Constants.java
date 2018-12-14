@@ -1543,6 +1543,12 @@ public interface Constants {
 
     public static final String MESSAGETYPE_1 = "1";// 邮箱
 
+    /** 认证状态 0：未认证 1：已认证 **/
+    public static final String IS_AUTH_STATUS_0 = "0";
+
+    /** 1：已认证 **/
+    public static final String IS_AUTH_STATUS_1 = "1";
+
     /** 是否签署文件 0：未签署 1：已签署 2 签署中 **/
     public static final String IS_SIGN_STATUS_0 = "0";
 
