@@ -1244,6 +1244,9 @@ public interface Constants {
     
     /** 魔钥个人 TOKEN前缀 **/
     public static final String MOYAO_TOKEN_PERSONAL = "MOYAO_PERSONAL_";
+    
+    /** 支付中心用户 TOKEN前缀 **/
+    public static final String PAY_CUSTOMER_TOKEN = "PAY_CUSTOMER_";
 
     /** 京东支付类型 4：余额 7：网银钱包 101：金采支付 */
     public static final Integer JD_PAYTYPE_BAL = 4;
