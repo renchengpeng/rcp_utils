@@ -2800,5 +2800,8 @@ public interface Constants {
 
     /** 默认的地址编号 0 **/
     public static final Integer DEFAULT_ADDRESS_ID = 0;
+
+    /** 内划算合同名称前缀 在线支付签章 **/
+    public static final String PAY_DOCUMENT_PREFIX = "OXFQZ";
     
 }
