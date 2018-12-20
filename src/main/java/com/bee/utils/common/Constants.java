@@ -1326,6 +1326,9 @@ public interface Constants {
     /** 京东售后状态3：退款完成 */
     public static final String JD_AFS_STATUS_3 = "3";
 
+    /** 京东售后状态4：退款中 */
+    public static final String JD_AFS_STATUS_4 = "4";
+
     /** 大礼包是否过期 0：未过期 */
     public static final Integer GIFT_PACKAGE_EXPIRED_0 = 0;
 
