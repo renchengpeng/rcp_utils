@@ -147,18 +147,16 @@ public class PDFUtils {
             paragraph.add(p2);
             document.add(paragraph);
             document.close();
-            FileOutputStream ff = new FileOutputStream(new File("D:\\mypdf.pdf"));
-            ff.write(byteArray.toByteArray());
-            ff.flush();
-            ff.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (DocumentException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
+            byte [] filebyte = byteArray.toByteArray();
+            byteArray.flush();
+            byteArray.close();
+            return filebyte;
+            
+        } catch (Exception e) {
+            log.error(e);
+            throw new CoreException("盖章失败",e);
+        } 
+        
     }
     /**
      * @description: 图片转pdf
