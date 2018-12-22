@@ -2806,5 +2806,23 @@ public interface Constants {
 
     /** 内划算合同名称前缀 在线支付签章 **/
     public static final String PAY_DOCUMENT_PREFIX = "OXFQZ";
+
+    /** 同步数据类型 '0企业账号同步 1企业信息同步 2个人信息同步'**/
+    public static final String SYNC_INFO_TYPE_0 = "0";
+
+    /** 同步数据类型 '0企业账号同步 1企业信息同步 2个人信息同步'**/
+    public static final String SYNC_INFO_TYPE_1 = "1";
+
+    /** 同步数据类型 '0企业账号同步 1企业信息同步 2个人信息同步'**/
+    public static final String SYNC_INFO_TYPE_2 = "2";
+
+
+    /** 同步数据状态 0未处理 1已处理 **/
+    public static final String SYNC_INFO_STATUS_0 = "0";
+
+    /** 同步数据状态 0未处理 1已处理 **/
+    public static final String SYNC_INFO_STATUS_1 = "1";
+
+
     
 }
