@@ -147,18 +147,16 @@ public class PDFUtils {
             paragraph.add(p2);
             document.add(paragraph);
             document.close();
-            FileOutputStream ff = new FileOutputStream(new File("D:\\mypdf.pdf"));
-            ff.write(byteArray.toByteArray());
-            ff.flush();
-            ff.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (DocumentException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
+            byte [] filebyte = byteArray.toByteArray();
+            byteArray.flush();
+            byteArray.close();
+            return filebyte;
+            
+        } catch (Exception e) {
+            log.error(e);
+            throw new CoreException("盖章失败",e);
+        } 
+        
     }
     /**
      * @description: 图片转pdf
@@ -188,18 +186,11 @@ public class PDFUtils {
             paragraph.add(cks);
             document.add(paragraph);
             document.close();
-            FileOutputStream ff = new FileOutputStream(new File("D:\\myimg.pdf"));
-            ff.write(byteArray.toByteArray());
-            ff.flush();
-            ff.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (DocumentException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
+            return byteArray.toByteArray();
+        }catch (Exception e) {
+            log.error(e);
+            throw new CoreException("盖章失败",e);
+        } 
     }
     /**
      * @description: createPDF1 为tw签署生成pfd格式的合同 并返回两个合同章的坐标 pdf样式需要参考 test.html 否则章的位置不好计算
