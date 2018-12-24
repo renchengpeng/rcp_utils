@@ -1907,6 +1907,8 @@ public interface Constants {
     public static final String MOYAO_TRANSCODE_10020 = "10020";
     /** 10022-wifi信息  客户端向moyao推送连接wifi成功消息*/
     public static final String MOYAO_TRANSCODE_10022 = "10022";
+    /**10023 客户端视频上传成功后，像后台**/
+    public static final String MOYAO_TRANSCODE_10023 = "10023";
     /** T0001-魔钥交易类型-指令开门 */
     public static final String MOYAO_TRANTYPE_T0001 = "T0001";
     /** T0002-魔钥交易类型-盘点标签 */
