@@ -3,14 +3,7 @@
  */
 package com.bee.sys.utils;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
@@ -27,6 +20,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.util.StringUtils;
 
 import com.alibaba.fastjson.JSON;
@@ -633,6 +627,92 @@ public class BeeUtils {
 		}
 		return resAccount;
 	}
+
+	/**
+	 * 功能描述: 执行宇哥的Shell脚本
+	 * @param inOrderCommand 为了授权而保留的路径
+	 * @param shellPath 脚本在本项目路径
+	 * @param allParms 带参数路径
+	 * @return
+	 */
+	public static String gotoShell(String inOrderCommand, String shellPath, String allParms){
+
+		JSONObject resultJSON = new JSONObject();
+
+		ProcessBuilder builderCommand = new ProcessBuilder("/usr/bin/chmod", "+x", inOrderCommand);
+		builderCommand.directory(new File(shellPath));
+
+		int runningStatus = 0;
+		String s = null;
+		StringBuffer sb = new StringBuffer();
+
+		try {
+
+			Process process = builderCommand.start();
+
+			BufferedReader stdInput = new BufferedReader(new InputStreamReader(process.getInputStream()));
+			BufferedReader stdError = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+
+			while ((s = stdInput.readLine()) != null) {
+				sb.append(s);
+			}
+
+			while ((s = stdError.readLine()) != null) {
+				sb.append(s);
+			}
+
+			runningStatus = process.waitFor();
+
+
+			String[] cmdString = {"/bin/sh", "-c", allParms};
+			Process pRuntime = Runtime.getRuntime().exec(cmdString);
+
+			BufferedReader stdInputRuntime = new BufferedReader(new InputStreamReader(pRuntime.getInputStream()));
+			BufferedReader stdErrorRuntime = new BufferedReader(new InputStreamReader(pRuntime.getErrorStream()));
+
+			while ((s = stdInputRuntime.readLine()) != null) {
+				sb.append(s);
+			}
+
+			while ((s = stdErrorRuntime.readLine()) != null) {
+				sb.append(s);
+			}
+
+			runningStatus = pRuntime.waitFor();
+
+			closeStream(stdInput);
+			closeStream(stdError);
+
+			closeStream(stdInputRuntime);
+			closeStream(stdErrorRuntime);
+
+		} catch (Exception e) {
+			sb.append(e.getMessage());
+			runningStatus = 1;
+		}
+
+		if (runningStatus == 0) {
+			//成功
+			resultJSON.put("code", "1");
+			resultJSON.put("msg", "成功");
+			return resultJSON.toJSONString();
+		} else {
+			resultJSON.put("code", "0");
+			resultJSON.put("msg", "调用shell脚本失败..." + sb.toString());
+			return resultJSON.toJSONString();
+		}
+	}
+
+	public static void closeStream(BufferedReader reader){
+		try {
+			if(reader != null){
+				reader.close();
+			}
+		} catch (Exception e) {
+			reader = null;
+		}
+	}
+
 //	public static void main(String[] args) {
 //        String aa="a d df".trim();
 //        if(!isEnglish(aa)) {
