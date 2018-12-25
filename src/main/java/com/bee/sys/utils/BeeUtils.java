@@ -722,12 +722,12 @@ public class BeeUtils {
 //    }
 	
 	 public static void main(String[] args) {
-	        String a = " k   g";
-	        a = a.trim();
-	        if(!BeeUtils.isEnglish(a)){
-	            System.out.println(a.replace(" ", ""));
-	        }else{
-	            System.out.println(a.trim());
+	     String a="121212121";
+	        if(a.matches("^[0-9]*[1-9][0-9]*$")) {
+	            
+	            System.out.println("11");
+	        }else {
+	            System.out.println("22");
 	        }
 	    }
 	
@@ -736,5 +736,6 @@ public class BeeUtils {
       return a.matches("^[a-zA-Z]*");
 
     }
+ 
  
 }
