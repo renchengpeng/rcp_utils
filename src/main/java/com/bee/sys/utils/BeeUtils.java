@@ -28,6 +28,8 @@ import com.bee.framework.i.bp.core.CoreException;
 import com.bee.utils.common.Constants;
 import com.bee.utils.common.ErrorCodes;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @author fanzhm
  * @since 2012-12-28 工具类
@@ -630,12 +632,14 @@ public class BeeUtils {
 
 	/**
 	 * 功能描述: 执行宇哥的Shell脚本
-	 * @param inOrderCommand 为了授权而保留的路径
-	 * @param shellPath 脚本在本项目路径
-	 * @param allParms 带参数路径
+	 * @param request 为了获取授权路径而保留的参数。
+	 * @param shellPath 脚本在本项目路径。 											  		例 ： request.getServletContext().getRealPath("/") + "WEB-INF";
+	 * @param allParms 带参数路径shell脚本的参数，每个之间要用一个" "空格隔开。  		 			例 ： String allParms = shellPath + "/add-domain.sh qiyeos.com：xyz.com " ;
 	 * @return
 	 */
-	public static String gotoShell(String inOrderCommand, String shellPath, String allParms){
+	public static String gotoShell(HttpServletRequest request, String shellPath, String allParms){
+
+		String inOrderCommand = request.getServletContext().getRealPath("/") + "WEB-INF";
 
 		JSONObject resultJSON = new JSONObject();
 
