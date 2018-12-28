@@ -491,7 +491,8 @@ public interface Constants {
     public final static String CHANNEL_21="21";
     /**消费券跃程充值 **/
     public final static String CHANNEL_22="22";
-
+    //蜂点企业
+    public final static String CHANNEL_23="23";
     public final static String CHANNEL = "channel"; // by cws channel-web
 
     public final static String ADMIN = "admin";
