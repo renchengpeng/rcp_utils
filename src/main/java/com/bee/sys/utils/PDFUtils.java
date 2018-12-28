@@ -284,7 +284,7 @@ public class PDFUtils {
             for(float [] resu:list){
                 //计算百分比
                 BigDecimal fx = DecimalUtil.divide(new BigDecimal(resu[0]-20), new BigDecimal(x), 2);
-                BigDecimal fy = DecimalUtil.divide(new BigDecimal(y-resu[1]-61), new BigDecimal(y), 2);
+                BigDecimal fy = DecimalUtil.divide(new BigDecimal(y-resu[1]-30), new BigDecimal(y), 2);
                 //签署人的盖章位置
                 resu[0] = fx.floatValue();
                 resu[1] = fy.floatValue();

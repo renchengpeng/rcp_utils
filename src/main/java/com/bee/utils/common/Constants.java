@@ -337,7 +337,7 @@ public interface Constants {
     /** 订单类型 3-充值 */
     public static final String ORDER_TYPE_3 = "3";
 
-    /** 交易类型 1-消费 */
+    /** 交易类型 1-消费（支出） */
     public static final String TRAN_TYPE_1 = "1";
 
     /** 交易类型 2-转让 */
@@ -371,11 +371,14 @@ public interface Constants {
     /** 交易类型 11-（福员外） 生成虚拟卡*/
     public static final String TRAN_TYPE_11= "11";
 
-    /** 交易类型 11-（福员外） 生成定额券*/
+    /** 交易类型 12-（福员外） 生成定额券*/
     public static final String TRAN_TYPE_12= "12";
     
     /** 交易类型 13-提现 */
     public static final String TRAN_TYPE_13 = "13";
+    
+    /** 交易类型 14-收款 */
+    public static final String TRAN_TYPE_14 = "14";
 
     /************************************** 支付订单 ***********************************************************/
     /** 支付订单类型 1-消费 */
@@ -491,6 +494,16 @@ public interface Constants {
     public final static String CHANNEL_21="21";
     /**消费券跃程充值 **/
     public final static String CHANNEL_22="22";
+    /**蜂点企业*/
+    public final static String CHANNEL_23="23";
+
+    /** odm蜂点企业 */
+    public final static String CHANNEL_24="24";
+    /**商户平台 **/
+    public final static String CHANNEL_MERCHANT="25";
+
+    /**蜂惠**/
+    public final static String CHANNEL_26 = "26";
 
     public final static String CHANNEL = "channel"; // by cws channel-web
 
@@ -1268,7 +1281,7 @@ public interface Constants {
     
     /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农，4拉卡拉 ,5招商银行 6甬易*/
     public static final String RESALE_DZBXK_DEAL_WAY_5 = "5";
-    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农，4拉卡拉 ,5招商银行 6甬易*/
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农，4拉卡拉 ,5招商银行 6甬易代付 */
     public static final String RESALE_DZBXK_DEAL_WAY_6 = "6";
 
     /** 转让电子报销款 - 转让中 */
@@ -1909,6 +1922,8 @@ public interface Constants {
     public static final String MOYAO_TRANSCODE_10020 = "10020";
     /** 10022-wifi信息  客户端向moyao推送连接wifi成功消息*/
     public static final String MOYAO_TRANSCODE_10022 = "10022";
+    /**10023 客户端视频上传成功后，像后台**/
+    public static final String MOYAO_TRANSCODE_10023 = "10023";
     /** T0001-魔钥交易类型-指令开门 */
     public static final String MOYAO_TRANTYPE_T0001 = "T0001";
     /** T0002-魔钥交易类型-盘点标签 */
