@@ -461,8 +461,6 @@ public interface Constants {
     public final static String CHANNEL_09="09";
     /**企业蜂贝**/
     public final static String CHANNEL_10 = "10";
-    /**蜂惠**/
-    public final static String CHANNEL_11 = "11";
 
     /** 费鱼员工 **/
     public final static String CHANNEL_FEIYU_EMP = "11";
@@ -495,6 +493,10 @@ public interface Constants {
     public final static String CHANNEL_22="22";
     //蜂点企业
     public final static String CHANNEL_23="23";
+
+    /**蜂惠**/
+    public final static String CHANNEL_24 = "24";
+
     public final static String CHANNEL = "channel"; // by cws channel-web
 
     public final static String ADMIN = "admin";
