@@ -337,7 +337,7 @@ public interface Constants {
     /** 订单类型 3-充值 */
     public static final String ORDER_TYPE_3 = "3";
 
-    /** 交易类型 1-消费 */
+    /** 交易类型 1-消费（支出） */
     public static final String TRAN_TYPE_1 = "1";
 
     /** 交易类型 2-转让 */
@@ -371,11 +371,14 @@ public interface Constants {
     /** 交易类型 11-（福员外） 生成虚拟卡*/
     public static final String TRAN_TYPE_11= "11";
 
-    /** 交易类型 11-（福员外） 生成定额券*/
+    /** 交易类型 12-（福员外） 生成定额券*/
     public static final String TRAN_TYPE_12= "12";
     
     /** 交易类型 13-提现 */
     public static final String TRAN_TYPE_13 = "13";
+    
+    /** 交易类型 14-收款 */
+    public static final String TRAN_TYPE_14 = "14";
 
     /************************************** 支付订单 ***********************************************************/
     /** 支付订单类型 1-消费 */
