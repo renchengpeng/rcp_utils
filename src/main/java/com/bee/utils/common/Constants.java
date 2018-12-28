@@ -491,11 +491,16 @@ public interface Constants {
     public final static String CHANNEL_21="21";
     /**消费券跃程充值 **/
     public final static String CHANNEL_22="22";
-    //蜂点企业
+    /**蜂点企业*/
     public final static String CHANNEL_23="23";
 
+    /** odm蜂点企业 */
+    public final static String CHANNEL_24="24";
+    /**商户平台 **/
+    public final static String CHANNEL_MERCHANT="25";
+
     /**蜂惠**/
-    public final static String CHANNEL_24 = "24";
+    public final static String CHANNEL_26 = "26";
 
     public final static String CHANNEL = "channel"; // by cws channel-web
 
