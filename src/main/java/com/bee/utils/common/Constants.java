@@ -461,6 +461,8 @@ public interface Constants {
     public final static String CHANNEL_09="09";
     /**企业蜂贝**/
     public final static String CHANNEL_10 = "10";
+    /**蜂惠**/
+    public final static String CHANNEL_11 = "11";
 
     /** 费鱼员工 **/
     public final static String CHANNEL_FEIYU_EMP = "11";
