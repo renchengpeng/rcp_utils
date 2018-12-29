@@ -1267,19 +1267,19 @@ public interface Constants {
     /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉*/
     public static final String RESALE_DZBXK_DEAL_WAY_0 = "0";
 
-    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉,5招商银行*/
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉,5招商银行 6甬易*/
     public static final String RESALE_DZBXK_DEAL_WAY_1 = "1";
 
-    /** 电子报销款 - 1，人工处理，0，随行付支付2，融宝支付3，爱农，4拉卡拉,5招商银行 */
+    /** 电子报销款 - 1，人工处理，0，随行付支付2，融宝支付3，爱农，4拉卡拉,5招商银行 6甬易*/
     public static final String RESALE_DZBXK_DEAL_WAY_2 = "2";
 
-    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉,5招商银行*/
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉,5招商银行 6甬易*/
     public static final String RESALE_DZBXK_DEAL_WAY_3 = "3";
     
-    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农，4拉卡拉 ,5招商银行*/
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农，4拉卡拉 ,5招商银行 6甬易*/
     public static final String RESALE_DZBXK_DEAL_WAY_4 = "4";
     
-    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农，4拉卡拉 ,5招商银行 */
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农，4拉卡拉 ,5招商银行 6甬易*/
     public static final String RESALE_DZBXK_DEAL_WAY_5 = "5";
     /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农，4拉卡拉 ,5招商银行 6甬易代付 */
     public static final String RESALE_DZBXK_DEAL_WAY_6 = "6";
