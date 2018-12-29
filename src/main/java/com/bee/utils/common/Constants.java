@@ -1328,6 +1328,9 @@ public interface Constants {
 
     /** 支付类型 6-壹通券 **/
     public static final String PAY_TYPE_6 = "6";
+    
+    /** 支付类型 7-徽商支付 **/
+    public static final String PAY_TYPE_7 = "7";
 
     /** 京东售后状态0：申请中 */
     public static final String JD_AFS_STATUS_0 = "0";
