@@ -436,8 +436,10 @@ public interface Constants {
     public final static String PAY_METHOD_WX="03";
     /**壹通券**/
     public final static String PAY_METHOD_XYED="04";
-     /** 账户支付 **/
+    /** 账户支付 **/
     public final static String PAY_METHOD_OPAY = "05";
+    /** 徽商支付**/
+    public final static String PAY_METHOD_HUISHANG = "06";
     
     
     
