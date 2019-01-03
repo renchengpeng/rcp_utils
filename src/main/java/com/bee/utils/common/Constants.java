@@ -6,6 +6,15 @@ package com.bee.utils.common;
  */
 public interface Constants {
 
+    /**risk swtich "1" : on ,  "0" : off **/
+
+    public static final String SWTICH_ON = "1";
+    public static final String SWTICH_OFF = "0";
+    /**费鱼的accesstoken的key**/
+    public static final String FY_ENTER_ACCESSTOKEN = "FY_ENTER_ACCESSTOKEN";
+    public static final String FY_EMP_ENTER_ACCESSTOKEN = "FY_EMP_ENTER_ACCESSTOKEN";
+
+
     public static final String ERROR_MESSAGE = "errorMessage";
     //ODM 登录账号开启状态 0：关闭 1：开启
     public static final String ODMLOGIN_STATUS_OPEN = "1";
@@ -23,21 +32,42 @@ public interface Constants {
     public static final String AGENT_PROPORTIONS_TO_FENGDIAN_EXCHANGE_NAME = "agent_proportions_to_fengdian_exchange";// 各平台向蜂点分成的交换机
     public static final String AGENT_PROPORTIONS_TO_FENGDIAN_ROUTING_KEY = "agent_proportions_to_fengdian_routingKey";// 各平台向蜂点分成的路由键
 
-    public static final String FEIYUFENGXIAO_RESALE_QUEUE_NAME = "feiyufengxiao_resale_queue";// 费鱼蜂销
+    public static final String FEIYUFENGXIAO_RESALE_QUEUE_NAME_ANPAY = "feiyufengxiao_resale_queue_anpay";// 费鱼蜂销 anpay
+
+    public static final String FEIYUFENGXIAO_RESALE_QUEUE_NAME_FINANCIAL = "feiyufengxiao_resale_queue_financial";// 费鱼蜂销 financial-web
 
     public static final String FEIYUFENGXIAO_RESALE_FAIL_QUEUE_NAME = "feiyufengxiao_resale_fail_queue";// 费鱼蜂销
-    
-    public static final String FPAY_RESALE_QUEUE_NAME = "fpay_resale_queue";//  蜂pay提现
-    
+
+    public static final String FPAY_RESALE_QUEUE_NAME_ANPAY = "fpay_resale_queue_anpay";//  蜂pay提现 anpay
+
+    public static final String FPAY_RESALE_QUEUE_NAME_FINANCIAL = "fpay_resale_queue_financial";//  蜂pay提现 financial-web
+
     public static final String FPAY_RESALE_FAIL_QUEUE_NAME = "fpay_resale_fail_queue";// 蜂pay提现失败
-    
-    public static final String MANGMAO_WITHDRAW_MONEY_QUEUE = "mangmao_withdraw_money_queue";// 忙猫新提现
-    
+
+    public static final String MANGMAO_WITHDRAW_MONEY_QUEUE_ANPAY = "mangmao_withdraw_money_queue_anpay";// 忙猫新提现 anpay
+
+    public static final String MANGMAO_WITHDRAW_MONEY_QUEUE_FINANCIAL = "mangmao_withdraw_money_queue_financial";// 忙猫新提现 financial-web
+
     public static final String MANGMAO_WITHDRAW_MONEY_RETURN_QUEUE = "mangmao_withdraw_money_return_queue";// 忙猫新提现
-    
-    
-    
-    
+
+    public static final String XFQ_FEIYUFENGXIAO_RESALE_QUEUE_NAME_ANPAY = "xfq_feiyufengxiao_resale_queue_anpay";// 消费券的蜂销  anpay
+
+    public static final String XFQ_FEIYUFENGXIAO_RESALE_QUEUE_NAME_FINANCIAL = "xfq_feiyufengxiao_resale_queue_financial";// 消费券的蜂销 financial-web
+
+    public static final String XFQ_FEIYUFENGXIAO_RESALE_FAIL_QUEUE_NAME = "xfq_feiyufengxiao_resale_fail_queue";// 消费券的蜂销 返回队列
+
+    public static final String XFQ_FPAY_RESALE_QUEUE_NAME_ANPAY = "xfq_fpay_resale_queue_anpay";//  消费券的蜂pay提现 anpay
+
+    public static final String XFQ_FPAY_RESALE_QUEUE_NAME_FINANCIAL = "xfq_fpay_resale_queue_financial";//  消费券的蜂pay提现 financial-web
+
+    public static final String XFQ_FPAY_RESALE_FAIL_QUEUE_NAME = "xfq_fpay_resale_fail_queue";// 消费券的蜂pay提现失败
+
+    public static final String XFQ_MANGMAO_WITHDRAW_MONEY_QUEUE_ANPAY = "xfq_mangmao_withdraw_money_queue_anpay";// 消费券的二手商城发送到 anpay
+
+    public static final String XFQ_MANGMAO_WITHDRAW_MONEY_QUEUE_FINANCIAL = "xfq_mangmao_withdraw_money_queue_financial";// 消费券的二手商城发送到 financial-web
+
+    public static final String XFQ_MANGMAO_WITHDRAW_MONEY_RETURN_QUEUE = "xfq_mangmao_withdraw_money_return_queue";// 消费券的二手商城 返回
+
     public static final String FYW_DELAY_QUEUE = "fyw_delay_queue";// 福员外
     
     public static final String FYW_REQUEST_HIS_QUEUE = "fyw_request_his_queue";// 福员外
@@ -271,6 +301,18 @@ public interface Constants {
     /** 订单状态 10-订单退款驳回 */
     public static final String ORDER_STATUS_10 = "10";
 
+    /** 子订单状态 1-正常，2-拒签 3-已发货 4--确认收货 5-退款*/
+    public static final String ORDERINFO_STATUS_1 = "1";
+    /** 子订单状态 2-拒签 */
+    public static final String ORDERINFO_STATUS_2 = "2";
+    /** 子订单状态 3-已发货 */
+    public static final String ORDERINFO_STATUS_3 = "3";
+    /** 子订单状态 4-确认收货 */
+    public static final String ORDERINFO_STATUS_4 = "4";
+
+    /** 子订单状态 5-退款 */
+    public static final String ORDERINFO_STATUS_5 = "5";
+
     /** 订单删除状态 0-订单是否删除 0 未删 */
     public static final String ORDER_IS_DEL_0 = "0";
 
@@ -295,7 +337,7 @@ public interface Constants {
     /** 订单类型 3-充值 */
     public static final String ORDER_TYPE_3 = "3";
 
-    /** 交易类型 1-消费 */
+    /** 交易类型 1-消费（支出） */
     public static final String TRAN_TYPE_1 = "1";
 
     /** 交易类型 2-转让 */
@@ -329,8 +371,14 @@ public interface Constants {
     /** 交易类型 11-（福员外） 生成虚拟卡*/
     public static final String TRAN_TYPE_11= "11";
 
-    /** 交易类型 11-（福员外） 生成定额券*/
+    /** 交易类型 12-（福员外） 生成定额券*/
     public static final String TRAN_TYPE_12= "12";
+    
+    /** 交易类型 13-提现 */
+    public static final String TRAN_TYPE_13 = "13";
+    
+    /** 交易类型 14-收款 */
+    public static final String TRAN_TYPE_14 = "14";
 
     /************************************** 支付订单 ***********************************************************/
     /** 支付订单类型 1-消费 */
@@ -388,8 +436,10 @@ public interface Constants {
     public final static String PAY_METHOD_WX="03";
     /**壹通券**/
     public final static String PAY_METHOD_XYED="04";
-     /** 账户支付 **/
+    /** 账户支付 **/
     public final static String PAY_METHOD_OPAY = "05";
+    /** 徽商支付**/
+    public final static String PAY_METHOD_HUISHANG = "06";
     
     
     
@@ -438,9 +488,24 @@ public interface Constants {
     public final static String CHANNEL_17="17";
     /**快寄卖 **/
     public final static String CHANNEL_18="18";
+    /**消费券的员工商城 **/
+    public final static String CHANNEL_19="19";
+    /**新商城（替换原有商城内划算/蜂贝）**/
+    public final static String CHANNEL_20="20";
+    /**消费券的二手商城 **/
+    public final static String CHANNEL_21="21";
+    /**消费券跃程充值 **/
+    public final static String CHANNEL_22="22";
+    /**蜂点企业*/
+    public final static String CHANNEL_23="23";
 
-    
-    
+    /** odm蜂点企业 */
+    public final static String CHANNEL_24="24";
+    /**商户平台 **/
+    public final static String CHANNEL_MERCHANT="25";
+
+    /**蜂惠**/
+    public final static String CHANNEL_26 = "26";
 
     public final static String CHANNEL = "channel"; // by cws channel-web
 
@@ -827,6 +892,9 @@ public interface Constants {
 
     /** 账户类型-BANK 丰付系统银行网银支付 */
     public static final String ACCOUNT_TYPE_BANK = "10";
+    
+    /** 账户类型-徽商银行账户 */
+    public static final String ACCOUNT_TYPE_HUISHANG="11";
 
     /** 限额规则状态-1-使用 */
     public static final String QUOTA_RULE_STATUS_1 = "1";
@@ -1191,6 +1259,9 @@ public interface Constants {
     
     /** 魔钥个人 TOKEN前缀 **/
     public static final String MOYAO_TOKEN_PERSONAL = "MOYAO_PERSONAL_";
+    
+    /** 支付中心用户 TOKEN前缀 **/
+    public static final String PAY_CUSTOMER_TOKEN = "PAY_CUSTOMER_";
 
     /** 京东支付类型 4：余额 7：网银钱包 101：金采支付 */
     public static final Integer JD_PAYTYPE_BAL = 4;
@@ -1198,17 +1269,22 @@ public interface Constants {
     /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉*/
     public static final String RESALE_DZBXK_DEAL_WAY_0 = "0";
 
-    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉*/
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉,5招商银行 6甬易*/
     public static final String RESALE_DZBXK_DEAL_WAY_1 = "1";
 
-    /** 电子报销款 - 1，人工处理，0，随行付支付2，融宝支付3，爱农，4拉卡拉 */
+    /** 电子报销款 - 1，人工处理，0，随行付支付2，融宝支付3，爱农，4拉卡拉,5招商银行 6甬易*/
     public static final String RESALE_DZBXK_DEAL_WAY_2 = "2";
 
-    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉*/
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农 ，4拉卡拉,5招商银行 6甬易*/
     public static final String RESALE_DZBXK_DEAL_WAY_3 = "3";
     
-    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农，4拉卡拉 */
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农，4拉卡拉 ,5招商银行 6甬易*/
     public static final String RESALE_DZBXK_DEAL_WAY_4 = "4";
+    
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农，4拉卡拉 ,5招商银行 6甬易*/
+    public static final String RESALE_DZBXK_DEAL_WAY_5 = "5";
+    /** 电子报销款 - 1，人工处理，0，随行付支付 2，融宝支付3，爱农，4拉卡拉 ,5招商银行 6甬易代付 */
+    public static final String RESALE_DZBXK_DEAL_WAY_6 = "6";
 
     /** 转让电子报销款 - 转让中 */
     public static final String RESALE_DZBXK_0 = "0";
@@ -1254,6 +1330,12 @@ public interface Constants {
 
     /** 支付类型 6-壹通券 **/
     public static final String PAY_TYPE_6 = "6";
+    
+    /** 支付类型 7-徽商支付 **/
+    public static final String PAY_TYPE_7 = "7";
+
+    /** 支付类型 8-水单支付 **/
+    public static final String PAY_TYPE_8 = "8";
 
     /** 京东售后状态0：申请中 */
     public static final String JD_AFS_STATUS_0 = "0";
@@ -1266,6 +1348,9 @@ public interface Constants {
 
     /** 京东售后状态3：退款完成 */
     public static final String JD_AFS_STATUS_3 = "3";
+
+    /** 京东售后状态4：退款中 */
+    public static final String JD_AFS_STATUS_4 = "4";
 
     /** 大礼包是否过期 0：未过期 */
     public static final Integer GIFT_PACKAGE_EXPIRED_0 = 0;
@@ -1490,6 +1575,12 @@ public interface Constants {
 
     public static final String MESSAGETYPE_1 = "1";// 邮箱
 
+    /** 认证状态 0：未认证 1：已认证 **/
+    public static final String IS_AUTH_STATUS_0 = "0";
+
+    /** 1：已认证 **/
+    public static final String IS_AUTH_STATUS_1 = "1";
+
     /** 是否签署文件 0：未签署 1：已签署 2 签署中 **/
     public static final String IS_SIGN_STATUS_0 = "0";
 
@@ -1666,6 +1757,9 @@ public interface Constants {
     public static final String MOYAO_CUPBOARD_OPENSTATUS_3 = "3";
 
 
+    /** 3-柜门开待处理 */
+    public static final String MOYAO_CUPBOARD_OPENSTATUS_3 = "3";
+
     /** 0-待入库-魔钥标签入库状态使用 */
     public static final String MOYAO_STORE_STATUS_0 = "0";
     
@@ -1835,7 +1929,7 @@ public interface Constants {
     public static final String MOYAO_TRANSCODE_10021 = "10021";
     /** 10019-魔钥指令-柜子升级成功后，返回版本号信息**/
     public static final String MOYAO_TRANSCODE_10019 = "10019";
-    /** 10013-魔钥指令-发布视频 */
+    /** 10020-魔钥指令-发布视频 */
     public static final String MOYAO_TRANSCODE_10020 = "10020";
     /** 10022-wifi信息  客户端向moyao推送连接wifi成功消息*/
     public static final String MOYAO_TRANSCODE_10022 = "10022";
@@ -2350,10 +2444,10 @@ public interface Constants {
     /** 服务商品审核状态 驳回 **/
     public static final String SERVICE_PRODUCT_AUDIT_STATUS_BACK = "2";
     
-    /**蜂惠banner开启状态*/
-    public static final String FH_BANNER_OFF_STATUS = "0";//关闭
-    public static final String FH_BANNER_ON_STATUS = "1";//打开
-    
+    /**banner开启状态*/
+    public static final String BANNER_OFF_STATUS = "00";//关闭
+    public static final String BANNER_ON_STATUS = "01";//打开
+
     /**产品是否绑定了属性0:绑定了 1:未绑定*/
     public static final String IS_BIND_ATTR_0="0";
     public static final String IS_BIND_ATTR_1="1";
@@ -2576,11 +2670,16 @@ public interface Constants {
     /** 默认的渠道编码 0 **/
     public static final String DEFAULT_CHANNEL_CODE = "0";
 
-    /** 默认的渠道编码 00001 **/
+    /** 默认的渠道编码 00001 商城**/
     public static final String MALL_CHANNEL_CODE = "00001";
 
-    /***********************************渠道编码结束***************************************/
+    /** 默认的渠道编码 00002 蜂惠 **/
+    public static final String FH_CHANNEL_CODE = "00002";
 
+    /***********************************渠道编码结束***************************************/
+    /** fb商城 TOKEN前缀 **/
+    public static final String FB_PERSONAL = "FB_PERSONAL_";
+    
     /** 商城个人 TOKEN前缀 **/
     public static final String MALL_PERSONAL = "MALL_PERSONAL_";
 
@@ -2647,4 +2746,111 @@ public interface Constants {
     /** 严选售后申请单状态：11:待客服确认 **/
     public static final Integer YX_AFS_STATUS_11 = 11;
 
+    /**网站站点标识  1-PC端**/
+    public static final String WEB_SITE_FLAG_1 = "1";
+    
+    /**网站站点标识 2-H5端**/
+    public static final String WEB_SITE_FLAG_2 = "2";
+    
+    /**网站站点标识 3-APP端**/
+    public static final String WEB_SITE_FLAG_3 = "3";
+    
+    /**网站站点**/
+    public static final String WEB_SITE_FLAG = "WEB_SITE_FLAG_";
+
+    /** 退款类型 01-售后退款**/
+    public static final String REFUND_TYPE_01 = "01";
+
+    /**退款类型 02-下单失败退款**/
+    public static final String REFUND_TYPE_02 = "02";
+
+    /**蜂惠banner位置id 011**/
+    public static final String FH_LOCATION_ID = "011";
+    /**商城banner位置id 020**/
+    public static final String MALL_LOCATION_ID = "020";
+
+    /** 登录账号开启状态 1：开启**/
+    public static final String LOGIN_STATUS_OPEN = "1";
+
+    /** 登录账号开启状态 0：关闭**/
+    public static final String LOGIN_STATUS_CLOSE = "0";
+
+    /** 蜂惠 TOKEN前缀 **/
+    public static final String FH_ENTERPRISE = "FH_ENTERPRISE_";
+
+    /** 登录账户类型：0-主账号 **/
+    public static final String VIP_LOGIN_PRIMARY_ACCOUNT = "0";
+    
+    /** 登录账户类型：1-子账号 **/
+    public static final String VIP_LOGIN_SUB_ACCOUNT = "1";
+
+    /** 注册位置 0蜂点同步到模块 **/
+    public static final String REGISTER_FLAG_FD = "0";
+    /** 注册位置 1模块单独注册 **/
+    public static final String REGISTER_FLAG_MODULE = "1";
+
+    /** 企业登录位置 0蜂点登录到模块 **/
+    public static final String LOGIN_FLAG_FD = "0";
+    /** 企业登录位置 1模块单独登录 **/
+    public static final String LOGIN_FLAG_MODULE = "1";
+
+    /** 支付宝个人 TOKEN前缀 **/
+    public static final String FYW_PERSONAL = "FYW_PERSONAL_";
+    public static final String FYW_ENTERPRISE = "FYW_ENTERPRISE_";
+
+    /** 支付宝 企业账户状态 0正常 1：未用 **/
+    public static final String FYW_ACCOUNT_0 = "0";
+    public static final String FYW_ACCOUNT_1 = "1";
+    /** 子账号权限标识：0-普通子账号  1-分发子账号，2-采购子账号  **/
+    public static final String FYW_LOGIN_POWER_0 = "0";
+    public static final String FYW_LOGIN_POWER_1 = "1";
+    public static final String FYW_LOGIN_POWER_2 = "2";
+    
+    /** 企业是否早支付宝存在  0 未存在,  1 已存在 **/
+    public static final String FYW_EXIST_TYPE_0 = "0";
+    public static final String FYW_EXIST_TYPE_1 = "1";
+    
+    /**支付宝banner位置id 234**/
+    public static final String FYW_LOCATION_ID = "234";
+
+    /** 模块是否ODM 0否 **/
+    public static final String ODM_MODULE_STATUS_0 = "0";
+
+    /** 模块是否ODM 1是 **/
+    public static final String ODM_MODULE_STATUS_1 = "1";
+    
+    /** 模块没有移动端**/
+    public static final String FD_APP_FLAG_NO = "0";
+    /** 模块有移动端  **/
+    public static final String FD_APP_FLAG_YES = "1";
+    
+    /** 模块域名统一  **/
+    public static final String FD_URLSAME_FLAG_YES = "0";
+    /** 模块域名不统一  **/
+    public static final String FD_URLSAME_FLAG_NO = "1";
+
+    /** 默认的地址编号 0 **/
+    public static final Integer DEFAULT_ADDRESS_ID = 0;
+
+    /** 内划算合同名称前缀 在线支付签章 **/
+    public static final String PAY_DOCUMENT_PREFIX = "OXFQZ";
+
+    /** 同步数据类型 '0企业账号同步 1企业信息同步 2个人信息同步'**/
+    public static final String SYNC_INFO_TYPE_0 = "0";
+
+    /** 同步数据类型 '0企业账号同步 1企业信息同步 2个人信息同步'**/
+    public static final String SYNC_INFO_TYPE_1 = "1";
+
+    /** 同步数据类型 '0企业账号同步 1企业信息同步 2个人信息同步'**/
+    public static final String SYNC_INFO_TYPE_2 = "2";
+
+
+    /** 同步数据状态 0未处理 1已处理 **/
+    public static final String SYNC_INFO_STATUS_0 = "0";
+
+    /** 同步数据状态 0未处理 1已处理 **/
+    public static final String SYNC_INFO_STATUS_1 = "1";
+
+
+    
 }

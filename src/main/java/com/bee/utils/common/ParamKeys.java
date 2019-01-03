@@ -186,7 +186,8 @@ public interface ParamKeys {
     public static final String MALL_ORDERS_NO="MallOrdersService";
     //商城 订单详情 编号
     public static final String MALL_ORDERINFO_NO="MallOrderInfoService";
-
+    //mall banner编号
+    public static final String MALL_BANNER_SEQ_NO= "MallBannerService";
     //预付商户限额
     public static final String LIMIT_SEQ="MerchantLimitAmtService";
     
@@ -279,8 +280,6 @@ public interface ParamKeys {
     //关键字
     public static final String KEYWORD_INVOICE_ITEM_SEQ_NO="KeyWordInvoiceItemService";
     
-    public static final String VIP_PRD_STATUS_SEQ_NO="VipPrdStatusService";
-    
     public static final String VIP_MODEL_RELATION_SEQ_NO="VipModelRelationService";
     
     //订单结算
@@ -309,6 +308,8 @@ public interface ParamKeys {
     public static final String RFID_STORE_BATCH_HIS_SEQ_NO="RfidStoreBatchHisService";
     public static final String CUPBOARD_REVISE_HIS_SEQ_NO="CupboardReviseHisService";
     public static final String ADVERTISING_PICTURES_SEQ_NO="AdvertisingPicturesService";
+    public static final String PERSONAL_CUSTOMER_BIND_SEQ_NO="PersonalCustomerBindService"; //xyd 20181205 个人模块绑定
+    public static final String ENTERPRISE_BIND_SEQ_NO="AuthorizeRelationService"; //企业绑定
     public static final String ADVERTISEMENT_SEQ_NO="AdvertisementService";
     public static final String ADVERTISEMENT_DETAILS_SEQ_NO="AdvertisementDetailsService";
     public static final String REVISE_REALMNAME_HIS_SEQ_NO="ReviseRealmnameHisService";
@@ -371,8 +372,6 @@ public interface ParamKeys {
     public static final String AGENT_MER_SEQ= "AgentMerService";
     //分销商登陆信息编号
     public static final String AGENT_MER_LOGIN_SEQ= "AgentMerLoginService";
-    //蜂惠banner编号
-    public static final String FH_BANNER_SEQ_NO= "FhBannerService";
     //蜂惠订单编号
     public static final String FH_ORDERS_SEQ_NO= "FhOrdersService";
     //峰惠对账记录编号
@@ -381,8 +380,6 @@ public interface ParamKeys {
     public static final String AGENT_ACCOUNT_NO="AgentVirAccountService";
     
     public static final String FH_PRODUCT_NO="FhProductService";
-    
-    public static final String RECORD_SEQ_NO="FdChangeRecordService";
     
     public static final String PRD_SKU_NO="productSkuNoService";
     //发票记录编号
@@ -407,4 +404,28 @@ public interface ParamKeys {
 
     /*SSL订单编号*/
     public static final String SSL_ORDER_SEQ = "SSL_ORDER_SEQ";
+
+    /* 蜂惠后台用户主键 */
+    public static final String FH_USERS_SEQ_NO = "FhUsersService";
+
+    /* 蜂惠后台权限主键 */
+    public static final String FH_PRIVILEGE_SEQ_NO = "FhPrivilegeService";
+
+    /* 蜂惠后台角色主键 */
+    public static final String FH_ROLE_SEQ_NO = "FhPrivilegeService";
+
+    /* 蜂惠后台部门主键 */
+    public static final String FH_DEPARTMENT_SEQ_NO = "DepartmentService";
+    
+    public static final String FYW_DEPARTMENT_SEQ_NO="FywDepartmentService";
+    
+    public static final String FYW_RESOURCE_SEQ_NO = "FywMenuService";
+    
+    public static final String FYW_USERS_SEQ_NO = "FywUsersService";
+    
+    public static final String FYW_PRIVILEGE_SEQ_NO = "FywPrivilegeService";
+    
+    public static final String FYW_ROLE_SEQ_NO = "FywRoleService";
+
+    public static final String SSL_ORDER_SEQ_NO = "SSLOrderService";
 }
