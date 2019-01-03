@@ -1757,9 +1757,6 @@ public interface Constants {
     public static final String MOYAO_CUPBOARD_OPENSTATUS_3 = "3";
 
 
-    /** 3-柜门开待处理 */
-    public static final String MOYAO_CUPBOARD_OPENSTATUS_3 = "3";
-
     /** 0-待入库-魔钥标签入库状态使用 */
     public static final String MOYAO_STORE_STATUS_0 = "0";
     

@@ -16,10 +16,10 @@
 
     
 	  <groupId>com.bee.utils</groupId>
-	  <artifactId>bee-utils</artifactId>
+	  <artifactId>rcp-utils</artifactId>
 	  <version>${commons_version}</version>
 	  <packaging>jar</packaging>
-	  <name>bee-utils</name>
+	  <name>rcp-utils</name>
 
   <dependencies>
   	<dependency>
@@ -126,5 +126,10 @@
 		    <artifactId>commons-lang3</artifactId>
 		    <version>3.4</version>
 		</dependency>
+	  <dependency>
+		  <groupId>org.junit.jupiter</groupId>
+		  <artifactId>junit-jupiter-api</artifactId>
+		  <version>RELEASE</version>
+	  </dependency>
   </dependencies>
 </project>
